@@ -1,12 +1,30 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react';
+import styled from 'styled-components';
 
-export default function Footer() {
+const StyledFooter= styled.footer`
+   width:100%;
+   text-align: center;
+   background: linear-gradient(hsl(108, 48%, 74%), transparent);
+   padding:0.2%;
+   p {
+   font-size: 15px;
+   color: rgb(0, 0, 0);
+   }
+   @media(max-width:780px){
+      width:100%;
+      margin-top:55px;
+      text-align: center;
+   }
+`;
 
-   return(
+const Footer = () => {
+
+   return (
       <>
-          <footer class="rodape">
-            <p class="fim">Copyright &copy; Grupo Panace IA 2021 </p>
-         </footer>
+         <StyledFooter>
+            <p> Copyright &copy; Grupo Panace I.A 2021 </p>
+         </StyledFooter>
       </>
-)}
+   )
+}
+export default Footer;

@@ -1,25 +1,20 @@
-import React, {Component} from 'react';
-import {MenuItems} from "./MenuItems"
-import './Menu.css';
+import React from 'react';
+import { Link } from 'react-router-dom'
+import { Nav } from './StyleMenu';
 
-class Menu extends Component {
-    render() {
-        return(
-            <nav className="menu">
-                <ul className="menu-itens">
-                    {MenuItems.map((item, index) =>{
-                        return (
-                            <li key={index}>
-                                <a className={item.cName} href={item.url}>
-                                {item.title}
-                                </a>
-                            </li>
-                        )
-                    })}
+const Menu = () => {
+
+    return (
+        <>
+            <Nav>
+                <ul>
+                    <li><Link to='/home'>Home</Link></li>
+                    <li><Link to='/comunidade'>Comunidade</Link></li>
+                    <li><Link to='/agendaeeventos'>Agenda & Eventos</Link></li>
+                    <li><Link to='/login'>Login</Link></li>
                 </ul>
-            </nav>
-        )
-    }
+            </Nav>   
+        </>
+    )
 }
-
-export default Menu
+export default Menu;

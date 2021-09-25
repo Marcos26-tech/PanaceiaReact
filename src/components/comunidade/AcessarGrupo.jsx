@@ -2,7 +2,7 @@ import React from 'react'
 import './AcessarGrupo.css'
 
 
-export default function Componente() {
+const AcessarGrupo = () => {
 
    return (
       <>
@@ -72,3 +72,4 @@ export default function Componente() {
       </>
    )
 }
+export default AcessarGrupo;
