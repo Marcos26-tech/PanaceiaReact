@@ -9,8 +9,6 @@ import Login from '../../login';
 import styled from 'styled-components';
 
 
-import styled from 'styled-components';
-
 
 const StyledHeader = styled.header`
    width: 100%;
