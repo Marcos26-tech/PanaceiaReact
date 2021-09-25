@@ -1,0 +1,79 @@
+.interesse {
+    height: 20vh;
+    width: 100%;
+    margin: auto;
+}
+
+.interesse h2 {
+    color: #000;
+    font-size: xx-large;
+}
+
+.animais {
+    width: 100%;
+    background-image: url(../../img/animais.jpg);
+    background-size: cover;
+}
+
+.culinaria {
+    width: 100%;
+    background-image: url(../../img/culinaria.jpg);
+    background-size: cover;
+}
+
+.plantas {
+    width: 100%;
+    background-image: url(../../img/plantas.jpg);
+    background-size: cover;
+}
+
+.grupos{
+    width: 100%;
+    flex-direction: column;
+    display: flexbox;
+    
+}
+
+.grupo {
+    margin: 1%;
+    width: 50%;
+    background-color: rgb(201, 170, 150);
+    border-radius: 8%;
+}
+
+/*grupos*/
+
+.todo {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+.nutricao {
+    width: 100%;
+    background-image: url(../../img/nutricao.jpg);
+    background-size: cover;
+}
+
+.artezanato {
+    width: 100%;
+    background-image: url(../../img/artezanato.jpg);
+    background-size: cover;
+}
+
+.relacionamento {
+    width: 100%;
+    background-image: url(../../img/relacionamento.jpg);
+    background-size: cover;
+}
+
+.topo {
+    background: linear-gradient(180deg, rgb(201, 170, 150), transparent);
+    border-radius: 20px;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}

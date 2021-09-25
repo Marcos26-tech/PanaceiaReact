@@ -1,0 +1,19 @@
+.logo img {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.caixaLogo {
+    width: 100%;
+    background-color: #48a048;
+    height: 110px;
+}
+
+.logo {
+    padding: 10px;
+    margin-left: 40%;
+}
+.logo h1{
+    text-align: left;
+}

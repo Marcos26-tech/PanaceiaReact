@@ -1,0 +1,36 @@
+.menu {
+    width: 85%;
+    mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+    margin: 0 auto;
+}
+  
+.menu ul {
+    text-align: center;
+    background:linear-gradient(90deg, transparent -20%, rgb(188, 226, 186) , rgb(255, 255, 255)49%, rgb(188, 226, 186) 86%,transparent 120% );
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);*/
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+  
+.menu ul li {
+    display: inline-block;
+}
+  
+.menu ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(7, 7, 7, 0.959);
+    text-decoration: none;
+    display: block;
+}
+  
+ .menu ul li a:hover {
+    box-shadow: 0 0 10px rgb(23 39 15), inset 0 0 1px rgb(255 255 255 / 60%);
+    background: rgba(160, 243, 160, 0.733);
+    color: rgba(10, 75, 15, 0.7);
+}
+
+.selecionado {
+    box-shadow: 0 0 10px rgb(23 39 15), inset 0 0 1px rgb(255 255 255 / 60%);
+    background: rgba(160, 243, 160, 0.733);
+}

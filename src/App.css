@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.container{
+  background-image: url("../src/img/arvores.jpg");
+  width: 100%;
+  background-size: cover;
+}
+.quadro2, .coluna1 .coluna{ 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8%;
+}
+.grupos{
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
