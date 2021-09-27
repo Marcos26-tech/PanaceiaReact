@@ -1,6 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom';
 import { Nav } from './StyleMenu';
+import Home from '../home/Home';
+import AcessarGrupo from '../comunidade/AcessarGrupo';
+import Agenda from '../agenda/Agenda';
+import Login from '../login/Login';
 
 const Menu = () => {
 
@@ -13,7 +17,17 @@ const Menu = () => {
                     <li><Link to='/agendaeeventos'>Agenda & Eventos</Link></li>
                     <li><Link to='/login'>Login</Link></li>
                 </ul>
-            </Nav>   
+            </Nav> 
+
+            <main>
+                <Switch>
+                <Route exact path="/"component={Home} />
+                <Route path='/home' component={Home} />
+                <Route path='/comunidade' component={AcessarGrupo} />
+                <Route path='/agendaeeventos' component={Agenda} />
+                <Route path='/login' component={Login} />
+                </Switch>
+            </main>  
         </>
     )
 }
