@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Agenda() {
+const Agenda = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Agenda() {
     )
 }
 
-export default Agenda
+export default Agenda;

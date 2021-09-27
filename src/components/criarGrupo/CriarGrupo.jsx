@@ -1,7 +1,7 @@
 import React from 'react'
 import './CriarGrupo.css'
 
-export default function CriarGrupo() {
+const CriarGrupo = () => {
 
     return (
         <div className="coluna coluna2">
@@ -44,3 +44,4 @@ export default function CriarGrupo() {
         </div>
     )
 }
+export default CriarGrupo;

@@ -1,5 +1,6 @@
-import React from 'react'
-import './AcessarGrupo.css'
+import React from 'react';
+import './AcessarGrupo.css';
+import CriarGrupo from'./AcessarGrupo';
 
 
 const AcessarGrupo = () => {
@@ -66,6 +67,8 @@ const AcessarGrupo = () => {
                         <button className="botaoCamp"><a href="depoimento.html">Entrar</a></button>
                      </div>
                   </div>
+
+                  <CriarGrupo />
                </div>
             </div>
          </div>

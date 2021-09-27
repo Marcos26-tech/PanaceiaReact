@@ -3,9 +3,9 @@ import { Switch, Route } from 'react-router-dom';
 import Logo from '../../img/logo.png';
 import Menu from '../menu/Menu'
 import Home from '../home/Home';
-import AcessarGrupo from '../../AcessarGrupo';
-import Agenda from '../../Agenda';
-import Login from '../../login';
+import AcessarGrupo from '../comunidade/AcessarGrupo';
+import Agenda from '../agenda/Agenda';
+import Login from '../login/Login';
 import styled from 'styled-components';
 
 
