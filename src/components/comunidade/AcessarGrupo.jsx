@@ -23,12 +23,6 @@ const AcessarGrupo = () => {
       setor: '',
       descricao: ''
   })
-  const novaTarefa = {
-      titulo: '',
-      setor: '',
-      descricao: ''
-  }
-
   const [tarefa, setTarefa] = useState(
       [
         {

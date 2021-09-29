@@ -22,7 +22,7 @@ export const DivTarefa = styled.div`
 function Post(props) {
     return (
         <DivTarefa>
-            <a href="#">{props.titulo}</a>
+            <p>{props.titulo}</p>
             <p>{props.setor}</p>
             <p>{props.descricao}</p>
             <span onClick={props.remove}><X /></span>
