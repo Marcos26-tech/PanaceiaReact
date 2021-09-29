@@ -13,8 +13,8 @@ const Menu = () => {
             <Nav>
                 <ul>
                     <li><Link to='/home'>Home</Link></li>
-                    <li><Link to='/comunidade'>Comunidade</Link></li>
                     <li><Link to='/agendaeeventos'>Agenda & Eventos</Link></li>
+                    <li><Link to='/comunidade'>Comunidade</Link></li>
                     <li><Link to='/login'>Login</Link></li>
                 </ul>
             </Nav> 
@@ -23,8 +23,8 @@ const Menu = () => {
                 <Switch>
                 <Route exact path="/"component={Home} />
                 <Route path='/home' component={Home} />
-                <Route path='/comunidade' component={AcessarGrupo} />
                 <Route path='/agendaeeventos' component={Agenda} />
+                <Route path='/comunidade' component={AcessarGrupo} />
                 <Route path='/login' component={Login} />
                 </Switch>
             </main>  
