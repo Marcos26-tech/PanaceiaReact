@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Item from '../../img/animais.jpg'
+import Item1 from '../../img/artes.jpg'
 
 
 
 import {StyledCarrocelContainer, StyledImageContainer, StyledArrowContainer, StyledImage } from './StyledHome';
 
-const imagens = [ Item];
+const imagens = [ Item, Item1];
 
 const Carrossel = () => {
   const [mudarImageIndex, setMudarImageIndex]= useState(0);

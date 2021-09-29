@@ -45,8 +45,6 @@ class Header extends Component {
                </Stylednovo> 
               <Menu/>
             </StyledHeader>
-             
-
          </>
       )
    }
