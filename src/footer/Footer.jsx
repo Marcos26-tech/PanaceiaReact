@@ -5,8 +5,6 @@ const StyledFooter= styled.footer`
    text-align: center;
    background: linear-gradient(hsl(108, 48%, 74%), transparent);
    padding:1px;
-   position: fixed;
-   width: 100%;
    p {
       font-size: 15px;
       color: rgb(0, 0, 0);

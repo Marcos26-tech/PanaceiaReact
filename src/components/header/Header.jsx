@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Logo from '../../img/logo.png';
 import Menu from '../menu/Menu'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Home from '../home/Home';
@@ -54,19 +54,19 @@ class Header extends Component {
             </StyledHeader>
             
             <main>
-               <Router>
-                  <div>
-                     <Switch>
-                        <Route exact path="/"component={Home} />
-                        <Route path='/Home' component={Home} />
-                        <Route path='/Agendaeeventos' component={Agenda} />
-                        <Route path='/Comunidade' component={AcessarGrupo} />
-                        <Route path='/Login' component={Login} />
-                     </Switch>
+               
+               <div>
+                  <Switch>
+                     <Route exact path="/"component={Home} />
+                     <Route path='/Home' component={Home} />
+                     <Route path='/Agendaeeventos' component={Agenda} />
+                     <Route path='/Comunidade' component={AcessarGrupo} />
+                     <Route path='/Login' component={Login} />
+                  </Switch>
 
 
-                  </div>
-               </Router>
+               </div>
+               
             </main>  
          </>
       )
