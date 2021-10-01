@@ -10,7 +10,7 @@ class Home extends Component {
           <Stylediv>
             <Section>
             <Title>Sejam Bem vindos a Panace I.A</Title>
-            <h3>“ Onde a busca em fazer a felicidade ser rotima na vida de todas as pessoas!”</h3>
+            <h3>“Onde a busca em fazer a felicidade ser rotina na vida de todas as pessoas!”</h3>
             </Section>
             <StyledContainer>
               <Carrossel />
