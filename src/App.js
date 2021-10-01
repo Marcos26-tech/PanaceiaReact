@@ -1,15 +1,14 @@
 import React from 'react';
-import Master from './components/master/Master';
+import Header from './components/header/Header';
+import Footer from './footer/Footer';
 import './App.css';
-
-
 
 
 const App = () => {
   return (
     <>
-      <Master />
-      
+      <Header />
+      <Footer />
     </>
   );
 }

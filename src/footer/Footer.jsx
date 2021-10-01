@@ -2,10 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledFooter= styled.footer`
-    margin-top: 100%;
-    text-align: center;
-    background: linear-gradient(hsl(108, 48%, 74%), transparent);
-    padding:1px;
+   text-align: center;
+   background: linear-gradient(hsl(108, 48%, 74%), transparent);
+   padding:1px;
     p {
     font-size: 15px;
     color: rgb(0, 0, 0);
