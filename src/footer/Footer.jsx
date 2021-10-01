@@ -21,7 +21,7 @@ const Footer = () => {
    return (
       <>
          <StyledFooter>
-            <p> Copyright &copy; Grupo Panace I.A 2021 </p>
+            <p>Copyright &copy; Grupo Panace I.A - 2021</p>
          </StyledFooter>
       </>
    )

@@ -11,8 +11,8 @@ import Item7 from '../../img/imghome/auto7.jpg';
 import Item8 from '../../img/imghome/auto8.jpg';
 import Item9 from '../../img/imghome/auto9.jpg';
 import Item10 from '../../img/imghome/auto10.jpg';
-import Item11 from '../../img/imghome/auto10.jpg';
-import Item12 from '../../img/imghome/auto10.jpg';
+import Item11 from '../../img/imghome/auto11.jpg';
+import Item12 from '../../img/imghome/auto12.jpg';
 
 
 

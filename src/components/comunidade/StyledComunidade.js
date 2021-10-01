@@ -4,6 +4,7 @@ export const Container = styled.section`
     align-items:center;
     margin:0 8% auto;
     background-color: #fff;
+    height: 100%;
     button {
         margin:20px;
         font-size:15px;
