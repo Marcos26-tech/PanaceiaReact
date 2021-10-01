@@ -1,85 +1,44 @@
 import React from 'react';
-import { useState } from 'react';
-import styled from 'styled-components';
-import FormPost from './FormPost';
-import Post from './Post';
+import {Container, Section, Span,} from './StyledComunidade';
 
-export const DivLista = styled.div`
-  display: flex;
-  width: 100%;
-  min-height:85vh;
-  padding:20px;
-  background-color:#ccc;
-  flex-wrap: wrap;
-  justify-content: space-around;
+import Infatil from '';
+import Mulheres from '';
+import Mental from '';
 
-`
+function AcessarGrupo() {
+    return (
+        <> 
+            <Span>
+                <h1>Comunidades Panace.IA</h1>
+                <h3>Juntos por um Futuro Saudável</h3>
+            </Span>
+            <Container>
+                
+                <button>Crie sua Comunidade</button>
 
+                <Section>
+                    <div>
+                        <img src={Infatil} alt="Saúde Infantil"/>
+                        <a href="">Saúde Infantil</a>
+                        <p>Descrição sobre o essa comunidade</p>
+                    </div>
 
-const AcessarGrupo = () => {
+                    <div>
+                    <img src={Mulheres} alt="Saúde das Mulheres"/>
+                        <a href="">Saúde para Mulheres</a>
+                        <p>Descrição sobre o essa comunidade</p>
+                    </div>
 
-   const [nTarefa, setnTarefa] = useState({
-      titulo: '',
-      setor: '',
-      descricao: ''
-  })
-  const [tarefa, setTarefa] = useState(
-      [
-        {
-            titulo: '',
-            setor: '',
-            descricao: ''
-        },
-      ])
+                    <div>
+                    <img src={Mental} alt="Saúde Mental"/>
+                        <a href="">Saúde Mental</a>
+                        <p>Descrição sobre o essa comunidade</p>
+                    </div>
 
-  const addTarefa = (e) => {
-      e.preventDefault()
-      setTarefa([...tarefa, nTarefa])
-      setnTarefa({
-          titulo: '',
-          setor: '',
-          descricao: ''
-      })
-
-  }
-
-  const captura = (e) => {
-      const { name, value } = e.target
-
-      if (name === 'titulo') {
-          setnTarefa({ 'titulo': value, 'setor': nTarefa.setor, 'descricao': nTarefa.descricao })
-      } else if (name === 'setor') {
-          setnTarefa({ 'titulo': nTarefa.titulo, 'setor': value, 'descricao': nTarefa.descricao })
-      } else if (name === 'descricao') {
-          setnTarefa({ 'titulo': nTarefa.titulo, 'setor': nTarefa.setor, 'descricao': value })
-      }
-  }
-
-  const removerTarefa = (tar) => {
-      let lista = tarefa
-      lista = lista.filter(
-          (t) =>
-              t !== tar)
-      setTarefa(lista)
-
-  }
-
-
-  return (
-      <DivLista>
-          <FormPost addTarefa={addTarefa} tarefa={nTarefa} digit={captura} />
-          {tarefa.map(
-              (tar, i) => (
-                  <Post key={i}
-                      titulo={tar.titulo}
-                      setor={tar.setor}
-                      descricao={tar.descricao}
-                      remove={removerTarefa.bind(this, tar)}
-                  />
-              )
-          )}
-          <button onClick={addTarefa}>Adicionar Tarefa</button>
-      </DivLista>
-  )
+                </Section>
+            </Container>
+        </>
+    )
 }
+
 export default AcessarGrupo;

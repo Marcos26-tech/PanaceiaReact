@@ -6,6 +6,7 @@ export const Section = styled.section`
   padding:5rem;
   text-align:center;
   justify-content: center;
+  background:white;
   h3 {
     font-weight: bold;
     color: rgb(12, 139, 1); 
