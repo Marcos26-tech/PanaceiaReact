@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Section, Span,} from './StyledComunidade';
 
-import Infatil from '../../img/imgcomunidade/infatil.jpg';
+import Infantil from '../../img/imgcomunidade/infantil.jpg';
 import Mulheres from '../../img/imgcomunidade/mulheres.jpg';
 import Mental from '../../img/imgcomunidade/mental.jpg';
 
@@ -18,7 +18,7 @@ function AcessarGrupo() {
 
                 <Section>
                     <div>
-                        <img src={Infatil} alt="Saúde Infantil"/>
+                        <img src={Infantil} alt="Saúde Infantil"/>
                         <a href="">Saúde Infantil</a>
                         <p>Descrição sobre o essa comunidade</p>
                     </div>

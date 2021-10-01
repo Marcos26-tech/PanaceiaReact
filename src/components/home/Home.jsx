@@ -1,22 +1,26 @@
 import React, {Component} from 'react';
 import Carrossel from './Carrossel';
 
-import {Title, StyledContainer, Section} from './StyledHome';
+import {Title, StyledContainer, Section, Stylediv} from './StyledHome';
 
 class Home extends Component {
   render() {
-    return(
-    <>
-      <Section>
-        <Title>Sejam Bem vindos a Loja Moda Panace I.A</Title>
-        <h3>“ A buscar por fazer a felicidade ser rotima na vida de todxs as pessoas!”</h3>
+      return(
+        <>
+          <Stylediv>
+            <Section>
+            <Title>Sejam Bem vindos a Panace I.A</Title>
+            <h3>“ Onde a busca em fazer a felicidade ser rotima na vida de todas as pessoas!”</h3>
+            </Section>
+            <StyledContainer>
+              <Carrossel />
+            </StyledContainer>
+          </Stylediv>
 
-        <StyledContainer>
-          <Carrossel />
-        </StyledContainer>
-      </Section>
-    </>
-    );
+        </>
+      );
   }
 }
 export default Home;
+
+

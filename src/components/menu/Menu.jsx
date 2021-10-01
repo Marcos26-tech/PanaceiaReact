@@ -1,10 +1,7 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { Nav } from './StyleMenu';
-import Home from '../home/Home';
-import AcessarGrupo from '../comunidade/AcessarGrupo';
-import Agenda from '../agenda/Agenda';
-import Login from '../login/Login';
+
 
 const Menu = () => {
 
@@ -19,15 +16,6 @@ const Menu = () => {
                 </ul>
             </Nav> 
 
-            <main>
-                <Switch>
-                <Route exact path="/"component={Home} />
-                <Route path='/home' component={Home} />
-                <Route path='/agendaeeventos' component={Agenda} />
-                <Route path='/comunidade' component={AcessarGrupo} />
-                <Route path='/login' component={Login} />
-                </Switch>
-            </main>  
         </>
     )
 }

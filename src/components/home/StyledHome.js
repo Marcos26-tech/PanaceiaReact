@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 //inicio style da pagina home//
-export const Section = styled.section`
-  margin:2rem;
-  padding:5rem;
+export const Stylediv = styled.div`
+  background:white;
+  border-radius:4%;
+  margin:5rem 8% 2rem;
   text-align:center;
   justify-content: center;
-  background:white;
+`;
+
+export const Section = styled.section`
+  margin:2px 10px 10px;
+  padding:2px;
+  text-align:center;
+  justify-content: center;
   h3 {
     font-weight: bold;
     color: rgb(12, 139, 1); 
@@ -14,7 +21,7 @@ export const Section = styled.section`
     margin:2px;
   }
 `;
-export const Title = styled.h3 `
+export const Title = styled.h1 `
   margin:1rem;
   padding:10px;
   font-weight: bold;
@@ -71,7 +78,7 @@ export const StyledArrowContainer = styled.div`
 `;
 
 export const StyledImage = styled.img`
-  width: 100%;
-  height:100%; 
-  border-radius:10%;
+  width:100%;
+  height:100%;
+  border-radius:5%;
 `;

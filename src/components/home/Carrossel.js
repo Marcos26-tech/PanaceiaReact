@@ -11,12 +11,14 @@ import Item7 from '../../img/imghome/auto7.jpg';
 import Item8 from '../../img/imghome/auto8.jpg';
 import Item9 from '../../img/imghome/auto9.jpg';
 import Item10 from '../../img/imghome/auto10.jpg';
+import Item11 from '../../img/imghome/auto10.jpg';
+import Item12 from '../../img/imghome/auto10.jpg';
 
 
 
 import {StyledCarrocelContainer, StyledImageContainer, StyledArrowContainer, StyledImage } from './StyledHome';
 
-const imagens = [ Item, Item1, Item2, Item3, Item4, Item5, Item6, Item7, Item8, Item9, Item10];
+const imagens = [ Item8, Item1, Item2, Item3, Item4, Item5, Item6, Item7, Item, Item9, Item10, Item11, Item12];
 
 const Carrossel = () => {
   const [mudarImageIndex, setMudarImageIndex]= useState(0);
