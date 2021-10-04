@@ -19,25 +19,25 @@ function AcessarGrupo() {
                 <Section>
                     <div>
                         <img src={Infantil} alt="Saúde Infantil"/>
-                        <a href="">Saúde Infantil</a>
+                        <a href="./#">Saúde Infantil</a>
                         <p>Descrição sobre o essa comunidade</p>
                     </div>
 
                     <div>
                         <img src={Mulheres} alt="Saúde das Mulheres"/>
-                        <a href="">Saúde para Mulheres</a>
+                        <a href="./#">Saúde para Mulheres</a>
                         <p>Descrição sobre o essa comunidade</p>
                     </div>
 
                     <div>
                         <img src={Mental} alt="Saúde Mental"/>
-                        <a href="">Saúde Mental</a>
+                        <a href="./#">Saúde Mental</a>
                         <p>Descrição sobre o essa comunidade</p>
                     </div>
 
                     <div>
                         <img src={Mental} alt="Saúde Mental"/>
-                        <a href="">Saúde Mental</a>
+                        <a href="./#">Saúde Mental</a>
                         <p>Descrição sobre o essa comunidade</p>
                     </div>
 
