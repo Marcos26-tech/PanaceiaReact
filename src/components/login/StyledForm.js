@@ -19,10 +19,11 @@ export const Form = styled.form`
 
 export const FormWrapper = styled.div`
   background-color:white;
+  opacity:95%;
   overflow: hidden;
   padding: 0 0 32px;
-  margin: 40px auto 0;
-  width: 490px;
+  margin: 75px auto 0;
+  width: 500px;
   height:700px;
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, .05), 0 0px 40px rgba(0, 0, 0, .08);

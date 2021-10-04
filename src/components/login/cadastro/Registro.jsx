@@ -3,45 +3,45 @@ import {Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput,
 
 const Registro = () => {
 
-  const [user, setUser] = useState({
-    name: '',
-    email: '',
-    password: ''
-  });
+    const [user, setUser] = useState({
+        name: '',
+        email: '',
+        password: ''
+    });
 
-  const [status, setStatus] = useState({
-    type: '',
-    mensagem: ''
-  });
+    const [status, setStatus] = useState({
+        type: '',
+        mensagem: ''
+    });
 
-  //Receber os dados do formulário
-  const valueInput = e => setUser({ ...user, [e.target.name]: e.target.value });
+    //Receber os dados do formulário
+    const valueInput = e => setUser({ ...user, [e.target.name]: e.target.value });
 
-  //Enviar os dados para o back-end
-  const addUser = async e => {
-    e.preventDefault();
+    //Enviar os dados para o back-end
+    const addUser = async e => {
+        e.preventDefault();
 
         if(!validate()) return;
 
-    const saveDataForm = true;
+        const saveDataForm = true;
 
-        if (saveDataForm) {
-            setStatus({
-                type: 'success',
-                mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
-            });
-            setUser({
-                name: '',
-                email: '',
-                password: ''
-            });
-            } else {
-            setStatus({
-                type: 'error',
-                mensagem: "Erro: Usuário não cadastrado!"
-            });
+            if (saveDataForm) {
+                setStatus({
+                    type: 'success',
+                    mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
+                });
+                setUser({
+                    name: '',
+                    email: '',
+                    password: ''
+                });
+                } else {
+                setStatus({
+                    type: 'error',
+                    mensagem: "Erro: Usuário não cadastrado!"
+                });
+            }
         }
-    }
 
     function validate(){
         if(!user.name) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!'});

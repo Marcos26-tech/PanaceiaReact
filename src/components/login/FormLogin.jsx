@@ -75,7 +75,7 @@ const FormLogin =() => {
                     </FormFieldset>
 
                     <FormFieldset>
-                        <FormButton type='button'>Login</FormButton>
+                        <FormButton type='submit'>Login</FormButton>
                     </FormFieldset>
                 </Form>
 
