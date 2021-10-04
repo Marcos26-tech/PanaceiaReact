@@ -18,17 +18,20 @@ export const Form = styled.form`
 `;
 
 export const FormWrapper = styled.div`
+  background-color:white;
   overflow: hidden;
   padding: 0 0 32px;
   margin: 40px auto 0;
   width: 490px;
+  height:700px;
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, .05), 0 0px 40px rgba(0, 0, 0, .08);
   border-radius: 5px;
 `
 export const FormHeader = styled.header`
+  margin: 50px 0 10px;
   padding-top: 24px;
-  padding-bottom:15px;
+  padding-bottom:19px;
 `
 export const FormBody = styled.div`
   padding-right: 32px;
@@ -103,6 +106,7 @@ export const FormButton = styled.button`
 
 
 export const FormLink = styled.a`
+  margin: 0 81px 0;
   display: inline-block;
   font-size: 12px;
   text-decoration: none;

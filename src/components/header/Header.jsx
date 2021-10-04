@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import Logo from '../../img/logo.png';
 import Menu from '../menu/Menu'
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Home from '../home/Home';
 import AcessarGrupo from '../comunidade/AcessarGrupo';
 import Agenda from '../agenda/Agenda';
-import Login from '../login/Login';
+import FormLogin from '../login/FormLogin';
+import Registro from '../login/cadastro/Registro'
+import ForgetPassword from '../login/resete/ForgetPassword'
 
 
 
@@ -55,18 +57,22 @@ class Header extends Component {
             
             <main>
                
-               <div>
-                  <Switch>
-                     <Route exact path="/"component={Home} />
-                     <Route path='/Home' component={Home} />
-                     <Route path='/Agendaeeventos' component={Agenda} />
-                     <Route path='/Comunidade' component={AcessarGrupo} />
-                     <Route path='/Login' component={Login} />
-                  </Switch>
+               <Router>   
+                  <div>
+                     <Switch>
+                        <Route exact path='/' component={FormLogin} />
+                        <Route exact path='/FormLogin' component={FormLogin} />
+                        <Route exact path='/Home' component={Home} />
+                        <Route exact path='/Agendaeeventos' component={Agenda} />
+                        <Route exact path='/Comunidade' component={AcessarGrupo} />
+                        <Route exact path='/Registro' component={Registro} />
+                        <Route exact path='/ForgetPassword' component={ForgetPassword} />
+                     </Switch>
+                  </div>
+               </Router>
 
 
-               </div>
-               
+
             </main>  
          </>
       )

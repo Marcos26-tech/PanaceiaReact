@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from './StyledForm'
+import {Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
 
-
-
-function FormCadastro() {
+const Registro = () => {
 
   const [user, setUser] = useState({
     name: '',
@@ -55,7 +53,7 @@ function FormCadastro() {
     }
 
     return (
-  
+        
         <FormWrapper>
             <FormBody>
                 
@@ -96,4 +94,4 @@ function FormCadastro() {
         </FormWrapper>
     )
 }  
-export default FormCadastro;
+export default Registro;
