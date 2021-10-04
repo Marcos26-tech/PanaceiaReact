@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-    align-items:center;
-    margin:0 8% auto;
-    background-color: #fff;
-    height: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 4%;
+  margin: 1rem 8% 2rem;
+  text-align: center;
+  justify-content: center;
     button {
         margin:20px;
         font-size:15px;
