@@ -30,7 +30,7 @@ function FormCadastro() {
         if (saveDataForm) {
             setStatus({
                 type: 'success',
-                mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A!"
+                mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
             });
             setUser({
                 name: '',
@@ -57,15 +57,14 @@ function FormCadastro() {
     return (
   
         <FormWrapper>
-
-          {status.type === 'success' ? <p style={{ color: "green" }}>{status.mensagem}</p> : ""}
-          {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
-    
             <FormBody>
-                    
+                
                 <FormHeader>
                     <Title>Cadastro Panace I.A</Title>
                 </FormHeader>
+
+                {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
+                {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
 
                 <Form onSubmit={addUser}>
                     <FormFieldset>
@@ -89,7 +88,7 @@ function FormCadastro() {
                 </Form>
 
                 <FormFieldset>
-                    <FormLink href="/Login">Já tem conta Clique aqui!</FormLink>
+                    <FormLink href="./FormLogin">Já tem conta Clique aqui!</FormLink>
                 </FormFieldset>
 
              </FormBody>
