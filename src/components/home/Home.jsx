@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Carrossel from "./Carrossel";
-import Watson from '../watson/Watson'
 
 import { Title, StyledContainer, Section, Stylediv } from "./StyledHome";
 
@@ -19,7 +18,6 @@ class Home extends Component {
           <StyledContainer>
             <Carrossel />
           </StyledContainer>
-          <Watson />
         </Stylediv>
       </>
     );
