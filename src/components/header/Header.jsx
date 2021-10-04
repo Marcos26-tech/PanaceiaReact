@@ -60,16 +60,11 @@ class Header extends Component {
                 <Route exact path="/" component={FormLogin} />
                 <Route exact path="/FormLogin" component={FormLogin} />
                 <Route exact path="/Registro" component={Registro} />
-                <Route
-                  exact
-                  path="/ForgetPassword"
-                  component={ForgetPassword}
-                />
-
-                <Route exact path="/Home" component={Home} />
+                <Route exact path="/ForgetPassword"component={ForgetPassword}/>
                 <Route exact path="/Agendaeeventos" component={Agenda} />
                 <Route exact path="/Comunidade" component={AcessarGrupo} />
               </Switch>
+              <Route exact path="/Home" component={Home} />
             </div>
           </Router>
         </main>
