@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
+import { Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
+import { Route, Link } from "react-router-dom";
+import Agenda from "../../agenda/Agenda";
 
 const Registro = () => {
 
@@ -21,42 +23,52 @@ const Registro = () => {
     const addUser = async e => {
         e.preventDefault();
 
-        if(!validate()) return;
+        if (!validate()) return;
 
         const saveDataForm = true;
 
-            if (saveDataForm) {
-                setStatus({
-                    type: 'success',
-                    mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
-                });
-                setUser({
-                    name: '',
-                    email: '',
-                    password: ''
-                });
-                } else {
-                setStatus({
-                    type: 'error',
-                    mensagem: "Erro: Usuário não cadastrado!"
-                });
-            }
+        if (saveDataForm) {
+            setStatus({
+                type: 'success',
+                mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
+            });
+            setUser({
+                name: '',
+                email: '',
+                password: ''
+            });
+        } else {
+            setStatus({
+                type: 'error',
+                mensagem: "Erro: Usuário não cadastrado!"
+            });
         }
-
-    function validate(){
-        if(!user.name) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!'});
-        if(!user.email) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo e-mail!'});
-        if(!user.password) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo senha!'});
-        if(user.password.length < 6) return setStatus({type: 'error', mensagem: 'Erro: A senha precisa ter pelo menos seis caracteres!'});
-
-    return true;
     }
 
+    function validate() {
+        if (!user.name) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!' });
+        if (!user.email) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo e-mail!' });
+        if (!user.password) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo senha!' });
+        if (user.password.length < 6) return setStatus({ type: 'error', mensagem: 'Erro: A senha precisa ter pelo menos seis caracteres!' });
+    
+    return true;
+    
+    }
+
+    function someCadastrar() {
+        if (user.name && user.email && user.password && user.password.length > 6) {
+            return (document.getElementById('form').style.visibility = "hidden",
+            window.location.replace('./termosdeuso'));
+        }
+    }
+
+
+
     return (
-        
+
         <FormWrapper>
             <FormBody>
-                
+
                 <FormHeader>
                     <Title>Cadastro Panace I.A</Title>
                 </FormHeader>
@@ -64,15 +76,15 @@ const Registro = () => {
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
                 {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
 
-                <Form onSubmit={addUser}>
+                <Form onSubmit={addUser} id="form">
                     <FormFieldset>
                         <label>Nome: </label>
                         <FormInput type="text" name="name" placeholder="Nome completo do usuário" onChange={valueInput} value={user.name} />
                     </FormFieldset>
-                
+
                     <FormFieldset>
                         <label>E-mail:</label>
-                        <FormInput type="email" name="email" placeholder="Melhor e-mail do usuário" onChange={valueInput}  value={user.email} />
+                        <FormInput type="email" name="email" placeholder="Melhor e-mail do usuário" onChange={valueInput} value={user.email} />
                     </FormFieldset>
 
                     <FormFieldset>
@@ -81,7 +93,7 @@ const Registro = () => {
                     </FormFieldset>
 
                     <FormFieldset>
-                        <FormButton type="submit">Cadastrar</FormButton>
+                        <FormButton type="submit" onClick={() => someCadastrar()}>Cadastrar</FormButton>
                     </FormFieldset>
                 </Form>
 
@@ -89,9 +101,9 @@ const Registro = () => {
                     <FormLink href="./FormLogin">Já tem conta Clique aqui!</FormLink>
                 </FormFieldset>
 
-             </FormBody>
+            </FormBody>
 
         </FormWrapper>
     )
-}  
+};
 export default Registro;

@@ -49,6 +49,13 @@ const FormLogin =() => {
     
         return true;
         }
+
+        function someLogin() {
+            if (user.email && user.password && user.password.length >= 6) {
+                return document.getElementById('form').style.visibility = "hidden"; 
+            }
+        }
+
     
     return (
    
@@ -62,11 +69,11 @@ const FormLogin =() => {
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
                 {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
 
-                <Form onSubmit={addUser}>
+                <Form onSubmit={addUser} id="form">
                 
                     <FormFieldset>
                         <label>E-mail:</label>
-                        <FormInput type="email" name="email" placeholder="Email cadastrado" onChange={valueInput}  value={user.email} />
+                        <FormInput type="email" name="email" placeholder="Email cadastrado" onChange={valueInput}  value={user.email} required/>
                     </FormFieldset>
 
                     <FormFieldset>
@@ -75,7 +82,7 @@ const FormLogin =() => {
                     </FormFieldset>
 
                     <FormFieldset>
-                        <FormButton type='submit'>Login</FormButton>
+                        <FormButton type='submit' onClick={() => someLogin()}>Login</FormButton>
                     </FormFieldset>
                 </Form>
 

@@ -10,6 +10,8 @@ import Agenda from "../agenda/Agenda";
 import FormLogin from "../login/FormLogin";
 import Registro from "../login/cadastro/Registro";
 import ForgetPassword from "../login/resete/ForgetPassword";
+import Questionario from "../questionario/Questionario";
+import Termos from "../termos/Termos";
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -63,6 +65,8 @@ class Header extends Component {
                 <Route exact path="/ForgetPassword"component={ForgetPassword}/>
                 <Route exact path="/Agendaeeventos" component={Agenda} />
                 <Route exact path="/Comunidade" component={AcessarGrupo} />
+                <Route exact path="/Termosdeuso" component={Termos} />
+                <Route exact path="/Questionario" component={Questionario} />
               </Switch>
               <Route exact path="/Home" component={Home} />
             </div>
