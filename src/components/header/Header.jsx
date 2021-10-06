@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Logo from "../../img/logo.png";
+import Logo from "../../assets/img/logo.png";
 import Menu from "../menu/Menu";
 import styled from "styled-components";
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import {Container, Section, Span,} from './StyledComunidade';
 
-import Infantil from '../../img/imgcomunidade/infantil.jpg';
-import Mulheres from '../../img/imgcomunidade/mulheres.jpg';
-import Mental from '../../img/imgcomunidade/mental.jpg';
+import Infantil from '../../assets/img/imgcomunidade/infantil.jpg';
+import Mulheres from '../../assets/img/imgcomunidade/mulheres.jpg';
+import Mental from '../../assets/img/imgcomunidade/mental.jpg';
 
 function AcessarGrupo() {
 
