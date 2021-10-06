@@ -2,10 +2,11 @@ import React from 'react';
 import { formatRelative } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 
-import './MostraComentario.css'
+import './css/Comentario.css'
+
 import imagemUsuario from '../../../assets/img/usuario.png';
 
-const MostraComentario = props => {
+const Comentario = props => {
     // const estilo = {
     //     color: 'red',
     //     padding: '10px',
@@ -24,4 +25,4 @@ const MostraComentario = props => {
     </div>
 }
 
-export default MostraComentario;
+export default Comentario;

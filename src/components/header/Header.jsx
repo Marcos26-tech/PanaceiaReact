@@ -11,7 +11,7 @@ import Agenda from "../agenda/Agenda";
 import FormLogin from "../login/FormLogin";
 import Registro from "../login/cadastro/Registro";
 import ForgetPassword from "../login/resete/ForgetPassword";
-import MostraComentario from '../pages/comentario/MostraComentario'
+import MostraComentario from '../pages/comentario/CriaComentario';
 
 const StyledHeader = styled.header`
   width: 100%;

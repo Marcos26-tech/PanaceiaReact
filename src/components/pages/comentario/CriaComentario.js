@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './Component.css';
 
-import MostraComentario from './Comentario'
+import './css/Comentario.css'
 
-class Comentario extends Component {
+import Comentario from './Comentario';
+
+class CriaComentario extends Component {
 
   state = {
     comentarios: [
@@ -52,14 +53,14 @@ class Comentario extends Component {
       <div className="App">
         <h1>Meu projeto</h1>
         {this.state.comentarios.map((comentario, indice) => (
-          <MostraComentario
+          <Comentario
             key={indice}
             nome={comentario.nome}
             email={comentario.email}
             data={comentario.data}
             onRemove={this.removerComentario.bind(this, comentario)}>
             {comentario.mensagem}
-          </MostraComentario>
+          </Comentario>
         ))}
 
         <form method="post" onSubmit={this.adicionarComentario} className="Novo-Comentario">
@@ -97,4 +98,4 @@ class Comentario extends Component {
   }
 }
 
-export default Comentario;
+export default CriaComentario;
