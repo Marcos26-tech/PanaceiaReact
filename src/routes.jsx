@@ -1,12 +1,12 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "../home/Home";
-import AcessarGrupo from "../comunidade/AcessarGrupo";
-import Agenda from "../agenda/Agenda";
-import FormLogin from "../login/FormLogin";
-import Registro from "../login/cadastro/Registro";
-import ForgetPassword from "../login/resete/ForgetPassword";
+import Home from "./components/home/Home";
+import AcessarGrupo from "./components/comunidade/AcessarGrupo";
+import Agenda from "./components/agenda/Agenda";
+import FormLogin from "./components/login/FormLogin";
+import Registro from "./components/login/cadastro/Registro";
+import ForgetPassword from "./components/login/resete/ForgetPassword";
 
 function Routes() {
   return (
