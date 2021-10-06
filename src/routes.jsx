@@ -13,13 +13,13 @@ function Routes() {
     <div>
       <Switch>
         <Route exact path="/" component={FormLogin} />
-        <Route exact path="/FormLogin" component={FormLogin} />
-        <Route exact path="/Registro" component={Registro} />
-        <Route exact path="/ForgetPassword" component={ForgetPassword} />
-        <Route exact path="/Agendaeeventos" component={Agenda} />
-        <Route exact path="/Comunidade" component={AcessarGrupo} />
+        <Route path="/FormLogin" component={FormLogin} />
+        <Route path="/Registro" component={Registro} />
+        <Route path="/ForgetPassword" component={ForgetPassword} />
+        <Route path="/Agendaeeventos" component={Agenda} />
+        <Route path="/Comunidade" component={AcessarGrupo} />
       </Switch>
-      <Route exact path="/Home" component={Home} />
+      <Route path="/Home" component={Home} />
     </div>
   );
 }
