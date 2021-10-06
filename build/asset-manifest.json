@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fcc8e50.chunk.css",
-    "main.js": "/static/js/main.b72a6b1a.chunk.js",
-    "main.js.map": "/static/js/main.b72a6b1a.chunk.js.map",
+    "main.css": "/static/css/main.49a98d29.chunk.css",
+    "main.js": "/static/js/main.af4d7f0e.chunk.js",
+    "main.js.map": "/static/js/main.af4d7f0e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1e55df24.js",
     "runtime-main.js.map": "/static/js/runtime-main.1e55df24.js.map",
     "static/js/2.0db23750.chunk.js": "/static/js/2.0db23750.chunk.js",
     "static/js/2.0db23750.chunk.js.map": "/static/js/2.0db23750.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.5fcc8e50.chunk.css.map": "/static/css/main.5fcc8e50.chunk.css.map",
+    "static/css/main.49a98d29.chunk.css.map": "/static/css/main.49a98d29.chunk.css.map",
     "static/js/2.0db23750.chunk.js.LICENSE.txt": "/static/js/2.0db23750.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/bachground.24e1fc59.jpg",
     "static/media/logo.f016cef1.png": "/static/media/logo.f016cef1.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.1e55df24.js",
     "static/js/2.0db23750.chunk.js",
-    "static/css/main.5fcc8e50.chunk.css",
-    "static/js/main.b72a6b1a.chunk.js"
+    "static/css/main.49a98d29.chunk.css",
+    "static/js/main.af4d7f0e.chunk.js"
   ]
 }
