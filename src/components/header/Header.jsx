@@ -11,6 +11,7 @@ import Agenda from "../agenda/Agenda";
 import FormLogin from "../login/FormLogin";
 import Registro from "../login/cadastro/Registro";
 import ForgetPassword from "../login/resete/ForgetPassword";
+import MostraComentario from '../pages/comentario/MostraComentario'
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -55,12 +56,14 @@ class Header extends Component {
         </StyledHeader>
 
         <Switch>
-            <Route exact path="/" component={FormLogin} />
+            <Route path="/" exact component={FormLogin} />
             <Route path="/FormLogin" component={FormLogin} />
             <Route path="/Registro" component={Registro} />
             <Route path="/ForgetPassword" component={ForgetPassword} />
             <Route path="/Agendaeeventos" component={Agenda} />
             <Route path="/Comunidade" component={AcessarGrupo} />
+            <Route path="/MostraComentario" component={MostraComentario} />
+
         </Switch>
           <Route path="/Home" component={Home} />
       </>

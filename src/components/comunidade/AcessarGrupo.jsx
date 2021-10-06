@@ -6,6 +6,7 @@ import Mulheres from '../../img/imgcomunidade/mulheres.jpg';
 import Mental from '../../img/imgcomunidade/mental.jpg';
 
 function AcessarGrupo() {
+
     return (
         <> 
             <Span>
@@ -19,7 +20,7 @@ function AcessarGrupo() {
                 <Section>
                     <div>
                         <img src={Infantil} alt="Saúde Infantil"/>
-                        <a href="./#">Saúde Infantil</a>
+                        <a href="./MostraComentario">Saúde Infantil</a>
                         <p>Descrição sobre o essa comunidade</p>
                     </div>
 
