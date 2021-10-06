@@ -1,15 +1,7 @@
 import React, { Component } from "react";
 import Logo from "../../img/logo.png";
 import Menu from "../menu/Menu";
-import {Switch, Route } from "react-router-dom";
 import styled from "styled-components";
-
-import Home from "../home/Home";
-import AcessarGrupo from "../comunidade/AcessarGrupo";
-import Agenda from "../agenda/Agenda";
-import FormLogin from "../login/FormLogin";
-import Registro from "../login/cadastro/Registro";
-import ForgetPassword from "../login/resete/ForgetPassword";
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -52,22 +44,6 @@ class Header extends Component {
           </Stylednovo>
           <Menu />
         </StyledHeader>
-
-        <main>
-          
-            <div>
-              <Switch>
-                <Route exact path="/" component={FormLogin} />
-                <Route exact path="/FormLogin" component={FormLogin} />
-                <Route exact path="/Registro" component={Registro} />
-                <Route exact path="/ForgetPassword"component={ForgetPassword}/>
-                <Route exact path="/Agendaeeventos" component={Agenda} />
-                <Route exact path="/Comunidade" component={AcessarGrupo} />
-              </Switch>
-              <Route exact path="/Home" component={Home} />
-            </div>
-         
-        </main>
       </>
     );
   }
