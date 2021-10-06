@@ -15,7 +15,6 @@ const Menu = () => {
                     <li><Link to='/FormLogin'>Login</Link></li>
                 </ul>
             </Nav> 
-
         </>
     )
 }
