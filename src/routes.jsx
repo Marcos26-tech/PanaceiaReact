@@ -9,6 +9,7 @@ import ForgetPassword from "./components/login/resete/ForgetPassword";
 import MostraComentario from "./components/comentario/CriaComentario";
 import CriaComunidades from "./components/comunidade/CriaComunidades";
 
+
 function Routes() {
   return (
     <>
