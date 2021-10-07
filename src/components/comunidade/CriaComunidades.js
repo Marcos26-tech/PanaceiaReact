@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Comunidades from '../pages/comunidade/Comunidades'
+import Comunidades from './Comunidades'
 
-import {Container, Button} from '../../assets/styles/StyledComunidade';
+import {Container, Button} from './StyledCriaComunidade';
 
 
 class CriaComunidades extends Component {

@@ -1,8 +1,8 @@
 import React from 'react';
-import {Container, Avatar, Conteudo, Data} from '../../../assets/styles/StyledComentario'
+import {Container, Avatar, Conteudo} from './StyleComunidade';
 
 
-import imagemComunidade from '../../../assets/img/imgcomunidade/mulheres.jpg';
+import imagemComunidade from '../../assets/img/imgcomunidade/mulheres.jpg';
 
 const Comunidades = props => {
  

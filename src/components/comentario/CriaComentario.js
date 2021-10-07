@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Comentario from './Comentario';
 
-import {Container, Button} from '../../../assets/styles/StyledCriaComentario';
+import {Container, Button} from './StyledCriaComentario';
 class CriaComentario extends Component {
   state = {
     comentarios: [

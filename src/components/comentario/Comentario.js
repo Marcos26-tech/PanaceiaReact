@@ -1,9 +1,9 @@
 import React from 'react';
 import { formatRelative } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
-import {Container, Avatar, Conteudo, Data} from '../../assets/styles/StyledComentario'
+import {Container, Avatar, Conteudo, Data} from './StyledComentario'
 
-import imagemUsuario from '../../../assets/img/usuario.png';
+import imagemUsuario from '../../assets/img/usuario.png';
 
 const Comentario = props => {
  
