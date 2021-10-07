@@ -6,6 +6,6 @@ body {
   background-image: url(./assets/img/bachground.jpg);
   z-index: 1;
   background-size: cover;
+  position:relative;
   opacity: 95%;
-  
 }
