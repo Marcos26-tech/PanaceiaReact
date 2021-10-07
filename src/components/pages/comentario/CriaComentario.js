@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
-
-import './css/Comentario.css'
-
 import Comentario from './Comentario';
 
+import {Container, Button} from '../../../assets/styles/StyledCriaComentario';
 class CriaComentario extends Component {
-
   state = {
     comentarios: [
       {
@@ -21,6 +18,7 @@ class CriaComentario extends Component {
     ],
     novoComentario: {
       nome: '',
+      email: '',
       mensagem: ''
     }
   }
@@ -47,7 +45,7 @@ class CriaComentario extends Component {
 
   render() {
     return (
-      <div className="App">
+      <Container >
         <h1>aqui vai o nome da comunidade</h1>
         {this.state.comentarios.map((comentario, indice) => (
           <Comentario
@@ -59,7 +57,7 @@ class CriaComentario extends Component {
           </Comentario>
         ))}
 
-        <form method="post" onSubmit={this.adicionarComentario} className="Novo-Comentario">
+        <form method="post" onSubmit={this.adicionarComentario}>
           <div>
             <input
               type="text"
@@ -78,9 +76,9 @@ class CriaComentario extends Component {
               rows="4" 
               placeholder="Escreva um comentário..."/>
           </div>
-          <button type="submit">Publicar</button>
+          <Button type="submit">Publicar</Button>
         </form>
-      </div>
+      </Container>
     );
   }
 }
