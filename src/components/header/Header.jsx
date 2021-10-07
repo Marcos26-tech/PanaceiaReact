@@ -3,15 +3,6 @@ import Logo from "../../assets/img/logo.png";
 import Menu from "../menu/Menu";
 import styled from "styled-components";
 
-import { Switch, Route}  from "react-router-dom";
-
-import Home from "../home/Home";
-import AcessarGrupo from "../comunidade/AcessarGrupo";
-import Agenda from "../agenda/Agenda";
-import FormLogin from "../login/FormLogin";
-import Registro from "../login/cadastro/Registro";
-import ForgetPassword from "../login/resete/ForgetPassword";
-import MostraComentario from '../pages/comentario/CriaComentario';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -42,7 +33,6 @@ const Stylednovo = styled.div`
     }
   }
 `;
-
 class Header extends Component {
   render() {
     return (
@@ -54,18 +44,6 @@ class Header extends Component {
           </Stylednovo>
           <Menu />
         </StyledHeader>
-
-        <Switch>
-            <Route path="/" exact component={FormLogin} />
-            <Route path="/FormLogin" component={FormLogin} />
-            <Route path="/Registro" component={Registro} />
-            <Route path="/ForgetPassword" component={ForgetPassword} />
-            <Route path="/Agendaeeventos" component={Agenda} />
-            <Route path="/Comunidade" component={AcessarGrupo} />
-            <Route path="/MostraComentario" component={MostraComentario} />
-
-        </Switch>
-          <Route path="/Home" component={Home} />
       </>
     );
   }
