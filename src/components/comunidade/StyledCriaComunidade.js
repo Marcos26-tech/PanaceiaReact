@@ -5,9 +5,10 @@ export const Container = styled.div`
     padding: 0 50px;
     background-color: #fff;
     h1{
+        font-size:17.5px;
         text-align: center;
-        margin:10px;
-        padding:15px;
+        margin:12px;
+        padding:16px;
     }
 
     form {

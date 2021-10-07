@@ -47,7 +47,7 @@ class CriaComunidades extends Component {
   render() {
     return (
       <Container >
-        <h1>aqui vai o titulo da comunidade</h1>
+        <h1>“ Encontre sua terapia, domine a causa, porque você só melhora se sair do ponto onde se encontra! by Grupo Panaceia ”</h1>
         {this.state.comunidade.map((comentario, indice) => (
           <Comunidades
             key={indice}
