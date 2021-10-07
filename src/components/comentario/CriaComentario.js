@@ -7,12 +7,12 @@ class CriaComentario extends Component {
     comentarios: [
       {
         nome: 'Rafael',
-        data: new Date(2021, 10, 19, 17, 30, 0),
+        data: new Date(2020, 9, 19, 17, 30, 0),
         mensagem: 'Olá, tudo bem?'
       },
       {
         nome: 'Pedro',
-        data: new Date(2021, 10, 22, 12, 15, 0),
+        data: new Date(2020, 9, 19, 17, 30, 0),
         mensagem: 'Olá, tudo bem. E você?'
       }
     ],
@@ -75,7 +75,7 @@ class CriaComentario extends Component {
               rows="4" 
               placeholder="Escreva um comentário..."/>
           </div>
-          <Button type="submit">Publicar</Button>
+          <Button type="submit">Publicar Comentário</Button>
         </form>
       </Container>
     );

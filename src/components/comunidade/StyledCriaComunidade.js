@@ -27,7 +27,7 @@ export const Container = styled.div`
         border-radius: .5rem;
     }
     textarea {
-        width: 100%;
+        width: 95%;
         color: #4a5568;
         background-color: #fff;
         border: 1px solid #e2e8f0;

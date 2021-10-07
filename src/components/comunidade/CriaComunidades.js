@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import Comunidades from './Comunidades'
 
 import {Container, Button} from './StyledCriaComunidade';
-
-
 class CriaComunidades extends Component {
   state = {
-    comentarios: [
+    comunidade: [
       {
-        titulo: 'Saúde de Mulheres depois dos 30 anos',
+        titulo: 'Saúde de Mulheres Depois dos 30 anos',
         descricao: 'Essa comunidade conversamos sobre as consultas médicas regulares o os exames indispensáveis, que todas as mulher com mais de 30 anos podem adotar como rotina.'
       },
       {
@@ -26,31 +24,31 @@ class CriaComunidades extends Component {
     }
   }
 
-  adicionarComentario = evento => {
+  adicionarComunidade = evento => {
     evento.preventDefault();
     const novoComentario = { ...this.state.novoComentario}
     this.setState({
-      comentarios: [...this.state.comentarios, novoComentario],
+      comunidade: [...this.state.comunidade, novoComentario],
       novoComentario: { titulo: '', descricao: '' }
     })
   }
 
   removerComentario = comentario => {
-    let lista = this.state.comentarios;
+    let lista = this.state.comunidade;
     lista = lista.filter(c => c !== comentario)
-    this.setState({ comentarios: lista })
+    this.setState({ comunidade: lista })
   }
 
   digitacao = evento => {
-    const { titulo, value } = evento.target;
-    this.setState({ novoComentario: { ...this.state.novoComentario, [titulo]: value } })
+    const { name, value } = evento.target;
+    this.setState({ novoComentario: { ...this.state.novoComentario, [name]: value } })
   }
 
   render() {
     return (
       <Container >
         <h1>aqui vai o titulo da comunidade</h1>
-        {this.state.comentarios.map((comentario, indice) => (
+        {this.state.comunidade.map((comentario, indice) => (
           <Comunidades
             key={indice}
             titulo={comentario.titulo}
@@ -59,7 +57,7 @@ class CriaComunidades extends Component {
           </Comunidades>
         ))}
 
-        <form method="post" onSubmit={this.adicionarComentario}>
+        <form method="post" onSubmit={this.adicionarComunidade}>
           <div>
             <input
               type="text"
@@ -67,7 +65,7 @@ class CriaComunidades extends Component {
               value={this.state.novoComentario.titulo}
               onChange={this.digitacao}
               required
-              placeholder="Título dessa Comunidade" />
+              placeholder="Digite o título da comunidade" />
           </div>
           <div>
             <textarea
@@ -76,7 +74,7 @@ class CriaComunidades extends Component {
               onChange={this.digitacao}
               required
               rows="4" 
-              placeholder="Escreva uma descrição sobre a comunidade"/>
+              placeholder="Escreva uma pequena descrição sobre a comunidade..."/>
           </div>
           <Button type="submit">Criar Comunidade</Button>
         </form>
@@ -84,4 +82,5 @@ class CriaComunidades extends Component {
     );
   }
 }
+
 export default CriaComunidades;

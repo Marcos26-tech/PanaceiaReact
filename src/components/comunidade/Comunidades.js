@@ -8,7 +8,7 @@ const Comunidades = props => {
  
     return (
         <Container>
-            <Avatar src={imagemComunidade} alt={props.nome} />
+            <Avatar src={imagemComunidade} alt={props.titulo} />
             <Conteudo>
                 <h2>{props.titulo}</h2>
                 <p>{props.children}</p>
