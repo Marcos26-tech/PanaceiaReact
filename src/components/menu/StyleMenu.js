@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     width: 85%;
+    padding-top:1em;
     mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-    margin: 0 auto;
+    margin:0 auto;
     @media(max-width:780px){
         display:block;
         width:100%;
