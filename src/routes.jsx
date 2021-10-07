@@ -7,21 +7,21 @@ import Login from "./components/login/Login";
 import Registro from "./components/login/cadastro/Registro";
 import ForgetPassword from "./components/login/resete/ForgetPassword";
 import MostraComentario from "./components/comentario/CriaComentario";
-import CriaComunidades from './components/comunidade/CriaComunidades'
+import CriaComunidades from "./components/comunidade/CriaComunidades";
 
 function Routes() {
   return (
     <>
       <Switch>
-        <Route path="login" component={Login} />
-        <Route path="/registro" component={Registro} />
-        <Route path="/forgetPassword" component={ForgetPassword} />
-        <Route path="/agendaeeventos" component={Agenda} />
-        <Route path="/comunidades" component={CriaComunidades} />
-        <Route path="/mostraComentario" component={MostraComentario} />
+        <Route path="/Login" component={Login} />
+        <Route path="/Registro" component={Registro} />
+        <Route path="/Forgetpassword" component={ForgetPassword} />
+        <Route path="/Agendaeeventos" component={Agenda} />
+        <Route path="/Comunidades" component={CriaComunidades} />
+        <Route path="/MostraComentario" component={MostraComentario} />
       </Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/home" exact component={Home} />
+      <Route path="/Home" exact component={Home} />
     </>
   );
 }

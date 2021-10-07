@@ -86,7 +86,7 @@ const Registro = () => {
                 </Form>
 
                 <FormFieldset>
-                    <FormLink href="./FormLogin">Já tem conta Clique aqui!</FormLink>
+                    <FormLink href="./Login">Já tem conta Clique aqui!</FormLink>
                 </FormFieldset>
 
              </FormBody>
