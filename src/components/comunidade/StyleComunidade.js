@@ -18,7 +18,7 @@ export const Conteudo = styled.div`
     width: 100%;
     position: relative;
     box-shadow:none;
-    h2 {
+    a {
         font-size: 1rem;
         margin: .1rem 0 .1rem;
         color: #2d3748

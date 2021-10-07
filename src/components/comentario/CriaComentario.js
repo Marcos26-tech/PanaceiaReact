@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Comentario from './Comentario';
 
 import {Container, Button} from './StyledCriaComentario';
+
+
 class CriaComentario extends Component {
   state = {
     comentarios: [
@@ -45,7 +47,7 @@ class CriaComentario extends Component {
   render() {
     return (
       <Container >
-        <h1>aqui vai o nome da comunidade</h1>
+        <h1>comentarios</h1>
         {this.state.comentarios.map((comentario, indice) => (
           <Comentario
             key={indice}

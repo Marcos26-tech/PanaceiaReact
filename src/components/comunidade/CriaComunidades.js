@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Comunidades from './Comunidades'
-
 import {Container, Button} from './StyledCriaComunidade';
+
 class CriaComunidades extends Component {
   state = {
     comunidade: [
@@ -18,22 +18,22 @@ class CriaComunidades extends Component {
         descricao: 'Aqui falamos sobre varios assuntos sobre como manter um nivel de qualidade de vida cognitiva e emocional.'
       },
     ],
-    novoComentario: {
+    novaComunidade: {
       titulo: '',
       descricao: ''
     }
   }
-  
+
   adicionarComunidade = evento => {
     evento.preventDefault();
-    const novoComentario = { ...this.state.novoComentario}
+    const novaComunidade = { ...this.state.novaComunidade}
     this.setState({
-      comunidade: [...this.state.comunidade, novoComentario],
-      novoComentario: { titulo: '', descricao: '' }
+      comunidade: [...this.state.comunidade, novaComunidade],
+      novaComunidade: { titulo: '', descricao: '' }
     })
   }
 
-  removerComentario = comentario => {
+  removerComunidade = comentario => {
     let lista = this.state.comunidade;
     lista = lista.filter(c => c !== comentario)
     this.setState({ comunidade: lista })
@@ -41,7 +41,7 @@ class CriaComunidades extends Component {
 
   digitacao = evento => {
     const { name, value } = evento.target;
-    this.setState({ novoComentario: { ...this.state.novoComentario, [name]: value } })
+    this.setState({ novaComunidade: { ...this.state.novaComunidade, [name]: value } })
   }
 
   render() {
@@ -52,7 +52,7 @@ class CriaComunidades extends Component {
           <Comunidades
             key={indice}
             titulo={comentario.titulo}
-            onRemove={this.removerComentario.bind(this, comentario)}>
+            onRemove={this.removerComunidade.bind(this, comentario)}>
             {comentario.descricao}
           </Comunidades>
         ))}
@@ -62,7 +62,7 @@ class CriaComunidades extends Component {
             <input
               type="text"
               name="titulo"
-              value={this.state.novoComentario.titulo}
+              value={this.state.novaComunidade.titulo}
               onChange={this.digitacao}
               required
               placeholder="Digite o título da comunidade" />
@@ -70,9 +70,8 @@ class CriaComunidades extends Component {
           <div>
             <textarea
               name="descricao"
-              value={this.state.novoComentario.descricao}
+              value={this.state.novaComunidade.descricao}
               onChange={this.digitacao}
-              required
               rows="4" 
               placeholder="Escreva uma pequena descrição sobre a comunidade..."/>
           </div>
