@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const Title = styled.h1`
-  font-size: 22px;
-  font-weight: bold;
-  text-align: center;
-  color: rgb(26, 25, 25);
-`;
-
 export const Container = styled.div`
   display: block;
   margin: 5rem 25rem 2rem;
@@ -15,24 +8,32 @@ export const Container = styled.div`
 export const Form = styled.form`
   width: 100%;
   height: 21rem;
+  label{
+    color: rgb(223, 211, 211);
+  }
 `;
 
 export const FormWrapper = styled.div`
-  background-color: white;
-  opacity: 95%;
+  background-color: rgba(5, 5, 5, 0.993);
+  opacity: 98%;
   overflow: hidden;
-  padding: 0 0 32px;
-  margin: 75px auto 0;
+  padding: 0 0 30px;
+  margin: 5rem auto 1rem ;
   width: 500px;
-  height: 700px;
+  height: 670px;
   font-family: Quicksand, arial, sans-serif;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
 `;
 export const FormHeader = styled.header`
   margin: 50px 0 10px;
   padding-top: 24px;
   padding-bottom: 19px;
+  h2 {
+    color: rgba(8, 184, 66, 0.993);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
 `;
 export const FormBody = styled.div`
   padding-right: 32px;
@@ -43,7 +44,6 @@ export const FormFieldset = styled.fieldset`
   padding: 0;
   margin: 0;
   border: 0;
-
   & + & {
     margin-top: 35px;
   }
@@ -57,7 +57,7 @@ export const FormFieldset = styled.fieldset`
   }
 `;
 export const FormInput = styled.input`
-  padding: 10px 0;
+  padding: 12px 0;
   width: 100%;
   font-family: inherit;
   font-size: 14px;
@@ -66,7 +66,7 @@ export const FormInput = styled.input`
   border-bottom: 1px solid #ddd;
   border-left: 0;
   transition: border-bottom-color 0.25s ease-in;
-
+  margin-top:5px;
   &:focus {
     border-bottom-color: rgb(255, 234, 0);
     outline: 0;
@@ -76,10 +76,9 @@ export const FormInput = styled.input`
     &::-webkit-input-placeholder {
       position: relative;
       color: rgb(255, 234, 0);
-      top: -12px;
-      font-size: 12px;
+      top: -10px;
+      font-size: 13px;
       left: 4px;
-      opacity: 1;
     }
   }
 `;
@@ -106,12 +105,11 @@ export const FormButton = styled.button`
 `;
 
 export const FormLink = styled.a`
-  margin: 0 81px 0;
-  display: inline-block;
-  font-size: 12px;
   text-decoration: none;
-  color: rgb(52, 52, 52);
-  border-bottom: 1px solid rgb(221, 221, 221);
+  margin: 0 55px 0;
+  display: inline-block;
+  font-size: 15px;
+  color: rgb(223, 211, 211);
   cursor: pointer;
   transition: color 0.25s ease-in;
 

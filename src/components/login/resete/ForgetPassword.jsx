@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
+import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
 
 
 const ForgetPassword =() => {
@@ -52,7 +52,7 @@ const ForgetPassword =() => {
             <FormBody>
                 
                 <FormHeader>
-                    <Title>Recuperação de Senha</Title>
+                    <h2>Recuperação de Senha</h2>
                 </FormHeader>
 
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}

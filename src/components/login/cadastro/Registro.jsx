@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
+import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
 
 const Registro = () => {
 
@@ -58,7 +58,7 @@ const Registro = () => {
             <FormBody>
                 
                 <FormHeader>
-                    <Title>Cadastro Panace I.A</Title>
+                    <h2>Cadastro Panace I.A</h2>
                 </FormHeader>
 
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
