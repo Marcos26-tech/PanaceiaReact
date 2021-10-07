@@ -7,18 +7,17 @@ class CriaComentario extends Component {
     comentarios: [
       {
         nome: 'Rafael',
-        data: new Date(2020, 3, 19, 17, 30, 0),
+        data: new Date(2021, 10, 19, 17, 30, 0),
         mensagem: 'Olá, tudo bem?'
       },
       {
         nome: 'Pedro',
-        data: new Date(2020, 3, 22, 12, 15, 0),
+        data: new Date(2021, 10, 22, 12, 15, 0),
         mensagem: 'Olá, tudo bem. E você?'
       }
     ],
     novoComentario: {
       nome: '',
-      email: '',
       mensagem: ''
     }
   }
