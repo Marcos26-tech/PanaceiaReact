@@ -23,7 +23,7 @@ class CriaComunidades extends Component {
       descricao: ''
     }
   }
-
+  
   adicionarComunidade = evento => {
     evento.preventDefault();
     const novoComentario = { ...this.state.novoComentario}
