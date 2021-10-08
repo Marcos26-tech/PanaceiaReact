@@ -15,6 +15,8 @@ export default function Questionario() {
     function validarQuestionario(qtdPerguntas) {
         if (qtdPerguntas < 14) {
             alert("É necessário responder todas as perguntas!");
+        } else {
+            alert("Pode seguir sua navegação pela Panace IA! <3")
         }
     }
 
