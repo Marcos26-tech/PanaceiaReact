@@ -44,6 +44,7 @@ class CriaComunidades extends Component {
     this.setState({ novaComunidade: { ...this.state.novaComunidade, [name]: value } })
   }
 
+ 
   render() {
     return (
       <Container >
@@ -80,6 +81,9 @@ class CriaComunidades extends Component {
       </Container>
     );
   }
+ 
 }
+
+
 
 export default CriaComunidades;

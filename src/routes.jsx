@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./components/home/Home";
-import Agenda from "./components/agenda/Agenda";
+import Agenda from "./components/agenda/RenderizaAgenda";
 import Login from "./components/login/Login";
 import Registro from "./components/login/cadastro/Registro";
 import ForgetPassword from "./components/login/resete/ForgetPassword";
