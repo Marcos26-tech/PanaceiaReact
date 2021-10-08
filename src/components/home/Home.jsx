@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Carrossel from "./Carrossel";
 
-import { Title, StyledContainer, Section, Stylediv } from "./StyledHome";
+import { Title, StyledContainer, Section, Container} from "./StyledHome";
 
 class Home extends Component {
   render() {
     return (
       <>
-        <Stylediv>
+        <Container>
           <Section>
             <Title>Sejam Bem vindos a Panace I.A</Title>
             <h3>
@@ -18,7 +18,7 @@ class Home extends Component {
           <StyledContainer>
             <Carrossel />
           </StyledContainer>
-        </Stylediv>
+        </Container>
       </>
     );
   }

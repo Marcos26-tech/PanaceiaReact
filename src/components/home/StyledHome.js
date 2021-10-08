@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 //inicio style da pagina home//
-export const Stylediv = styled.div`
+export const Container = styled.div`
   background: rgb(255, 255, 255);
   border-radius: 4%;
   margin: 5rem 8% 2rem;

@@ -2,13 +2,14 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./components/home/Home";
-import Agenda from "./components/agenda/RenderizaAgenda";
+import Agenda from "./components/agenda/Agenda";
 import Login from "./components/login/Login";
 import Registro from "./components/login/cadastro/Registro";
 import ForgetPassword from "./components/login/resete/ForgetPassword";
 import MostraComentario from "./components/comentario/CriaComentario";
 import CriaComunidades from "./components/comunidade/CriaComunidades";
-
+import Questionario from "./components/questionario/Questionario"
+import Termosdeuso from "./components/termo/TermosDeUso"
 
 function Routes() {
   return (
@@ -20,6 +21,8 @@ function Routes() {
         <Route path="/Agendaeeventos" component={Agenda} />
         <Route path="/Comunidades" component={CriaComunidades} />
         <Route path="/MostraComentario" component={MostraComentario} />
+        <Route path="/Questionario" component={Questionario} />
+        <Route path="/Termosdeuso" component={Termosdeuso} />
       </Switch>
       <Route path="/" exact component={Home} />
       <Route path="/Home" exact component={Home} />

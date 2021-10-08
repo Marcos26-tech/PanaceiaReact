@@ -52,6 +52,13 @@ const Registro = () => {
     return true;
     }
 
+    function someCadastrar() {
+        if (user.name && user.email && user.password && user.password.length > 6) {
+            return (document.getElementById('form').style.visibility = "hidden",
+            window.location.replace('./Termosdeuso'));
+        }
+    }
+
     return (
         
         <FormWrapper>
@@ -64,7 +71,7 @@ const Registro = () => {
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
                 {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
 
-                <Form onSubmit={addUser}>
+                <Form onSubmit={addUser} id='form'>
                     <FormFieldset>
                         <label>Nome: </label>
                         <FormInput type="text" name="name" placeholder="Nome completo do usuário" onChange={valueInput} value={user.name} />
@@ -81,7 +88,7 @@ const Registro = () => {
                     </FormFieldset>
 
                     <FormFieldset>
-                        <FormButton type="submit">Cadastrar</FormButton>
+                        <FormButton type="submit" onClick={() => someCadastrar()}>Cadastrar</FormButton>
                     </FormFieldset>
                 </Form>
 

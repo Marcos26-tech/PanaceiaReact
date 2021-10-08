@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import Routes from "./routes";
 import "./App.css";
 
+
 const App = () => {
   return (
     <>

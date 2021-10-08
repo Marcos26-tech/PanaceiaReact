@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Avatar, Conteudo} from './StyleComunidade';
+import {Container, Avatar, Conteudo} from './StyledComunidade';
 
 import imagemComunidade from '../../assets/img/imgcomunidade/mulheres.jpg';
 
