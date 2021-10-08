@@ -6,4 +6,9 @@ export const Container = styled.section`
   margin: 5rem 8% 2rem;
   text-align: center;
   justify-content: center;
+  div{
+    min-width:320px;
+    height:630px;   
+  }
 `;
+
