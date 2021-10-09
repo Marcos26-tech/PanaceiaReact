@@ -1,3 +1,4 @@
 # PanaceiaReact
 
-# npm install --save express body-parser cors watson-developer-cloud
+# npm install --save-dev @babel/core
+
