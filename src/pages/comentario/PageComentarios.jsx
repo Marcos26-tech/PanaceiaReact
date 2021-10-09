@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Comentario from './Comentario';
+import Comentario from '../../components/comentario/Comentario';
 
-import {Container, Button} from './StyledCriaComentario';
+import {Container, Button} from '../../components/comentario/StyledCriaComentario';
 
 
-class CriaComentario extends Component {
+class PageComentarios extends Component {
   state = {
     comentarios: [
       {
@@ -84,4 +84,4 @@ class CriaComentario extends Component {
   }
 }
 
-export default CriaComentario;
+export default PageComentarios;

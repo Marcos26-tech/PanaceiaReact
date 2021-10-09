@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Comunidades from './Comunidades'
-import {Container, Button} from './StyledCriaComunidade';
+import Comunidades from '../../components/comunidade/Comunidades';
+import {Container, Button} from '../../components/comunidade/StyledCriaComunidade';
 
-class CriaComunidades extends Component {
+class PageComunidades extends Component {
   state = {
     comunidade: [
       {
@@ -86,4 +86,4 @@ class CriaComunidades extends Component {
 
 
 
-export default CriaComunidades;
+export default PageComunidades;
