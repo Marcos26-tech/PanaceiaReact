@@ -1,6 +1,5 @@
 import React from "react";
-import { Container} from "../../assets/style/StyleGlobal";
-import { FormButton } from ".././login/StyledForm";
+import { Container, FormButton } from "../../assets/style/StyleGlobal";
 import styled from "styled-components";
 
 export const Section = styled.section`
