@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Comunidades from '../../components/comunidade/Comunidades';
-import {Container, Button} from '../../components/comunidade/StyledCriaComunidade';
+import Comunidades from '../../src/components/comunidade/Comunidades';
+import {Container, Button} from '../../src/components/comunidade/StyledCriaComunidade';
 
 class PageComunidades extends Component {
   state = {
