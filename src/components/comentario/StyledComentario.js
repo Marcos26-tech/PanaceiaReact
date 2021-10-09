@@ -9,11 +9,13 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.img`
-    max-width: 50px;
-    max-height: 50px;
+  margin-top:10px;
+  max-width: 50px;
+  max-height: 50px;
 `;
 
 export const Conteudo = styled.div`
+    margin-top:10px;
     margin-left: 1rem;
     width: 100%;
     position: relative;
@@ -42,8 +44,6 @@ export const Data = styled.p`
     text-align: right;
     color: #718096;
     font-size: 10px;
-    margin: 0;
-    padding:0;
 `;
 
 //inicio do style do icone das pag//

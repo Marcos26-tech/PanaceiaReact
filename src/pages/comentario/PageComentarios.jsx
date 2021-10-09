@@ -58,7 +58,7 @@ class PageComentarios extends Component {
           </Comentario>
         ))}
 
-        <form method="post" onSubmit={this.adicionarComentario}>
+        <form method="post" action="aqui vai a função de enviar os dados do formulario" onSubmit={this.adicionarComentario}>
           <div>
             <input
               type="text"
