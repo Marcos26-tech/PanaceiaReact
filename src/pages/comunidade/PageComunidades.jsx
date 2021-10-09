@@ -60,7 +60,7 @@ class PageComunidades extends Component {
           </Comunidades>
         ))}
 
-        <form method="post" onSubmit={this.adicionarComunidade}>
+        <form method="post" action="{this. função pra enviar os dados}" onSubmit={this.adicionarComunidade}>
           <div>
             <input
               type="text"
