@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Carrossel from "./Carrossel";
+import Carrossel from "../../components/home/Carrossel";
 
-import { Title, StyledContainer, Section, Container} from "./StyledHome";
+import { Title, StyledContainer, Section, Container} from "../../components/home/StyledHome";
 
-class Home extends Component {
+class PageHome extends Component {
   render() {
     return (
       <>
@@ -23,4 +23,4 @@ class Home extends Component {
     );
   }
 }
-export default Home;
+export default PageHome;

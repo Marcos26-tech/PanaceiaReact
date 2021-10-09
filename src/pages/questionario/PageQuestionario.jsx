@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Section} from "../home/StyledHome";
+import { Container, Section} from "../../assets/style/StyleGlobal";
 import styled from "styled-components";
 
 
