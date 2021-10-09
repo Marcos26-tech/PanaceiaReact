@@ -1,5 +1,5 @@
 import React from "react";
-import {Switch, Route } from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Home from "./pages/pagehome/PageHome";
 import Agenda from "./pages/agenda/PageAgenda";
@@ -14,7 +14,7 @@ import Termosdeuso from "./pages/termos/PageTermosDeUso";
 function Routes() {
   return (
     <>
-      
+      <Router>
         <Switch>
           <Route path="/Registro" component={Registro} />
           <Route path="/Forgetpassword" component={ForgetPassword} />
@@ -28,7 +28,7 @@ function Routes() {
         <Route path="/Login" component={Login} />
         <Route path="/" exact component={Home} />
         <Route path="/Home" exact component={Home} />
-      
+      </Router>
     </>
   );
 }
