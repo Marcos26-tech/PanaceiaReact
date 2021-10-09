@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Carrossel from "../../src/components/home/Carrossel";
+import Carrossel from "../../components/home/Carrossel";
 
-import { Title, StyledContainer, Section, Container} from "../../src/assets/style/StyleGlobal";
+import { Title, StyledContainer, Section, Container} from "../../assets/style/StyleGlobal";
 
 class PageHome extends Component {
   render() {

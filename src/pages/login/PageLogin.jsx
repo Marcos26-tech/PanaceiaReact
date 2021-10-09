@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../src/assets/style/StyleFormGlobal';
+import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../assets/style/StyleFormGlobal';
 
 
 const FormLogin =() => {

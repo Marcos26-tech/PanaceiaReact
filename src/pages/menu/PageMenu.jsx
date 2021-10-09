@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Nav } from '../../src/assets/style/StyleMenu';
+import { Nav } from '../../assets/style/StyleMenu';
 
 
 const Menu = () => {
