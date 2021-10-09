@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Comentario from '../../components/comentario/Comentario';
 
-import {Container, Button} from '../../components/comentario/StyledCriaComentario';
+import {Container, Button} from '../../components/comentario/StyledPageComentario';
 
 
 class PageComentarios extends Component {
