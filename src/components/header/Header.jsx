@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Logo from "../../assets/img/logo.png";
-import Menu from "../../../pages/menu/PageMenu";
+import Menu from "../../pages/menu/PageMenu";
 import styled from "styled-components";
 
 
