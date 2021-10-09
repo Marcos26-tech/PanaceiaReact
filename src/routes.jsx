@@ -3,9 +3,9 @@ import {Switch, Route } from "react-router-dom";
 
 import Home from "./pages/pagehome/PageHome";
 import Agenda from "./pages/agenda/PageAgenda";
-import Login from "./components/login/Login";
-import Registro from "./components/login/cadastro/Registro";
-import ForgetPassword from "./components/login/resete/ForgetPassword";
+import Login from "./pages/login/PageLogin";
+import Registro from "./pages/login/cadastro/PageRegistro";
+import ForgetPassword from "./pages/login/setsenha/PageForgetPassword";
 import MostraComentario from "./pages/comentario/PageComentarios";
 import CriaComunidades from "./pages/comunidade/PageComunidades";
 import Questionario from "./pages/questionario/PageQuestionario";

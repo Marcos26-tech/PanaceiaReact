@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
+import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
 
 const Registro = () => {
 
