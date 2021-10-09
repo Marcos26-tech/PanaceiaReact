@@ -2,14 +2,14 @@ import React from "react";
 import {Switch, Route } from "react-router-dom";
 
 import Home from "./pages/pagehome/PageHome";
-import Agenda from "./components/agenda/Agenda";
+import Agenda from "./pages/agenda/PageAgenda";
 import Login from "./components/login/Login";
 import Registro from "./components/login/cadastro/Registro";
 import ForgetPassword from "./components/login/resete/ForgetPassword";
 import MostraComentario from "./pages/comentario/PageComentarios";
 import CriaComunidades from "./pages/comunidade/PageComunidades";
 import Questionario from "./pages/questionario/PageQuestionario";
-import Termosdeuso from "./components/termo/TermosDeUso";
+import Termosdeuso from "./pages/termos/PageTermosDeUso";
 
 function Routes() {
   return (
