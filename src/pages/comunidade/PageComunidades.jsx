@@ -20,7 +20,6 @@ class PageComunidades extends Component {
     ],
     novaComunidade: {
       titulo: '',
-      imagem:'',
       descricao: ''
     }
   }
@@ -30,7 +29,7 @@ class PageComunidades extends Component {
     const novaComunidade = { ...this.state.novaComunidade}
     this.setState({
       comunidade: [...this.state.comunidade, novaComunidade],
-      novaComunidade: { titulo: '', imagem:'', descricao: '' }
+      novaComunidade: { titulo: '', descricao: '' }
     })
   }
 
@@ -54,13 +53,12 @@ class PageComunidades extends Component {
           <Comunidades
             key={indice}
             titulo={comentario.titulo}
-            imagem={comentario.imagem}
             onRemove={this.removerComunidade.bind(this, comentario)}>
             {comentario.descricao}
           </Comunidades>
         ))}
 
-        <form method="post" action="{this. função pra enviar os dados}" onSubmit={this.adicionarComunidade}>
+        <form method="post" onSubmit={this.adicionarComunidade}>
           <div>
             <input
               type="text"
@@ -72,10 +70,8 @@ class PageComunidades extends Component {
           </div>
           <div>
             <input
-              type="file"
-              name="imagem"
-              value={this.state.novaComunidade.titulo}
-              onChange={this.digitacao}/>
+              type="file" />
+
           </div>
           <div>
             <textarea
