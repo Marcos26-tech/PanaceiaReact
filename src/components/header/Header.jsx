@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Logo from "../../img/logo.png";
-import Menu from "../menu/Menu";
-import {Switch, Route } from "react-router-dom";
+import Logo from "../../assets/img/logo.png";
+import Menu from "../../pages/menu/PageMenu";
 import styled from "styled-components";
 
+<<<<<<< HEAD
 import Home from "../home/Home";
 import AcessarGrupo from "../comunidade/AcessarGrupo";
 import Agenda from "../agenda/Agenda";
@@ -12,6 +12,8 @@ import Registro from "../login/cadastro/Registro";
 import ForgetPassword from "../login/resete/ForgetPassword";
 import Questionario from "../questionario/Questionario";
 import Termos from "../termos/Termos";
+=======
+>>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -42,7 +44,6 @@ const Stylednovo = styled.div`
     }
   }
 `;
-
 class Header extends Component {
   render() {
     return (
@@ -54,6 +55,7 @@ class Header extends Component {
           </Stylednovo>
           <Menu />
         </StyledHeader>
+<<<<<<< HEAD
 
         <main>
           
@@ -72,6 +74,8 @@ class Header extends Component {
             </div>
          
         </main>
+=======
+>>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc
       </>
     );
   }
