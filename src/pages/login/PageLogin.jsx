@@ -20,13 +20,12 @@ const FormLogin =() => {
       //Enviar os dados para o back-end
       const addUser = async e => {
         e.preventDefault();
+        if(!validate()) return;
     
-            
 
-            if(!validate()) return;
-    
+
+
         const saveDataForm = true;
-    
             if (saveDataForm) {
                 setStatus({
                     type: 'success',
