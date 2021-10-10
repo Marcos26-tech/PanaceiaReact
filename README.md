@@ -1,4 +1,4 @@
 # PanaceiaReact
 
-# npm install --save-dev @babel/core
+# npm install --save react-calendly
 
