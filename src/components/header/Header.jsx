@@ -3,17 +3,6 @@ import Logo from "../../assets/img/logo.png";
 import Menu from "../../pages/menu/PageMenu";
 import styled from "styled-components";
 
-<<<<<<< HEAD
-import Home from "../home/Home";
-import AcessarGrupo from "../comunidade/AcessarGrupo";
-import Agenda from "../agenda/Agenda";
-import FormLogin from "../login/FormLogin";
-import Registro from "../login/cadastro/Registro";
-import ForgetPassword from "../login/resete/ForgetPassword";
-import Questionario from "../questionario/Questionario";
-import Termos from "../termos/Termos";
-=======
->>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -55,27 +44,6 @@ class Header extends Component {
           </Stylednovo>
           <Menu />
         </StyledHeader>
-<<<<<<< HEAD
-
-        <main>
-          
-            <div>
-              <Switch>
-                <Route exact path="/" component={FormLogin} />
-                <Route exact path="/FormLogin" component={FormLogin} />
-                <Route exact path="/Registro" component={Registro} />
-                <Route exact path="/ForgetPassword"component={ForgetPassword}/>
-                <Route exact path="/Agendaeeventos" component={Agenda} />
-                <Route exact path="/Comunidade" component={AcessarGrupo} />
-                <Route exact path="/Termosdeuso" component={Termos} />
-                <Route exact path="/Questionario" component={Questionario} />
-              </Switch>
-              <Route exact path="/Home" component={Home} />
-            </div>
-         
-        </main>
-=======
->>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc
       </>
     );
   }
