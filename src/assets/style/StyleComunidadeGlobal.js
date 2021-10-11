@@ -25,6 +25,9 @@ export const Container = styled.div`
         margin: 1rem 0;
         display: block;
         border-radius: .5rem;
+        @media (max-width: 789px) {
+            width:89%;
+            height:6rem;}
     }
     textarea {
         width: 95%;
@@ -38,8 +41,7 @@ export const Container = styled.div`
         border-radius: .5rem;
             @media (max-width: 789px) {
             width:89%;
-            height:6rem;
-        }
+            height:6rem;}
     }    
     @media (max-width: 789px) {
     margin: 14.5rem 3% auto;
