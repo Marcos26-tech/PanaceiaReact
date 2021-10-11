@@ -7,13 +7,12 @@ export const Container = styled.section`
   border-radius: 4%;
   padding: 2rem 5rem 2rem;
   margin: 5rem 8% 2rem;
-  height: 54rem;
+  height:100%;
   text-align: center;
   justify-content: center;
   @media (max-width: 789px) {
     margin: 14.5rem 3% auto;
     padding:10px;
-    height:42rem;
   }
 `;
 
@@ -110,5 +109,36 @@ export const FormButton = styled.button`
   &:hover {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
     transform: translate(0, -5px);
+  }
+`;
+
+//inicio style da pagina PageQuestionario
+export const Span= styled.span`
+    font-weight: bold;
+    color: rgb(12, 139, 1);
+    text-align: center;
+    margin: 2px;
+`;
+
+export const StyledQuestionario = styled.div`
+  border: 1px solid #56565656;
+  text-align:justify;
+  margin: 5px 0 12px;
+  padding: 0 5px 5px;
+  font-size:14.5px;
+  h2 {
+    font-size:16px;
+  }
+  input[type=radio]:checked{
+    content: '';
+    cursor: pointer; 
+    width: 15px;
+    height: 15px;
+  }
+  input{
+    margin-left: 12px;
+    position: relative;
+    width: 14px;
+    height: 14px;
   }
 `;

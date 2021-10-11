@@ -1,21 +1,10 @@
 import React from "react";
-import { Container, Section} from "../../assets/style/StyleGlobal";
-import styled from "styled-components";
-
-
-export const Span= styled.span`
-    font-weight: bold;
-    color: rgb(12, 139, 1);
-    text-align: center;
-    margin: 2px;
-`;
-
-const StyledQuestionario = styled.div`
-  h2 {
-    color: red;
-    display: block;
-  }
-`;
+import {
+  Container,
+  Section,
+  Span,
+  StyledQuestionario,
+} from "../../assets/style/StyleGlobal";
 
 const Questionario = () => {
   function validarQuestionario(qtdPerguntas) {
@@ -23,7 +12,7 @@ const Questionario = () => {
       alert("É necessário responder todas as perguntas!");
     } else {
       alert("Pode seguir sua navegação pela Panace IA! <3");
-      window.location.replace('./Comunidades')
+      window.location.replace("./Comunidades");
     }
   }
 
@@ -125,7 +114,7 @@ const Questionario = () => {
             <input type="radio" class="question" name="4" value="2" />
             atualmente bem menos
             <input type="radio" class="question" name="4" value="3" />
-            não consigo mais[
+            não consigo mais
           </StyledQuestionario>
 
           <StyledQuestionario>
@@ -268,5 +257,5 @@ const Questionario = () => {
       </Container>
     </>
   );
-}
+};
 export default Questionario;
