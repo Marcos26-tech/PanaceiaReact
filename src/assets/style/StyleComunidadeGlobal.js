@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 4.5rem 0 0;
+    margin: 5rem 0 0;
     padding: 0 50px;
     background-color: #fff;
     h1{
+        font-size:17.5px;
         text-align: center;
-        margin:10px;
-        padding:15px;
+        margin:12px;
+        padding:16px;
     }
-
     form {
     border-radius: .5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
@@ -36,20 +36,28 @@ export const Container = styled.div`
         margin: 1rem 0;
         display: block;
         border-radius: .5rem;
-    }
+            @media (max-width: 789px) {
+            width:89%;
+            height:6rem;
+        }
+    }    
+    @media (max-width: 789px) {
+    margin: 14.5rem 3% auto;
+    display:block;
+    padding:15px;
+    height:100%;
+  }
 `;
 
 export const Button = styled.button`
-    background-color: #4299e1;
+    background-color: rgb(25, 121, 6);
     color: #fff;
     font-size: 1rem;
     padding: .5rem 1rem;
     border-radius: .5rem;
     border: none;
     &:hover {
-        background-color: #2b6cb0;
+        background-color: rgb(122, 243, 9);
         cursor: pointer;
     }
 `;
-
-

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Comentario from '../../components/comentario/Comentario';
 
-import {Container, Button} from '../../components/comentario/StyledPageComentario';
+import {Container, Button} from '../../assets/style/StyleComunidadeGlobal';
 
 
 class PageComentarios extends Component {
@@ -75,7 +75,7 @@ class PageComentarios extends Component {
               onChange={this.digitacao}
               required
               rows="4" 
-              placeholder="Escreva um comentário..."/>
+              placeholder="Escreva seu depoimento..."/>
           </div>
           <Button type="submit">Publicar Comentário</Button>
         </form>
