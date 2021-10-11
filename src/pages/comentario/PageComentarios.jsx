@@ -47,7 +47,7 @@ class PageComentarios extends Component {
   render() {
     return (
       <Container >
-        <h1>comentarios</h1>
+        <h1>Depoimentos da comunidade</h1>
         {this.state.comentarios.map((comentario, indice) => (
           <Comentario
             key={indice}
@@ -60,6 +60,7 @@ class PageComentarios extends Component {
 
         <form method="post" action="aqui vai a função de enviar os dados do formulario" onSubmit={this.adicionarComentario}>
           <div>
+            <h3>Compartilhe um depoimento com a comunidade</h3>
             <input
               type="text"
               name="nome"

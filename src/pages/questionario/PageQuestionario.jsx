@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  Container,
-  Section,
-  Span,
-  StyledQuestionario,
-} from "../../assets/style/StyleGlobal";
+import { Container, Section, Span, StyledQuestionario} from "../../assets/style/StyleGlobal";
+
 
 const Questionario = () => {
   function validarQuestionario(qtdPerguntas) {
@@ -12,7 +8,7 @@ const Questionario = () => {
       alert("É necessário responder todas as perguntas!");
     } else {
       alert("Pode seguir sua navegação pela Panace IA! <3");
-      window.location.replace("./Comunidades");
+      window.location.replace('./Comunidades')
     }
   }
 
@@ -73,7 +69,7 @@ const Questionario = () => {
             <input type="radio" class="question" name="1" value="2" />
             boa parte do tempo
             <input type="radio" class="question" name="1" value="1" />
-            de vez em quando
+            <span>de vez em quando</span>
             <input type="radio" class="question" name="1" value="0" />
             nunca
           </StyledQuestionario>
@@ -124,7 +120,7 @@ const Questionario = () => {
             <input type="radio" class="question" name="5" value="2" />
             boa parte do tempo
             <input type="radio" class="question" name="5" value="1" />
-            de vez em quando
+            <span>de vez em quando</span>
             <input type="radio" class="question" name="5" value="0" />
             raramente
           </StyledQuestionario>
@@ -134,7 +130,7 @@ const Questionario = () => {
             <input type="radio" class="question" name="6" value="3" />
             nunca
             <input type="radio" class="question" name="6" value="2" />
-            poucas vezes
+            <span>poucas vezes</span>
             <input type="radio" class="question" name="6" value="1" />
             muitas vezes
             <input type="radio" class="question" name="6" value="0" />a maior
@@ -144,11 +140,11 @@ const Questionario = () => {
           <StyledQuestionario>
             <h2>7 - Consigo ficar sentada à vontade e me sentir relaxada:</h2>
             <input type="radio" class="question" name="7" value="0" />
-            sim, quase sempre
+            sim, <span>quase sempre</span>
             <input type="radio" class="question" name="7" value="1" />
             muitas vezes
             <input type="radio" class="question" name="7" value="2" />
-            poucas vezes
+            <span>poucas vezes</span>
             <input type="radio" class="question" name="7" value="3" />
             nunca
           </StyledQuestionario>
@@ -156,11 +152,11 @@ const Questionario = () => {
           <StyledQuestionario>
             <h2>8 - Eu estou lenta para pensar e fazer coisas:</h2>
             <input type="radio" class="question" name="8" value="3" />
-            quase sempre
+            <span>quase sempre</span>
             <input type="radio" class="question" name="8" value="2" />
             muitas vezes
             <input type="radio" class="question" name="8" value="1" />
-            poucas vezes
+            <span>poucas vezes</span>
             <input type="radio" class="question" name="8" value="0" />
             nunca
           </StyledQuestionario>
@@ -173,11 +169,11 @@ const Questionario = () => {
             <input type="radio" class="question" name="9" value="0" />
             nunca
             <input type="radio" class="question" name="9" value="1" />
-            de vez em quando
+            <span>de vez em quando</span>
             <input type="radio" class="question" name="9" value="2" />
             muitas vezes
             <input type="radio" class="question" name="9" value="3" />
-            quase sempre
+            <span>quase sempre</span>
           </StyledQuestionario>
 
           <StyledQuestionario>
@@ -217,21 +213,21 @@ const Questionario = () => {
             <input type="radio" class="question" name="12" value="1" />
             um pouco menos que antes
             <input type="radio" class="question" name="12" value="2" />
-            bem menos que antes
+            <span>um pouco menos que antes</span>
             <input type="radio" class="question" name="12" value="3" />
-            quase nunca
+            <span>quase nunca</span>
           </StyledQuestionario>
 
           <StyledQuestionario>
             <h2>13 - De repente, tenho a sensação de entrar em pânico:</h2>
-            <input type="radio" class="question" name="13" value="3" />a quase
-            todo momento
+            <input type="radio" class="question" name="13" value="3" />
+            <span>a quase todo momento</span>
             <input type="radio" class="question" name="13" value="2" />
-            várias vezes
+            <span>várias vezes</span>
             <input type="radio" class="question" name="13" value="1" />
-            de vez em quando
+            <span>de vez em quando</span>
             <input type="radio" class="question" name="13" value="0" />
-            não senti isso
+            <span>não senti isso</span>
           </StyledQuestionario>
 
           <StyledQuestionario>
@@ -240,13 +236,13 @@ const Questionario = () => {
               televisão, de rádio ou quando leio alguma coisa:
             </h2>
             <input type="radio" class="question" name="14" value="0" />
-            quase sempre
+            <span>quase sempre</span>
             <input type="radio" class="question" name="14" value="1" />
-            várias vezes
+            <span>várias vezes</span>
             <input type="radio" class="question" name="14" value="2" />
-            poucas vezes
+            <span>poucas vezes</span>
             <input type="radio" class="question" name="14" value="3" />
-            quase nunca
+            <span><span>quase nunca</span></span>
           </StyledQuestionario>
 
           <button onClick={() => enviarQuestionario()}>
@@ -257,5 +253,5 @@ const Questionario = () => {
       </Container>
     </>
   );
-};
+}
 export default Questionario;
