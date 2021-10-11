@@ -3,7 +3,9 @@ import { Container, FormButton } from '../../assets/style/StyleGlobal'
 import { Span } from '../questionario/PageQuestionario'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-
+import dog from '../../assets/img/dog.jpg'
+import cat from '../../assets/img/cat.jpg'
+import yoga from '../../assets/img/yoga.jpg'
 
 export const Modal = styled.div`
     position: fixed;
@@ -34,10 +36,30 @@ export const ModalBody = styled.div`
     padding: 10px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
 `;
 export const ModalFooter = styled.div`
     padding: 10px;
 `;
+
+export const CheckImg = styled.div`
+    label {
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    }
+
+    label img {
+    height: 100px;
+    width: 100px;
+    }
+`;
+
+
 
 
 
@@ -48,6 +70,14 @@ function PageInteresse() {
     const mostraModal = () => {
         setShow(!show)
     }
+
+    const salvarInteresses = () => {
+
+        alert("Interesses salvos com sucesso!")
+        window.location.replace('./Comunidades')
+
+    }
+
 
 
     return (
@@ -70,13 +100,35 @@ function PageInteresse() {
                     {show && <Modal>
                         <ModalContent>
                             <ModalHeader>
-                                <h4>Modal Title</h4>
+                                <Span><h1>Meus Interesses</h1>
+                                    <h3>Selecione as imagens que mais têm a ver com seus interesses:</h3>
+                                </Span>
+
                             </ModalHeader>
                             <ModalBody>
-                                This is modal content(body)
+                                <CheckImg>
+                                    <input type="checkbox" class="checkbox1" />
+                                    <label for="checkbox1">Cachorros<img src={dog} /></label>
+                                    <input type="checkbox" class="checkbox2" />
+                                    <label for="checkbox2">Gatos<img src={cat} /></label>
+                                    <input type="checkbox" class="checkbox3" />
+                                    <label for="checkbox3">Meditação<img src={yoga} /></label>
+                                    <input type="checkbox" class="checkbox4" />
+                                    <label for="checkbox4">Meditação<img src={yoga} /></label>
+                                    <input type="checkbox" class="checkbox5" />
+                                    <label for="checkbox5">Meditação<img src={yoga} /></label>
+                                    <input type="checkbox" class="checkbox6" />
+                                    <label for="checkbox6">Meditação<img src={yoga} /></label>
+                                    <input type="checkbox" class="checkbox7" />
+                                    <label for="checkbox7">Meditação<img src={yoga} /></label>
+                                    <input type="checkbox" class="checkbox8" />
+                                    <label for="checkbox8">Meditação<img src={yoga} /></label>
+
+                                </CheckImg>
                             </ModalBody>
                             <ModalFooter>
-                                <button onClick={mostraModal}>Fechar</button>
+                                <FormButton onClick={salvarInteresses}>Salvar </FormButton>
+                                <button onClick={mostraModal}>Voltar</button>
                             </ModalFooter>
                         </ModalContent>
                     </Modal>}
