@@ -5,6 +5,7 @@ export const Container = styled.section`
   background: rgb(255, 255, 255);
   opacity:98%;
   border-radius: 4%;
+  padding: 2rem 5rem 2rem;
   margin: 5rem 8% 2rem;
   height: 54rem;
   text-align: center;
@@ -35,10 +36,9 @@ export const Title = styled.h1`
   font-size:35px;
   font-weight: bold;
   color: rgb(12, 139, 1);
-  display: flex;
   text-align: center;
   justify-content: center;
-  @media (max-width: 780px) {
+  @media (max-width: 789px) {
     font-size:15px;
   }
 `;
@@ -79,7 +79,7 @@ export const StyledArrowContainer = styled.div`
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-    background-color: #d9d9d9;
+    background-color: rgb(112, 241, 112);
   }
 `;
 
@@ -107,7 +107,6 @@ export const FormButton = styled.button`
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-
   &:hover {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
     transform: translate(0, -5px);

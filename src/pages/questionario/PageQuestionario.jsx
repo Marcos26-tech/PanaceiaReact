@@ -17,7 +17,7 @@ const StyledQuestionario = styled.div`
   }
 `;
 
-export default function Questionario() {
+const Questionario = () => {
   function validarQuestionario(qtdPerguntas) {
     if (qtdPerguntas < 14) {
       alert("É necessário responder todas as perguntas!");
@@ -269,3 +269,4 @@ export default function Questionario() {
     </>
   );
 }
+export default Questionario;
