@@ -11,7 +11,7 @@ class PageHome extends Component {
           <Section>
             <Title>Sejam Bem vindos a Panace I.A</Title>
             <h3>
-              “Onde a busca em fazer a felicidade ser rotina na vida de todas as
+              “Onde a busca em tornar a felicidade e o autocuidado serem rotina na vida de todas as
               pessoas!”
             </h3>
           </Section>
