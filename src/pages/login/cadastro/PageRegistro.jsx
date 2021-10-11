@@ -1,11 +1,5 @@
 import React, { useState } from "react";
-<<<<<<< HEAD:src/components/login/cadastro/Registro.jsx
-import { Form, FormWrapper, FormHeader, Title, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../StyledForm';
-import { Route, Link } from "react-router-dom";
-import Agenda from "../../agenda/Agenda";
-=======
 import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
->>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc:src/pages/login/cadastro/PageRegistro.jsx
 
 const Registro = () => {
 
@@ -66,17 +60,6 @@ const Registro = () => {
         }
     }
 
-<<<<<<< HEAD:src/components/login/cadastro/Registro.jsx
-
-=======
-    function someCadastrar() {
-        if (user.name && user.email && user.password && user.password.length > 6) {
-            return (document.getElementById('form').style.visibility = "hidden",
-            window.location.replace('./Termosdeuso'));
-        }
-    }
->>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc:src/pages/login/cadastro/PageRegistro.jsx
-
     return (
 
         <FormWrapper>
@@ -89,11 +72,7 @@ const Registro = () => {
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
                 {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
 
-<<<<<<< HEAD:src/components/login/cadastro/Registro.jsx
-                <Form onSubmit={addUser} id="form">
-=======
                 <Form onSubmit={addUser} id='form'>
->>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc:src/pages/login/cadastro/PageRegistro.jsx
                     <FormFieldset>
                         <label>Nome: </label>
                         <FormInput type="text" name="name" placeholder="Nome completo do usuário" onChange={valueInput} value={user.name} />

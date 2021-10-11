@@ -53,17 +53,10 @@ const FormLogin =() => {
 
         function someLogin() {
             if (user.email && user.password && user.password.length >= 6) {
-<<<<<<< HEAD:src/components/login/FormLogin.jsx
-                return document.getElementById('form').style.visibility = "hidden"; 
-            }
-        }
-
-=======
                 return (document.getElementById('form').style.visibility = "hidden",
                 window.location.replace('./Comunidades'));
             }
         }
->>>>>>> 4a4b12aa847b1ee566d3527264d612b4d04998dc:src/pages/login/PageLogin.jsx
     
     return (
    
