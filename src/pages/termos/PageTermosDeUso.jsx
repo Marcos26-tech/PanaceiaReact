@@ -2,6 +2,7 @@ import React from "react";
 import { Container, FormButton } from "../../assets/style/StyleGlobal";
 import styled from "styled-components";
 
+
 export const Section = styled.section`
   background: rgb(255, 255, 255);
   border-radius: 2%;

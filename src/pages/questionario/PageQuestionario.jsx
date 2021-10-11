@@ -23,7 +23,7 @@ export default function Questionario() {
       alert("É necessário responder todas as perguntas!");
     } else {
       alert("Pode seguir sua navegação pela Panace IA! <3");
-      window.location.replace('./Comunidades')
+      window.location.replace('./Interesses')
     }
   }
 

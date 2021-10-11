@@ -10,6 +10,7 @@ import MostraComentario from "./pages/comentario/PageComentarios";
 import CriaComunidades from "./pages/comunidade/PageComunidades";
 import Questionario from "./pages/questionario/PageQuestionario";
 import Termosdeuso from "./pages/termos/PageTermosDeUso";
+import PageInteresse from "./pages/interesse/PageInteresse";
 
 function Routes() {
   return (
@@ -20,6 +21,7 @@ function Routes() {
           <Route path="/Forgetpassword" component={ForgetPassword} />
           <Route path="/Agendaeeventos" component={Agenda} />
           <Route path="/Comunidades" component={CriaComunidades} />
+          <Route path="/Interesses" component={PageInteresse} />
           <Route path="/MostraComentario" component={MostraComentario} />
           <Route path="/Questionario" component={Questionario} />
           <Route path="/Termosdeuso" component={Termosdeuso} />
