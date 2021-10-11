@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 //inicio style da pagina home//
-export const Container = styled.div`
+export const Container = styled.section`
   background: rgb(255, 255, 255);
   border-radius: 4%;
   margin: 5rem 8% 2rem;
   text-align: center;
   justify-content: center;
+  @media (max-width: 789px) {
+    margin-top:14.5rem;
+  }
 `;
 
-export const Section = styled.section`
+export const Section = styled.div`
   margin: 2px 10px 10px;
   padding: 2px;
   text-align: center;
@@ -19,8 +22,12 @@ export const Section = styled.section`
     color: rgb(12, 139, 1);
     text-align: center;
     margin: 2px;
+      @media (max-width: 789px) {
+      font-size:13px;
+    }
   }
 `;
+
 export const Title = styled.h1`
   margin: 1rem;
   padding: 10px;
@@ -30,8 +37,7 @@ export const Title = styled.h1`
   text-align: center;
   justify-content: center;
   @media (max-width: 780px) {
-    width: 100%;
-    padding-top: 13rem;
+    font-size:15px;
   }
 `;
 

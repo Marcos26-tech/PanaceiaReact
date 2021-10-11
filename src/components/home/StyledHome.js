@@ -7,6 +7,10 @@ export const Container = styled.div`
   margin: 5rem 8% 2rem;
   text-align: center;
   justify-content: center;
+  @media (max-width: 789px) {
+    margin:0;
+    padding:0;
+  }
 `;
 
 export const Section = styled.section`
@@ -43,18 +47,18 @@ export const StyledContainer = styled.section`
 export const StyledCarrocelContainer = styled.div`
   height: 40rem;
   width: 50rem;
-  padding: 0;
+  margin:0;
   padding-left: 4rem;
   padding-bottom: 6.5rem;
   margin: 20px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 780px) {
+  @media (max-width: 789px) {
     display: flex;
     width: 100%;
-    margin: auto;
-    padding: 5px;
+    margin: 0;
+    padding:0;
   }
 `;
 
@@ -81,4 +85,8 @@ export const StyledImage = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 5%;
+  @media (max-width: 789px) {
+    width: 100%;
+    height: 80%;
+  }
 `;
