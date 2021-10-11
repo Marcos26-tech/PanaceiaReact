@@ -18,11 +18,17 @@ export const FormWrapper = styled.div`
   opacity: 98%;
   overflow: hidden;
   padding: 0 0 30px;
-  margin: 5rem auto 1rem ;
+  margin: 5rem auto 1.5rem ;
   width: 500px;
   height: 670px;
   font-family: Quicksand, arial, sans-serif;
   border-radius: 5px;
+  @media (max-width: 783px) {
+    margin: 14.5rem 3% auto;
+    padding:5px;
+    height:42rem;
+    width: 92%;
+  }
 `;
 export const FormHeader = styled.header`
   margin: 50px 0 10px;
@@ -97,7 +103,6 @@ export const FormButton = styled.button`
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-
   &:hover {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
     transform: translate(0, -5px);
@@ -106,7 +111,7 @@ export const FormButton = styled.button`
 
 export const FormLink = styled.a`
   text-decoration: none;
-  margin: 0 55px 0;
+  margin: 10px 55px 0;
   display: inline-block;
   font-size: 15px;
   color: rgb(223, 211, 211);
@@ -116,4 +121,8 @@ export const FormLink = styled.a`
   &:hover {
     color: rgb(255, 234, 0);
   }
+  @media (max-width: 783px) {
+    font-size: 13px;
+    text-align: center
+}
 `;
