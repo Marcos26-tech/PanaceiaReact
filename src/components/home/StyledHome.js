@@ -7,10 +7,6 @@ export const Container = styled.div`
   margin: 5rem 8% 2rem;
   text-align: center;
   justify-content: center;
-  @media (max-width: 789px) {
-    margin:0;
-    padding:0;
-  }
 `;
 
 export const Section = styled.section`
@@ -46,19 +42,17 @@ export const StyledContainer = styled.section`
 //inicio style da pagina carrocel//
 export const StyledCarrocelContainer = styled.div`
   height: 40rem;
-  width: 50rem;
-  margin:0;
-  padding-left: 4rem;
-  padding-bottom: 6.5rem;
-  margin: 20px auto;
+  width: 100%;
+  padding: 0 20px 0;
+  margin: 20px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (max-width: 789px) {
     display: flex;
     width: 100%;
-    margin: 0;
-    padding:0;
+    margin: 2px;
+    padding:0px;
   }
 `;
 

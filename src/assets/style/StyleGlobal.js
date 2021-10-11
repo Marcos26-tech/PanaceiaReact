@@ -3,16 +3,20 @@ import styled from "styled-components";
 //inicio style da pagina home//
 export const Container = styled.section`
   background: rgb(255, 255, 255);
+  opacity:98%;
   border-radius: 4%;
   margin: 5rem 8% 2rem;
+  height: 54rem;
   text-align: center;
   justify-content: center;
   @media (max-width: 789px) {
-    margin-top:14.5rem;
+    margin: 14.5rem 3% auto;
+    padding:10px;
+    height:42rem;
   }
 `;
 
-export const Section = styled.div`
+export const Section = styled.section`
   margin: 2px 10px 10px;
   padding: 2px;
   text-align: center;
@@ -22,15 +26,13 @@ export const Section = styled.div`
     color: rgb(12, 139, 1);
     text-align: center;
     margin: 2px;
-      @media (max-width: 789px) {
-      font-size:13px;
-    }
   }
 `;
 
 export const Title = styled.h1`
-  margin: 1rem;
+  margin: 10px;
   padding: 10px;
+  font-size:35px;
   font-weight: bold;
   color: rgb(12, 139, 1);
   display: flex;
@@ -48,19 +50,17 @@ export const StyledContainer = styled.section`
 //inicio style da pagina carrocel//
 export const StyledCarrocelContainer = styled.div`
   height: 40rem;
-  width: 50rem;
-  padding: 0;
-  padding-left: 4rem;
-  padding-bottom: 6.5rem;
-  margin: 20px auto;
+  width: 100%;
+  padding: 0 20px 0;
+  margin: 20px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 780px) {
+  @media (max-width: 789px) {
     display: flex;
     width: 100%;
-    margin: auto;
-    padding: 5px;
+    margin: 2px;
+    padding:2px;
   }
 `;
 
@@ -87,6 +87,10 @@ export const StyledImage = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 5%;
+  @media (max-width: 789px) {
+    width: 100%;
+    height: 80%;
+  }
 `;
 
 export const FormButton = styled.button`
