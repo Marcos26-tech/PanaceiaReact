@@ -78,8 +78,8 @@ class PageComunidades extends Component {
 
           <Div>
             <img src={ImagemAutocuidado} alt="Autocuidado Feminino"/>
-            <p><a href={site} target="_blank" rel="noreferrer"><span>"Autocuidado deve ser o cuidado consigo mesma, atenção às próprias necessidades do corpo, mentais e psicológicas." </span></a>
-              Esta definição é a mais simples e também mais abrangente. 
+            <p><a href={site} target="_blank" rel="noreferrer"><span>"Autocuidado deve ser o cuidado consigo mesma, atenção às próprias necessidades do corpo, mentais e psicológicas"</span></a> Esta definição
+              é a mais simples e também mais abrangente. 
               O principal elemento do autocuidado é a atenção voltada para si mesmo, para as próprias necessidades e aspirações.
               O que envolve cuidar de todos os nossos principais aspectos como seres humanos: o físico, o mental e o emocional. </p>
           </Div>
