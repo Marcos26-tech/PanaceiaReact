@@ -31,22 +31,7 @@ export const Container = styled.div`
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 1rem;
   }
-  input {
-    width: 300px;
-    color: #4a5568;
-    background-color: #fff;
-    border: 1px solid #e2e8f0;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0;
-    display: block;
-    border-radius: 0.5rem;
-    @media (max-width: 789px) {
-      width: 89%;
-      height: 6rem;
-    }
-  }
-  textarea {
+  input, textarea {
     width: 95%;
     color: #4a5568;
     background-color: #fff;
@@ -57,7 +42,7 @@ export const Container = styled.div`
     display: block;
     border-radius: 0.5rem;
     @media (max-width: 789px) {
-      width: 89%;
+      width: 88%;
       height: 6rem;
     }
   }
@@ -69,7 +54,7 @@ export const Container = styled.div`
     h1{
       font-size:16px;
     }
-    h3{
+    h3, h2{
       font-size:14px;
     }
   }
