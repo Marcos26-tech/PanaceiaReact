@@ -121,6 +121,7 @@ export const Divi = styled.div`
   display: flex;
   padding: 10px;
   margin: 10px;
+  
   img {
     width:9rem;
     height:10rem;
@@ -167,6 +168,7 @@ export const Div = styled.div`
 `;
 
 export const SectionPrimeira = styled.section`
+  text-decoration:nome;
   display: flex;
   align-items:center;
   border-bottom: 1px solid rgb(25, 121, 6);
