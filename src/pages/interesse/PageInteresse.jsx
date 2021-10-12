@@ -3,9 +3,14 @@ import { Container, FormButton } from '../../assets/style/StyleGlobal'
 import { Span } from '../questionario/PageQuestionario'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
-import dog from '../../assets/img/dog.jpg'
-import cat from '../../assets/img/cat.jpg'
-import yoga from '../../assets/img/yoga.jpg'
+import dog from '../../assets/img/imginteresses/dog.jpg'
+import cat from '../../assets/img/imginteresses/cat.jpg'
+import yoga from '../../assets/img/imginteresses/yoga.jpg'
+import familia from '../../assets/img/imginteresses/familia.jpg'
+import espiritualidade from '../../assets/img/imginteresses/espiritualidade.jpg'
+import estudos from '../../assets/img/imginteresses/estudos.jpg'
+import lutas from '../../assets/img/imginteresses/lutas.jpg'
+import tecnologia from '../../assets/img/imginteresses/tecnologia.jpg'
 
 export const Modal = styled.div`
     position: fixed;
@@ -17,11 +22,15 @@ export const Modal = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    
 `;
 
 export const ModalContent = styled.div`
     width: 750px;
     background-color: #fff;
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+    
 `;
 
 export const ModalHeader = styled.div`
@@ -36,14 +45,16 @@ export const ModalBody = styled.div`
     padding: 10px;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
-    max-height: calc(100vh - 210px);
-    overflow-y: auto;
 `;
 export const ModalFooter = styled.div`
     padding: 10px;
 `;
 
 export const CheckImg = styled.div`
+
+    input[type="checkbox"][id^="checkbox"] {
+    display: none;
+}
     label {
     border: 1px solid #fff;
     padding: 10px;
@@ -53,9 +64,48 @@ export const CheckImg = styled.div`
     cursor: pointer;
     }
 
+    label::before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
     label img {
     height: 100px;
-    width: 100px;
+    width: 150px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+    }
+
+    input[type='checkbox']:checked + label {
+    border-color: #ddd;
+}
+
+    input[type='checkbox']:checked + label::before {
+    content: "✓";
+    background-color: grey;
+    transform: scale(1);
+}
+
+    input[type='checkbox']:checked + label img{
+        height: 100px;
+        width: 150px;
+        transform: scale(1.0);
+        box-shadow: 0 0 5px #333;
+        z-index: -1;
+
     }
 `;
 
@@ -72,11 +122,21 @@ function PageInteresse() {
     }
 
     const salvarInteresses = () => {
+        var listaInteresses = []
 
-        alert("Interesses salvos com sucesso!")
+        for (let i = 0; i < 8; i++) {
+            if (document.querySelectorAll('input')[i].checked) {
+                var interesse = document.querySelectorAll('input')[i]
+                listaInteresses.push(interesse.name)
+            }
+        }
+
+        alert("Interesses salvos com sucesso! <3 \n" + listaInteresses)
+
         window.location.replace('./Comunidades')
-
     }
+
+
 
 
 
@@ -107,22 +167,22 @@ function PageInteresse() {
                             </ModalHeader>
                             <ModalBody>
                                 <CheckImg>
-                                    <input type="checkbox" class="checkbox1" />
-                                    <label for="checkbox1">Cachorros<img src={dog} /></label>
-                                    <input type="checkbox" class="checkbox2" />
-                                    <label for="checkbox2">Gatos<img src={cat} /></label>
-                                    <input type="checkbox" class="checkbox3" />
-                                    <label for="checkbox3">Meditação<img src={yoga} /></label>
-                                    <input type="checkbox" class="checkbox4" />
-                                    <label for="checkbox4">Meditação<img src={yoga} /></label>
-                                    <input type="checkbox" class="checkbox5" />
-                                    <label for="checkbox5">Meditação<img src={yoga} /></label>
-                                    <input type="checkbox" class="checkbox6" />
-                                    <label for="checkbox6">Meditação<img src={yoga} /></label>
-                                    <input type="checkbox" class="checkbox7" />
-                                    <label for="checkbox7">Meditação<img src={yoga} /></label>
-                                    <input type="checkbox" class="checkbox8" />
-                                    <label for="checkbox8">Meditação<img src={yoga} /></label>
+                                    <input type="checkbox" id="checkbox1" name="cachorros" />
+                                    <label for="checkbox1">Cachorros<img src={dog} alt="cachorros" /></label>
+                                    <input type="checkbox" id="checkbox2" name="gatos" />
+                                    <label for="checkbox2">Gatos<img src={cat} alt="gatos" /></label>
+                                    <input type="checkbox" id="checkbox3" name="yoga" />
+                                    <label for="checkbox3">Meditação<img src={yoga} alt="yoga" /></label>
+                                    <input type="checkbox" id="checkbox4" name="estudos"/>
+                                    <label for="checkbox4">Estudos<img src={estudos} alt="estudos" /></label>
+                                    <input type="checkbox" id="checkbox5" name="tecnologia"/>
+                                    <label for="checkbox5">Tecnologia<img src={tecnologia} alt="tecnologia" /></label>
+                                    <input type="checkbox" id="checkbox6" name="lutas"/>
+                                    <label for="checkbox6">Lutas<img src={lutas} alt="lutas" /></label>
+                                    <input type="checkbox" id="checkbox7" name="espiritualidade"/>
+                                    <label for="checkbox7">Espiritualidade<img src={espiritualidade} alt="espiritualidade" /></label>
+                                    <input type="checkbox" id="checkbox8" name="familia"/>
+                                    <label for="checkbox8">Família<img src={familia} alt="familia" /></label>
 
                                 </CheckImg>
                             </ModalBody>
