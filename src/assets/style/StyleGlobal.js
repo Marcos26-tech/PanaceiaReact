@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 //inicio style da pagina home//
 export const Container = styled.section`
-  background: rgb(255, 255, 255);
+  background: #f2efbd;
   opacity:98%;
   border-radius: 4%;
   padding: 2rem 5rem 2rem;
@@ -23,7 +23,7 @@ export const Section = styled.section`
   justify-content: center;
   h3 {
     font-weight: bold;
-    color: rgb(12, 139, 1);
+    color: #343d59;
     text-align: center;
     margin: 2px;
   }
@@ -34,7 +34,7 @@ export const Title = styled.h1`
   padding: 10px;
   font-size:35px;
   font-weight: bold;
-  color: rgb(12, 139, 1);
+  color: #343d59;
   text-align: center;
   justify-content: center;
   @media (max-width: 789px) {
@@ -78,7 +78,7 @@ export const StyledArrowContainer = styled.div`
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-    background-color: rgb(112, 241, 112);
+    background-color: #26a682;
   }
 `;
 
