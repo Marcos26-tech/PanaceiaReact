@@ -10,6 +10,7 @@ import MostraComentario from "./pages/comentario/PageComentarios";
 import CriaComunidades from "./pages/comunidade/PageComunidades";
 import Questionario from "./pages/questionario/PageQuestionario";
 import Termosdeuso from "./pages/termos/PageTermosDeUso";
+import Perfil from './pages/perfil/PagePerfil'
 
 function Routes() {
   return (
@@ -23,6 +24,7 @@ function Routes() {
           <Route path="/MostraComentario" component={MostraComentario} />
           <Route path="/Questionario" component={Questionario} />
           <Route path="/Termosdeuso" component={Termosdeuso} />
+          <Route path="/Perfil" component={Perfil} />
         </Switch>
        
         <Route path="/Login" component={Login} />
