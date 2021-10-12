@@ -10,6 +10,7 @@ import {
   SectionPrimeira,
   Div,
   Divi,
+  Dividir,
 } from "../../assets/style/StyleComunidadeGlobal";
 
 const site ="https://www.vestimentarte.com.br/2020/06/autocuidado-o-que-e-principais-tipos.html"
@@ -104,7 +105,7 @@ class PageComunidades extends Component {
 
         <Form method="post" onSubmit={this.adicionarComunidade}>
           <h3>Construa uma comunidade aqui</h3>
-          <div>
+          <Dividir>
             <FcComments />
             <input
               type="text"
@@ -114,11 +115,24 @@ class PageComunidades extends Component {
               required
               placeholder="Digite o título da comunidade"
             />
-          </div>
+            <label>Escolha a categoria da comunidade</label>
+            <select>
+              <option value="saude">Saúde Feminina</option>
+              <option value="mental">Saúde Mental</option>
+              <option value="emocional">Inteligencia Emocional</option>
+              <option value="auto">Autocuidado</option>
+              <option value="filhos">Saúde dos Filhos</option>
+              <option value="pets">Mães de Pet</option>
+              <option value="outros">Outros</option>
+            </select>
+
+          </Dividir>
+
           <div>
             <FcAddImage />
             <input type="file" />
           </div>
+        
           <div>
             <FcSms />
             <textarea
