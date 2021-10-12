@@ -75,11 +75,7 @@ export const Button = styled.button`
 
 //fomulario de criar comunidades
 export const Form = styled.form`
-  div {
-    margin-top: -5px;
-  }
-  input,
-  textarea {
+  textarea{
     width:95%;
     margin-top: -25px;
     margin-left: 25px;
@@ -105,6 +101,19 @@ export const Form = styled.form`
     }
   }
 `;
+
+export const Dividir = styled.div`
+  display:flex;
+  input {
+    width:50%;
+    margin: 1px 0 0px;
+    margin-top: 5px;
+    margin-left: 9px;
+    padding-left: 10px;
+  }
+`;
+
+
 
 // inicio do stilo da seção de comunidade
 export const Divi = styled.div`
@@ -165,7 +174,7 @@ export const SectionPrimeira = styled.section`
   border-bottom: 1px solid rgb(25, 121, 6);
   p{
     text-align:justify;
-    margin: 2px;
+    margin: 2px 20px 0 2px;
     padding: 2px;
   }
   @media (max-width: 789px) {
