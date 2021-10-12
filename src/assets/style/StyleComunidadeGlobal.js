@@ -95,6 +95,7 @@ export const Form = styled.form`
   }
   input,
   textarea {
+    width:85%;
     margin-top: -25px;
     margin-left: 25px;
     padding-left: 10px;
@@ -121,8 +122,8 @@ export const Divi = styled.div`
   padding: 10px;
   margin: 10px;
   img {
-    width: 38%;
-    height:11.5rem;
+    width:9rem;
+    height:10rem;
   }
   span{
     color: rgb(194, 5, 131);
@@ -135,8 +136,8 @@ export const Divi = styled.div`
       text-align:center;
     }
     img{
-      width: 39%;
-      height:12rem;
+      width:8rem;
+      height:10rem;
     }
   }
 `;
@@ -146,8 +147,8 @@ export const Div = styled.div`
   padding: 10px;
   margin: 10px;
   img {
-    width: 31%;
-    height:12rem;
+    width:10rem;
+    height:10rem;
   }
   span{
     color: rgb(194, 5, 131);
@@ -159,8 +160,8 @@ export const Div = styled.div`
       font-size:14px;
     }
     img{
-      width: 39%;
-      height:12rem;
+      width:8rem;
+      height:10rem;
     }
   }
 `;
