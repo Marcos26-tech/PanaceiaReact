@@ -95,11 +95,13 @@ export const Form = styled.form`
   }
   input,
   textarea {
-    width:90%;
+    width:95%;
     margin-top: -25px;
     margin-left: 25px;
     padding-left: 10px;
     position: relative;
+    @media (max-width: 789px) {
+      input, textarea{width:85%;}
   }
   button {
     background-color: rgb(25, 121, 6);
