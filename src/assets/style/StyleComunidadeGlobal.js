@@ -85,8 +85,6 @@ export const Form = styled.form`
     margin-left: 25px;
     padding-left: 10px;
     position: relative;
-    @media (max-width: 789px) {
-      input, textarea{width:85%;}
   }
   button {
     background-color: rgb(25, 121, 6);
@@ -101,15 +99,18 @@ export const Form = styled.form`
       cursor: pointer;
     }
   }
-}
+  @media (max-width: 789px) {
+    input, textarea{
+      width:82%;
+    }
+  }
 `;
 
 // inicio do stilo da seção de comunidade
 export const Divi = styled.div`
   display: flex;
-  padding: 10px;
-  margin: 10px;
-  
+  margin: 0 0 10px;
+  padding: 0 0 10px;
   img {
     width:9rem;
     height:10rem;
@@ -125,16 +126,18 @@ export const Divi = styled.div`
       text-align:center;
     }
     img{
+  
+      position:relative;
       width:8rem;
-      height:10rem;
+      height:12rem;
     }
   }
 `;
 
 export const Div = styled.div`
   display: flex;
-  padding: 10px;
-  margin: 10px;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
   img {
     width:10rem;
     height:10rem;
@@ -149,21 +152,21 @@ export const Div = styled.div`
       font-size:14px;
     }
     img{
+      position:relative;
       width:8rem;
-      height:10rem;
+      height:13rem;
     }
   }
 `;
 
 export const SectionPrimeira = styled.section`
-  text-decoration:nome;
   display: flex;
   align-items:center;
   border-bottom: 1px solid rgb(25, 121, 6);
   p{
     text-align:justify;
-    margin: 5px;
-    padding: 5px;
+    margin: 2px;
+    padding: 2px;
   }
   @media (max-width: 789px) {
      display:block;
