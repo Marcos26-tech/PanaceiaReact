@@ -95,7 +95,7 @@ export const Form = styled.form`
   }
   input,
   textarea {
-    width:85%;
+    width:90%;
     margin-top: -25px;
     margin-left: 25px;
     padding-left: 10px;
