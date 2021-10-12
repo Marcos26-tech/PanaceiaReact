@@ -101,6 +101,7 @@ export const Form = styled.form`
       cursor: pointer;
     }
   }
+}
 `;
 
 // inicio do stilo da seção de comunidade
