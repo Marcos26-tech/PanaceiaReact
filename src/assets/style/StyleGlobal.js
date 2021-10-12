@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 //inicio style da pagina home//
 export const Container = styled.section`
-  background: #f2efbd;
+  background: #e7e7e5;
   opacity:98%;
   border-radius: 4%;
   padding: 2rem 5rem 2rem;
