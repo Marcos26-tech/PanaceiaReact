@@ -174,8 +174,8 @@ export const SectionPrimeira = styled.section`
   border-bottom: 1px solid rgb(25, 121, 6);
   p{
     text-align:justify;
-    margin: 2px 20px 0 2px;
-    padding: 2px;
+    margin: 2px 27px 0 3px;
+    padding: 3px;
   }
   @media (max-width: 789px) {
      display:block;

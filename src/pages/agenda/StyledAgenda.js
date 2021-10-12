@@ -2,16 +2,13 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   background: rgb(255, 255, 255);
-  opacity:98%;
   border-radius: 4%;
-  padding: 2rem 5rem 2rem;
-  margin: 5rem 8% 2rem;
-  height: 54rem;
+  padding: 1rem 3rem 3rem;
+  margin: 5rem 8% 3rem;
+  height: 100%;
   text-align: center;
   justify-content: center;
   div{
-    margin: 0;
-    padding: 0;
     min-width:320px;
     height:630px;   
   }
