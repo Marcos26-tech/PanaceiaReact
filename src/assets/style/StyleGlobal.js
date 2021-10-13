@@ -6,12 +6,12 @@ export const Container = styled.section`
   opacity:98%;
   border-radius:5px;
   padding: 1rem 3rem 3rem;
-  margin: 5rem 8% 3rem;
+  margin: 3rem 8% 3rem;
   height:100%;
   text-align: center;
   justify-content: center;
   @media (max-width: 789px) {
-    margin: 14.5rem 3% auto;
+    margin: 3rem 3% auto;
     padding:10px;
   }
 `;

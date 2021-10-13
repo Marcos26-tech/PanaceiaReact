@@ -19,7 +19,7 @@ export const FormWrapper = styled.div`
   font-family: Quicksand, arial, sans-serif;
   border-radius: 5px;
   @media (max-width: 783px) {
-    margin: 14.5rem 3% auto;
+    margin: 3rem 3% auto;
     padding:5px;
     height:42rem;
     width: 92%;

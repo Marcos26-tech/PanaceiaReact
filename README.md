@@ -14,3 +14,5 @@ instalar essas lips
 
 # npm install --save react-calendly
 
+# npm install --save typewriter-effect
+
