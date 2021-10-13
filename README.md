@@ -16,3 +16,4 @@ instalar essas lips
 
 # npm install --save typewriter-effect
 
+# npm install --save react-spinners
