@@ -124,7 +124,7 @@ export const Divi = styled.div`
     width:9rem;
     height:10rem;
   }
-  span{
+  a {
     color: rgb(194, 5, 131);
     font-weight:bold;
     font-size:18px;
@@ -151,7 +151,7 @@ export const Div = styled.div`
     width:10rem;
     height:10rem;
   }
-  span{
+  a {
     color: rgb(194, 5, 131);
     font-weight:bold;
     font-size:16px;

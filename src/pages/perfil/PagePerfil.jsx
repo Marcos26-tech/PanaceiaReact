@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton,} from '../../assets/style/StylePagePerfil';
+import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, Button, Input} from '../../assets/style/StylePagePerfil';
 
 const PagePerfil = () => {
 
@@ -61,19 +61,18 @@ const PagePerfil = () => {
                 
                 <FormHeader>
                     <h2>Perfil</h2>
+                    <div>
+                        <Button type="submit">sair</Button>
+                    </div>
                 </FormHeader>
 
                 {status.type === 'success' ? <p style={{ color: "#033d11" }}>{status.mensagem}</p> : ""}
                 {status.type === 'error' ? <p style={{ color: "#ff0000" }}>{status.mensagem}</p> : ""}
 
-                <div>
-                    <FormButton type="submit">sair</FormButton>
-                </div>
-
                 <Form onSubmit={addUser} id='form'>
                     <FormFieldset>
                         <label>Alterar a Foto: </label>
-                        <FormInput type="file" name="name" placeholder="foto" onChange={valueInput} value={user.image} />
+                        <Input type="file" name="name" placeholder="foto" onChange={valueInput} value={user.image} />
                     </FormFieldset>
 
                     <FormFieldset>

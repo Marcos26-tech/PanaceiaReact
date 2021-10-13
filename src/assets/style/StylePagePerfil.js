@@ -1,10 +1,5 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: block;
-  margin: 5rem 25rem 2rem;
-`;
-
 export const Form = styled.form`
   width: 100%;
   height: 21rem;
@@ -19,7 +14,7 @@ export const FormWrapper = styled.div`
   overflow: hidden;
   padding: 0 0 30px;
   margin: 5rem auto 1.5rem ;
-  width: 500px;
+  width: 900px;
   height: 670px;
   font-family: Quicksand, arial, sans-serif;
   border-radius: 5px;
@@ -31,9 +26,8 @@ export const FormWrapper = styled.div`
   }
 `;
 export const FormHeader = styled.header`
-  margin: 50px 0 10px;
-  padding-top: 24px;
-  padding-bottom: 19px;
+  margin: 9px 0 5px;
+  padding:9px;
   h2 {
     color: rgba(8, 184, 66, 0.993);
     font-size: 22px;
@@ -89,9 +83,18 @@ export const FormInput = styled.input`
   }
 `;
 
+export const Input = styled.input`
+  padding: 12px 0;
+  width: 120px;
+  font-family: inherit;
+  font-size: 14px;
+`;
+
+//style botão editar pagina perfil
 export const FormButton = styled.button`
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 50%;
+  align-items: center;
   padding: 12px 0;
   font-family: inherit;
   font-size: 14px;
@@ -109,20 +112,32 @@ export const FormButton = styled.button`
   }
 `;
 
-export const FormLink = styled.a`
-  text-decoration: none;
-  margin: 10px 55px 0;
+//style botão sair da pagina perfil
+export const Button = styled.button`
+  margin: 0 0 0 90%;
   display: inline-block;
+  width: 10%;
+  padding:5px 0;
+  text-align: center;
+  font-family: inherit;
   font-size: 15px;
-  color: rgb(223, 211, 211);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 234, 0);
+  border: 0;
+  border-radius: 35px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: color 0.25s ease-in;
-
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
   &:hover {
-    color: rgb(255, 234, 0);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
+    transform: translate(0, -5px);
   }
   @media (max-width: 783px) {
-    font-size: 13px;
-    text-align: center
-}
+    font-size: 12px;
+    text-align: center;
+    margin: 0 0 0 85%;
+    width: 19%;
+  }
 `;
+

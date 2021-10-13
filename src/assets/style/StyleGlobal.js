@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   background: rgb(247, 246, 246);
   opacity:98%;
-  border-radius: 4%;
+  border-radius:5px;
   padding: 1rem 3rem 3rem;
   margin: 5rem 8% 3rem;
   height:100%;
