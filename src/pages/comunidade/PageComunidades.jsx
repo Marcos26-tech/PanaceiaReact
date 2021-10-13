@@ -97,8 +97,7 @@ class PageComunidades extends Component {
           <Comunidades
             key={indice}
             titulo={comentario.titulo}
-            onRemove={this.removerComunidade.bind(this, comentario)}
-          >
+            onRemove={this.removerComunidade.bind(this, comentario)}>
             {comentario.descricao}
           </Comunidades>
         ))}

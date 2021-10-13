@@ -7,7 +7,7 @@ const Menu = () => {
 
     //falta fazer a validação com localstorage se o usuario estiver logado = true se não estiver sera = false.
 
-    const  istrue = true;
+    const  istrue = false;
 
 
     return (
