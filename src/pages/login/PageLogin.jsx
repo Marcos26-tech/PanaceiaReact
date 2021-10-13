@@ -90,7 +90,7 @@ const FormLogin =() => {
                 </FormFieldset>
 
                 <FormFieldset>
-                    <FormLink href="./ForgetPassword">Esqueceu sua Senha!</FormLink>
+                    <FormLink href="./ForgetPassword">Esqueceu sua senha!</FormLink>
                 </FormFieldset>
 
             </FormBody>

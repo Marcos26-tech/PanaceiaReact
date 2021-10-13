@@ -93,8 +93,8 @@ export const StyledImage = styled.img`
 `;
 
 export const FormButton = styled.button`
-  display: block;
-  width: 100%;
+  display:inline-block;
+  width: 25%;
   padding: 12px 0;
   font-family: inherit;
   font-size: 14px;

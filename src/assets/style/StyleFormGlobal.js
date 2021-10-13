@@ -18,7 +18,7 @@ export const FormWrapper = styled.div`
   opacity: 98%;
   overflow: hidden;
   padding: 0 0 30px;
-  margin: 5rem auto 1.5rem ;
+  margin: 3rem auto 1.5rem ;
   width: 500px;
   height: 670px;
   font-family: Quicksand, arial, sans-serif;
