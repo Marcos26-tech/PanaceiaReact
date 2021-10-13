@@ -47,7 +47,7 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 789px) {
-    margin: 14.5rem 3% auto;
+    margin: 3rem 3% auto;
     display: block;
     padding: 15px;
     height: 100%;

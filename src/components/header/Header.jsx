@@ -13,11 +13,7 @@ const StyledHeader = styled.header`
     position: absolute;
     height: 80px;
     width: 80px;
-    padding: 10px 230px 0 0;
-    @media (max-width: 780px) {
-      align-items: center;
-      padding-left: 19%;
-    }
+    padding: 10px 82px 0 0;
   }
 `;
 
@@ -25,14 +21,15 @@ const Stylednovo = styled.div`
   display: flex;
   justify-content: center;
   p {
-    margin: 0;
+    position: relative;
+    margin: 0 0 0 175px;
     padding-top: 2rem;
     font-size: 30px;
     font-weight: bold;
     @media (max-width: 780px) {
       width: 100%;
       font-size: 25px;
-      padding-left: 10rem;
+      padding-left:1.5rem;
     }
   }
 `;
