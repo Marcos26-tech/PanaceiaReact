@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin: 5rem 0 0;
   padding: 0 50px;
-  background-color: #fff;
+  background: rgb(247, 246, 246);
   h1 {
     text-align: center;
     margin: 12px;

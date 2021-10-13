@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  background: rgb(255, 255, 255);
+  background: rgb(247, 246, 246);
+  opacity:98%;
   border-radius: 4%;
   padding: 1rem 3rem 3rem;
   margin: 5rem 8% 3rem;
-  height: 100%;
+  height:100%;
   text-align: center;
   justify-content: center;
   div{
-    min-width:320px;
-    height:630px;   
+    min-width:20px; 
   }
   h2{
   margin: 2px;
@@ -28,9 +28,10 @@ export const Container = styled.section`
   @media (max-width: 789px) {
     margin: 14.5rem 3% auto;
     padding:10px;
-    height:50rem;
+    height:100%;
   }
 `;
+
 
 
 

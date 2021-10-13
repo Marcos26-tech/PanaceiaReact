@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 //inicio style da pagina home//
 export const Container = styled.section`
-  background: #e7e7e5;
+  background: rgb(247, 246, 246);
   opacity:98%;
   border-radius: 4%;
-  padding: 2rem 5rem 2rem;
-  margin: 5rem 8% 2rem;
+  padding: 1rem 3rem 3rem;
+  margin: 5rem 8% 3rem;
   height:100%;
   text-align: center;
   justify-content: center;

@@ -28,8 +28,8 @@ function Routes() {
         </Switch>
        
         <Route path="/Login" component={Login} />
-        <Route path="/" exact component={Home} />
         <Route path="/Home" exact component={Home} />
+        <Route path="/" exact component={Home} />
       
     </>
   );
