@@ -13,6 +13,13 @@ export const Container = styled.section`
   @media (max-width: 789px) {
     margin: 3rem 3% auto;
     padding:10px;
+    height:41rem;
+    h3 {
+      font-size:12px;
+    }
+    h1 {
+      font-size:15px;
+    }
   }
 `;
 
@@ -37,9 +44,6 @@ export const Title = styled.h1`
   color: #343d59;
   text-align: center;
   justify-content: center;
-  @media (max-width: 789px) {
-    font-size:15px;
-  }
 `;
 
 export const StyledContainer = styled.section`
@@ -56,10 +60,8 @@ export const StyledCarrocelContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 789px) {
-    display: flex;
-    width: 100%;
-    margin: 2px;
     padding:2px;
+    margin: 2px;
   }
 `;
 
