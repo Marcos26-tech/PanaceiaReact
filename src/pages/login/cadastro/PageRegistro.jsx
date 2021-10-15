@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
 
+
+
 const Registro = () => {
 
     const [user, setUser] = useState({
         name: '',
         email: '',
-        password: ''
+        password: '',
+        logado:false
     });
+
 
     const [status, setStatus] = useState({
         type: '',
@@ -23,25 +27,44 @@ const Registro = () => {
 
         if(!validate()) return;
 
+
         const saveDataForm = true;
 
-            if (saveDataForm) {
-                setStatus({
-                    type: 'success',
-                    mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
-                });
-                setUser({
-                    name: '',
-                    email: '',
-                    password: ''
-                });
-                } else {
-                setStatus({
-                    type: 'error',
-                    mensagem: "Erro: Usuário não cadastrado!"
-                });
-            }
+        if (saveDataForm) {
+            setStatus({
+                type: 'success',
+                mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
+
+            });
+            setUser({
+                name: '',
+                email: '',
+                password: ''
+            });
+            } else {
+            setStatus({
+                type: 'error',
+                mensagem: "Erro: Usuário não cadastrado!"
+            });
         }
+
+      const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
+
+
+
+        listaUser.push(  
+        {
+            name:user.name,
+            email:user.email,
+            password:user.password,
+            logado:true,
+        } 
+        )
+
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+
+    }
+    
 
     function validate(){
         if(!user.name) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!'});

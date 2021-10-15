@@ -53,7 +53,10 @@ const PagePerfil = () => {
         return true;
     }
 
-
+    function sair(){
+        window.localStorage.clear()
+        window.location.replace('/Login')
+    }
     return (
         
         <FormWrapper>
@@ -62,7 +65,7 @@ const PagePerfil = () => {
                 <FormHeader>
                     <h2>Perfil</h2>
                     <div>
-                        <Button type="submit">sair</Button>
+                        <Button onClick={sair}>sair</Button>
                     </div>
                 </FormHeader>
 
