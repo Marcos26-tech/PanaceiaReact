@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
 
 
-
 const Registro = () => {
-
     const [user, setUser] = useState({
         name: '',
         email: '',
         password: '',
         logado:false
     });
-
 
     const [status, setStatus] = useState({
         type: '',
@@ -27,14 +24,12 @@ const Registro = () => {
 
         if(!validate()) return;
 
-
         const saveDataForm = true;
 
         if (saveDataForm) {
             setStatus({
                 type: 'success',
                 mensagem: "Usuário cadastrado com sucesso Bem vindo a comunidade Panace I.A"
-
             });
             setUser({
                 name: '',
@@ -48,10 +43,7 @@ const Registro = () => {
             });
         }
 
-      const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
-
-
-
+        const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]');
         listaUser.push(  
         {
             name:user.name,
@@ -60,12 +52,9 @@ const Registro = () => {
             logado:true,
         } 
         )
-
         localStorage.setItem('listaUser', JSON.stringify(listaUser))
-
     }
     
-
     function validate(){
         if(!user.name) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!'});
         if(!user.email) return setStatus({type: 'error', mensagem: 'Erro: Necessário preencher o campo e-mail!'});
