@@ -5,7 +5,6 @@ import { Nav } from '../../assets/style/StyleMenu';
 
 const Menu = () => {
 
-
     let listaUser = window.localStorage.getItem('listaUser');
 
     return (

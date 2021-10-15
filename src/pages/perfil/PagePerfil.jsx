@@ -54,7 +54,7 @@ const PagePerfil = () => {
     }
 
     function sair(){
-        window.localStorage.clear()
+        window.localStorage.clear('ListaUser')
         window.location.replace('/Login')
     }
     return (
