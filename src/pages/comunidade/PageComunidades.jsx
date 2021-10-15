@@ -105,7 +105,7 @@ class PageComunidades extends Component {
         <Form method="post" onSubmit={this.adicionarComunidade}>
           <h3>Construa uma comunidade aqui</h3>
           <Dividir>
-            <FcComments />
+            <label><FcComments /></label>
             <input
               type="text"
               name="titulo"
@@ -128,12 +128,12 @@ class PageComunidades extends Component {
           </Dividir>
 
           <div>
-            <FcAddImage />
+            <label><FcAddImage /></label>
             <input type="file" />
           </div>
         
           <div>
-            <FcSms />
+            <label><FcSms /></label>
             <textarea
               name="descricao"
               value={this.state.novaComunidade.descricao}

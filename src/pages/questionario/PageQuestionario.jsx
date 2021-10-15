@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Section, Span, StyledQuestionario} from "../../assets/style/StyleGlobal";
+import { Container, Section, Span, StyledQuestionario, FormButton} from "../../assets/style/StyleGlobal";
 
 
 const Questionario = () => {
@@ -64,14 +64,14 @@ const Questionario = () => {
         <Section>
           <StyledQuestionario>
             <h2>1 - Eu me sinto tensa ou contraída:</h2>
-            <input type="radio" class="question" name="1" value="3" />a maior
-            parte do tempo
-            <input type="radio" class="question" name="1" value="2" />
-            boa parte do tempo
-            <input type="radio" class="question" name="1" value="1" />
-            <span>de vez em quando</span>
-            <input type="radio" class="question" name="1" value="0" />
-            nunca
+            <label><input type="radio" class="question" name="1" value="3" />
+            A maior parte do tempo</label>
+            <label><input type="radio" class="question" name="1" value="2" />
+            Boa parte do tempo</label>
+            <label><input type="radio" class="question" name="1" value="1" />
+            <span>de vez em quando</span></label>
+            <label><input type="radio" class="question" name="1" value="0" />
+            nunca</label>
           </StyledQuestionario>
 
           <StyledQuestionario>
@@ -245,10 +245,10 @@ const Questionario = () => {
             <span><span>quase nunca</span></span>
           </StyledQuestionario>
 
-          <button onClick={() => enviarQuestionario()}>
+          <FormButton onClick={() => enviarQuestionario()}>
             {" "}
             Enviar Questionário
-          </button>
+          </FormButton>
         </Section>
       </Container>
     </>
