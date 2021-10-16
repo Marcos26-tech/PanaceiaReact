@@ -72,7 +72,7 @@ const FormLogin =() => {
                 
                     <FormFieldset>
                         <label>E-mail:</label>
-                        <FormInput type="email" name="email" placeholder="Email cadastrado" onChange={valueInput}  value={user.email} />
+                        <FormInput type="email" name="email" placeholder="Email cadastrado" onChange={valueInput}  value={user.email} required/>
                     </FormFieldset>
 
                     <FormFieldset>
