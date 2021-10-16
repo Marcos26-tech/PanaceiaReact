@@ -41,7 +41,7 @@ export const Conteudo = styled.div`
 `;
 
 export const Data = styled.p`
-    text-align: right;
+    float: right;
     color: #718096;
     font-size: 10px;
 `;
@@ -51,11 +51,13 @@ export const Span= styled.span`
     .tw-heart {
     background: url(http://i.imgur.com/zw8ahUb.png) no-repeat 0 0;
     left: 0px;
-    top: 0px;}
+    top: 0px;
+    margin: 0 auto}
     position: relative;
-    width: 5rem;
-    height: 5rem;
+    width: 4em;
+    height: 4.5em;
     display: block;
+    justify-content: right;
 
 
   [type="checkbox"]:checked + .tw-heart {
@@ -73,7 +75,7 @@ export const Span= styled.span`
     width: 85%;
     height: 85%;
     z-index: 1;
-    margin: 0;
+
   }
 `;
 export const IconeLike = styled.span`

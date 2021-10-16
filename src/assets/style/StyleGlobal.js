@@ -124,18 +124,25 @@ export const Span= styled.span`
 
 export const StyledQuestionario = styled.div`
   border: 1px solid #56565656;
-  text-align:justify;
+  border-radius: 5px;
   margin: 5px 0 12px;
-  padding: 0 5px 5px;
+  padding: 0 15px 20px;
   font-size:14.5px;
+  background-color:  rgb(247, 246, 246) ;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  
   h2 {
     font-size:16px;
+    text-align: center;
+    color: rgb(12, 139, 1);
   }
-  input[type=radio]:checked{
-    content: '';
+  input[type=radio]:checked {
+  
     cursor: pointer; 
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
+    border: 5px solid;
+    
   }
   input{
     margin-left: 12px;

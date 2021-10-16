@@ -32,13 +32,13 @@ export const Container = styled.div`
     padding: 1rem;
   }
   input, textarea {
-    width: 95%;
+    width: 92%;
     color: #4a5568;
     background-color: #fff;
     border: 1px solid #e2e8f0;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
     display: block;
     border-radius: 0.5rem;
     @media (max-width: 789px) {
@@ -75,12 +75,17 @@ export const Button = styled.button`
 
 //fomulario de criar comunidades
 export const Form = styled.form`
+  label{
+    margin: auto;
+  }
+  div{
+    display: flex;
+  }
+  input{
+    width: 92%;
+  }
   textarea{
-    width:95%;
-    margin-top: -25px;
-    margin-left: 25px;
-    padding-left: 10px;
-    position: relative;
+    width:92%;
   }
   button {
     background-color: rgb(25, 121, 6);
@@ -104,15 +109,15 @@ export const Form = styled.form`
 
 export const Dividir = styled.div`
   display:flex;
+
+  label {
+    margin: auto;
+  }
   input {
     width:50%;
-    margin: 1px 0 0px;
-    margin-top: 5px;
-    margin-left: 9px;
-    padding-left: 10px;
+    margin: auto;
   }
 `;
-
 
 
 // inicio do stilo da seção de comunidade
