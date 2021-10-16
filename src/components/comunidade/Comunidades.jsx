@@ -1,5 +1,6 @@
 import React from 'react';
-import {Container, Avatar, Conteudo} from './StyledComunidade';
+import { Container, Avatar, Conteudo } from './StyledComunidade';
+import { Link } from 'react-router-dom'
 
 import imagemComunidade from '../../assets/img/imgcomunidade/mulheres.jpg';
 
@@ -10,7 +11,7 @@ const Comunidades = props => {
         <Container>
             <Avatar src={imagemComunidade} alt={props.titulo} />
             <Conteudo>
-                <a href="/MostraComentario">{props.titulo}</a>
+                <Link title="Depoimentos" to={`/MostraComentario/${props.id}`} >{props.titulo}</Link>
                 <p>{props.children}</p>
                 <button onClick={props.onRemove}>&times;</button>
             </Conteudo>

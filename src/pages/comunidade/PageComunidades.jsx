@@ -102,6 +102,7 @@ function PageComunidades() {
         <Comunidades
           key={comunidade.id}
           titulo={comunidade.nome}
+          id={comunidade.id}
           onRemove={handleDelete.bind(this, comunidade.id)}>
           {comunidade.descricao}
         </Comunidades>
