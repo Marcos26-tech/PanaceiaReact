@@ -1,6 +1,6 @@
 import { React, useState } from 'react'
 import { Container, FormButton } from '../../assets/style/StyleGlobal'
-import { Span } from '../questionario/PageQuestionario'
+import { Span } from '../../assets/style/StyleGlobal'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom';
 import dog from '../../assets/img/imginteresses/dog.jpg'

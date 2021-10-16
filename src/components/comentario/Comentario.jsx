@@ -9,13 +9,13 @@ const Comentario = props => {
  
     return (
         <Container>
-            <Avatar src={imagemUsuario} alt={props.nome} />
+                <Avatar src={imagemUsuario} alt={props.nome} />
             <Conteudo>
                 <h2>{props.nome}</h2>
                 <p>{props.children}</p>
                 <Span> 
-                    <input type="checkbox" name="name" value=""></input>
-                    <IconeLike className="tw-heart"></IconeLike>
+                        <input type="checkbox" name="name" value=""></input>
+                        <IconeLike className="tw-heart"></IconeLike>
                 </Span>
                 <Data>{formatRelative(props.data, new Date(),{ locale: ptBR })}</Data>
                 <button onClick={props.onRemove}>&times;</button>

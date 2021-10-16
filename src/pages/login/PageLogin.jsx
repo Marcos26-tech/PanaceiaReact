@@ -7,23 +7,21 @@ const FormLogin =() => {
     const [user, setUser] = useState({
         email: '',
         password: ''
-      });
+    });
     
-      const [status, setStatus] = useState({
+    const [status, setStatus] = useState({
         type: '',
         mensagem: ''
-      });
+    });
     
-      //Receber os dados do formulário
-      const valueInput = e => setUser({ ...user, [e.target.name]: e.target.value });
+    //Receber os dados do formulário
+    const valueInput = e => setUser({ ...user, [e.target.name]: e.target.value });
     
-      //Enviar os dados para o back-end
-      const addUser = async e => {
+    //Enviar os dados para o back-end
+    const addUser = async e => {
         e.preventDefault();
         if(!validate()) return;
     
-
-
 
         const saveDataForm = true;
             if (saveDataForm) {
@@ -92,7 +90,7 @@ const FormLogin =() => {
                 </FormFieldset>
 
                 <FormFieldset>
-                    <FormLink href="./ForgetPassword">Esqueceu sua Senha!</FormLink>
+                    <FormLink href="./ForgetPassword">Esqueceu sua senha!</FormLink>
                 </FormFieldset>
 
             </FormBody>

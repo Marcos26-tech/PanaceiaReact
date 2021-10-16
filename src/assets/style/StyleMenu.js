@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     width: 85%;
     mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-    margin:0 auto;
-    @media(max-width:780px){
+    margin:3rem auto 0;
+    @media(max-width:789px){
         display:block;
         width:100%;
         text-align:center;
@@ -38,7 +38,8 @@ export const Nav = styled.nav`
         color: rgba(10, 138, 21, 0.938);
         transition: all 0.2s ease-in;
         }
-        @media(max-width:780px){
+        @media(max-width:789px){
+        text-align:center;
         display:block;
         width:100%;
         }

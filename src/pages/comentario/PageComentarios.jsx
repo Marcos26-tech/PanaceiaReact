@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Comentario from '../../components/comentario/Comentario';
 
-import {Container, Button} from '../../components/comentario/StyledPageComentario';
+import {Container, Button} from '../../assets/style/StyleComunidadeGlobal';
 
 
 class PageComentarios extends Component {
@@ -47,7 +47,7 @@ class PageComentarios extends Component {
   render() {
     return (
       <Container >
-        <h1>comentarios</h1>
+        <h1>Depoimentos da comunidade</h1>
         {this.state.comentarios.map((comentario, indice) => (
           <Comentario
             key={indice}
@@ -60,6 +60,7 @@ class PageComentarios extends Component {
 
         <form method="post" action="aqui vai a função de enviar os dados do formulario" onSubmit={this.adicionarComentario}>
           <div>
+            <h3>Compartilhe um depoimento com a comunidade</h3>
             <input
               type="text"
               name="nome"
@@ -75,7 +76,7 @@ class PageComentarios extends Component {
               onChange={this.digitacao}
               required
               rows="4" 
-              placeholder="Escreva um comentário..."/>
+              placeholder="Escreva seu depoimento..."/>
           </div>
           <Button type="submit">Publicar Comentário</Button>
         </form>

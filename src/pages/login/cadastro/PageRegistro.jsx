@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
+import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
+
 
 const Registro = () => {
-
     const [user, setUser] = useState({
         name: '',
         email: '',
-        password: ''
+        password: '',
+        logado: false
     });
 
     const [status, setStatus] = useState({
@@ -41,6 +42,18 @@ const Registro = () => {
                 mensagem: "Erro: Usuário não cadastrado!"
             });
         }
+
+
+        const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+        listaUser.push(
+            {
+                name: user.name,
+                email: user.email,
+                password: user.password,
+                logado: true,
+            }
+        )
+        localStorage.setItem('listaUser', JSON.stringify(listaUser))
     }
 
     function validate() {
@@ -48,15 +61,15 @@ const Registro = () => {
         if (!user.email) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo e-mail!' });
         if (!user.password) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo senha!' });
         if (user.password.length < 6) return setStatus({ type: 'error', mensagem: 'Erro: A senha precisa ter pelo menos seis caracteres!' });
-    
-    return true;
-    
+
+        return true;
+
     }
 
     function someCadastrar() {
         if (user.name && user.email && user.password && user.password.length > 6) {
             return (document.getElementById('form').style.visibility = "hidden",
-            window.location.replace('./termosdeuso'));
+                window.location.replace('./termosdeuso'));
         }
     }
 
@@ -101,5 +114,5 @@ const Registro = () => {
 
         </FormWrapper>
     )
-};
+}
 export default Registro;

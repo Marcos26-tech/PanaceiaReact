@@ -30,7 +30,7 @@ export const Section = styled.section`
   }
 `;
 
-function Termos() {
+const Termos = () => {
   function aceitouTermos() {
     if (document.getElementById("termos-ok").checked) {
       window.location.replace("./Questionario");

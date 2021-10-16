@@ -1,12 +1,26 @@
 import styled from "styled-components";
 
 //inicio style da pagina home//
-export const Container = styled.div`
-  background: rgb(255, 255, 255);
-  border-radius: 4%;
-  margin: 5rem 8% 2rem;
+export const Container = styled.section`
+  background: rgb(247, 246, 246);
+  opacity:98%;
+  border-radius:5px;
+  padding: 1rem 3rem 3rem;
+  margin: 3rem 8% 3rem;
+  height:100%;
   text-align: center;
   justify-content: center;
+  @media (max-width: 789px) {
+    margin: 3rem 3% auto;
+    padding:10px;
+    height:41rem;
+    h3 {
+      font-size:12px;
+    }
+    h1 {
+      font-size:15px;
+    }
+  }
 `;
 
 export const Section = styled.section`
@@ -16,23 +30,20 @@ export const Section = styled.section`
   justify-content: center;
   h3 {
     font-weight: bold;
-    color: rgb(12, 139, 1);
+    color: #343d59;
     text-align: center;
     margin: 2px;
   }
 `;
+
 export const Title = styled.h1`
-  margin: 1rem;
+  margin: 10px;
   padding: 10px;
+  font-size:35px;
   font-weight: bold;
-  color: rgb(12, 139, 1);
-  display: flex;
+  color: #343d59;
   text-align: center;
   justify-content: center;
-  @media (max-width: 780px) {
-    width: 100%;
-    padding-top: 13rem;
-  }
 `;
 
 export const StyledContainer = styled.section`
@@ -42,19 +53,15 @@ export const StyledContainer = styled.section`
 //inicio style da pagina carrocel//
 export const StyledCarrocelContainer = styled.div`
   height: 40rem;
-  width: 50rem;
-  padding: 0;
-  padding-left: 4rem;
-  padding-bottom: 6.5rem;
-  margin: 20px auto;
+  width: 100%;
+  padding: 0 20px 0;
+  margin: 20px 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 780px) {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    padding: 5px;
+  @media (max-width: 789px) {
+    padding:2px;
+    margin: 2px;
   }
 `;
 
@@ -73,7 +80,7 @@ export const StyledArrowContainer = styled.div`
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-    background-color: #d9d9d9;
+    background-color: #26a682;
   }
 `;
 
@@ -81,11 +88,15 @@ export const StyledImage = styled.img`
   width: 100%;
   height: 100%;
   border-radius: 5%;
+  @media (max-width: 789px) {
+    width: 100%;
+    height: 80%;
+  }
 `;
 
 export const FormButton = styled.button`
-  display: block;
-  width: 100%;
+  display:inline-block;
+  width: 25%;
   padding: 12px 0;
   font-family: inherit;
   font-size: 14px;
@@ -97,9 +108,46 @@ export const FormButton = styled.button`
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-
   &:hover {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
     transform: translate(0, -5px);
+  }
+`;
+
+//inicio style da pagina PageQuestionario
+export const Span= styled.span`
+    font-weight: bold;
+    color: rgb(12, 139, 1);
+    text-align: center;
+    margin: 2px;
+`;
+
+export const StyledQuestionario = styled.div`
+  border: 1px solid #56565656;
+  border-radius: 5px;
+  margin: 5px 0 12px;
+  padding: 0 15px 20px;
+  font-size:14.5px;
+  background-color:  rgb(247, 246, 246) ;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  
+  h2 {
+    font-size:16px;
+    text-align: center;
+    color: rgb(12, 139, 1);
+  }
+  input[type=radio]:checked {
+  
+    cursor: pointer; 
+    width: 16px;
+    height: 16px;
+    border: 5px solid;
+    
+  }
+  input{
+    margin-left: 12px;
+    position: relative;
+    width: 14px;
+    height: 14px;
   }
 `;

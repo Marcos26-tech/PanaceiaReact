@@ -9,16 +9,18 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.img`
+    margin: 0.5rem;
     max-width: 50px;
     max-height: 50px;
 `;
 
 export const Conteudo = styled.div`
-    margin-left: 1rem;
+    margin: 0.5rem 0 0 0;
     width: 100%;
     position: relative;
     box-shadow:none;
     a {
+        font-weight:bold;
         font-size: 1rem;
         margin: .1rem 0 .1rem;
         color: #2d3748
