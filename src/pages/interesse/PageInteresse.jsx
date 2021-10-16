@@ -21,8 +21,7 @@ export const Modal = styled.div`
     background-color: rgba(0, 0 ,0, 0.5);
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;  
 `;
 
 export const ModalContent = styled.div`
