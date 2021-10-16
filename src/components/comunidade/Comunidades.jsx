@@ -11,7 +11,7 @@ const Comunidades = props => {
         <Container>
             <Avatar src={imagemComunidade} alt={props.titulo} />
             <Conteudo>
-                <Link title="Depoimentos" to={`/MostraComentario/${props.id}`} >{props.titulo}</Link>
+                <Link title="Depoimentos" to={`/depo/${props.id}`} >{props.titulo}</Link>
                 <p>{props.children}</p>
                 <button onClick={props.onRemove}>&times;</button>
             </Conteudo>

@@ -1,88 +1,97 @@
-import React, { Component } from 'react';
+import { React, useEffect, useState } from 'react';
 import Comentario from '../../components/comentario/Comentario';
 
-import {Container, Button} from '../../assets/style/StyleComunidadeGlobal';
+import { Container, Button } from '../../assets/style/StyleComunidadeGlobal';
 
 
-class PageComentarios extends Component {
-  state = {
-    comentarios: [
-      {
-        nome: 'Rafael',
-        data: new Date(2020, 9, 19, 17, 30, 0),
-        mensagem: 'Olá, tudo bem?'
-      },
-      {
-        nome: 'Pedro',
-        data: new Date(2020, 9, 19, 17, 30, 0),
-        mensagem: 'Olá, tudo bem. E você?'
-      }
-    ],
-    novoComentario: {
-      nome: '',
-      mensagem: ''
+function PageComentarios (props) {
+
+    let id = "";
+
+    if (props.match.path.toLowerCase().includes("depo")) {
+        id = props.match.params.id
     }
-  }
 
-  adicionarComentario = evento => {
-    evento.preventDefault();
-    const novoComentario = { ...this.state.novoComentario, data: new Date() }
-    this.setState({
-      comentarios: [...this.state.comentarios, novoComentario],
-      novoComentario: { nome: '', mensagem: '' }
-    })
-  }
+    // MÉTODO GET
+    const [depoimentos, setDepoimentos] = useState([])
 
-  removerComentario = comentario => {
+    
+    useEffect(() => {
+        fetch("/rest/brief").then((resp) => {
+            return resp.json()
+        }).then((resp) => {
+            setDepoimentos(resp)
+            console.log(resp)
+        }).catch(error => {
+            console.log(error)
+        })
+    }, [])
+
+
+  //   const adicionarComentario = evento => {
+  //   evento.preventDefault();
+  //   const novoComentario = { ...this.state.novoComentario, data: new Date() }
+  //   this.setState({
+  //     comentarios: [...this.state.comentarios, novoComentario],
+  //     novoComentario: { nome: '', mensagem: '' }
+  //   })
+  // }
+
+  const removerComentario = comentario => {
     let lista = this.state.comentarios;
     lista = lista.filter(c => c !== comentario)
     this.setState({ comentarios: lista })
   }
 
-  digitacao = evento => {
+  const digitacao = evento => {
     const { name, value } = evento.target;
     this.setState({ novoComentario: { ...this.state.novoComentario, [name]: value } })
   }
 
-  render() {
-    return (
+  const testa = () => {
+    alert("Esse é o id: " + id)
+  }
+
+  return (
       <Container >
         <h1>Depoimentos da comunidade</h1>
-        {this.state.comentarios.map((comentario, indice) => (
+        {depoimentos.map((depoimento) => (
           <Comentario
-            key={indice}
-            nome={comentario.nome}
-            data={comentario.data}
-            onRemove={this.removerComentario.bind(this, comentario)}>
-            {comentario.mensagem}
+            key={depoimento.id}
+            idComunidade={id}
+            idDepoimento={depoimento.idComunidade}
+            nome={id == depoimento.idComunidade ? depoimento.titulo : null}
+            comentario={id == depoimento.idComunidade ? depoimento.comentario : null}
+            onRemove={removerComentario.bind(this, depoimento.id)}>
+            {id == depoimento.idComunidade ? depoimento.comentario : null}
           </Comentario>
         ))}
 
-        <form method="post" action="aqui vai a função de enviar os dados do formulario" onSubmit={this.adicionarComentario}>
+        <form onSubmit="">
           <div>
             <h3>Compartilhe um depoimento com a comunidade</h3>
             <input
               type="text"
               name="nome"
-              value={this.state.novoComentario.nome}
-              onChange={this.digitacao}
+              value={depoimentos.titulo}
+              onChange={digitacao}
               required
               placeholder="Digite seu nome" />
           </div>
           <div>
             <textarea
               name="mensagem"
-              value={this.state.novoComentario.mensagem}
-              onChange={this.digitacao}
+              value={depoimentos.mensagem}
+              onChange={digitacao}
               required
-              rows="4" 
-              placeholder="Escreva seu depoimento..."/>
+              rows="4"
+              placeholder="Escreva seu depoimento..." />
           </div>
           <Button type="submit">Publicar Comentário</Button>
+          <button onClick={testa}>TESTA !!!! </button>
         </form>
       </Container>
     );
   }
-}
 
 export default PageComentarios;

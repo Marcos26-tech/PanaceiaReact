@@ -23,7 +23,7 @@ function Routes() {
           <Route path="/Agendaeeventos" component={Agenda} />
           <Route path="/Comunidades" component={CriaComunidades} />
           <Route path="/Interesses" component={PageInteresse} />
-          <Route path="/MostraComentario/:id" component={MostraComentario} />
+          <Route path="/depo/:id" component={MostraComentario} />
           <Route path="/Questionario" component={Questionario} />
           <Route path="/Termosdeuso" component={Termosdeuso} />
           <Route path="/Perfil" component={Perfil} />
