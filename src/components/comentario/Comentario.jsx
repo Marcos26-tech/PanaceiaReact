@@ -20,7 +20,8 @@ const Comentario = props => {
                             <input type="checkbox" name="name" value=""></input>
                             <IconeLike className="tw-heart"></IconeLike>
                         </Span>
-                        {/* <Data>{formatRelative(props.data, new Date(),{ locale: ptBR })}</Data> */}
+                        <Data>{formatRelative(props.data, new Date(), { locale: ptBR })}</Data>
+                        
                         <button onClick={props.onRemove}>&times; </button>
                     </Conteudo>
                 </Container >
