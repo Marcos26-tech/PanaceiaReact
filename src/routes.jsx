@@ -24,8 +24,8 @@ function Routes() {
           <Route path="/Comunidades" component={CriaComunidades} />
           <Route path="/Interesses" component={PageInteresse} />
           <Route path="/depo/:id" component={MostraComentario} />
-          <Route path="/Questionario" component={Questionario} />
-          <Route path="/Termosdeuso" component={Termosdeuso} />
+          <Route path="/questionario/:id" component={Questionario} />
+          <Route path="/Termosdeuso/" component={Termosdeuso} />
           <Route path="/Perfil" component={Perfil} />
         </Switch>
        
