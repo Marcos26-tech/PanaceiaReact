@@ -45,15 +45,22 @@ const Registro = () => {
 
 
         const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+        const isLogado = JSON.parse(localStorage.getItem('isLogado') || '[]')
+
         listaUser.push(
             {
                 name: user.name,
                 email: user.email,
                 password: user.password,
-                logado: true,
-            }
-        )
+            })
+
+        isLogado.push(
+            {
+                logado: true
+            })
+
         localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        localStorage.setItem('isLogado', JSON.stringify(isLogado))
     }
 
     function validate() {
