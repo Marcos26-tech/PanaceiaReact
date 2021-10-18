@@ -11,6 +11,8 @@ import {
   Div,
   Divi,
   Dividir,
+  Div1,
+  Div2,
 } from "../../assets/style/StyleComunidadeGlobal";
 
 const site = "https://www.vestimentarte.com.br/2020/06/autocuidado-o-que-e-principais-tipos.html"
@@ -120,25 +122,14 @@ function PageComunidades() {
             required
             placeholder="Digite o título da comunidade"
           />
-          <label>Escolha a categoria da comunidade</label>
-          <select>
-            <option value="saude">Saúde Feminina</option>
-            <option value="mental">Saúde Mental</option>
-            <option value="emocional">Inteligencia Emocional</option>
-            <option value="auto">Autocuidado</option>
-            <option value="filhos">Saúde dos Filhos</option>
-            <option value="pets">Mães de Pet</option>
-            <option value="outros">Outros</option>
-          </select>
-
         </Dividir>
 
-        <div>
+        <Div1>
           <label><FcAddImage /></label>
           <input type="file" />
-        </div>
+        </Div1>
 
-        <div>
+        <Div2>
           <label><FcSms /></label>
           <textarea
             name="descricao"
@@ -147,7 +138,7 @@ function PageComunidades() {
             rows="4"
             placeholder="Escreva uma pequena descrição sobre a comunidade..."
           />
-        </div>
+        </Div2>
         <button type="submit">Criar Comunidade</button>
       </Form>
     </Container>

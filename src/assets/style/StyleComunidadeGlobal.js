@@ -32,7 +32,6 @@ export const Container = styled.div`
     padding: 1rem;
   }
   input, textarea {
-    width: 92%;
     color: #4a5568;
     background-color: #fff;
     border: 1px solid #e2e8f0;
@@ -82,10 +81,10 @@ export const Form = styled.form`
     display: flex;
   }
   input{
-    width: 92%;
+    width: 90%;
   }
   textarea{
-    width:92%;
+    width:90%;
   }
   button {
     background-color: rgb(25, 121, 6);
@@ -100,22 +99,68 @@ export const Form = styled.form`
       cursor: pointer;
     }
   }
-  @media (max-width: 789px) {
-    input, textarea{
-      width:82%;
-    }
-  }
 `;
 
 export const Dividir = styled.div`
   display:flex;
-
+  margin: 0;
   label {
-    margin: auto;
+    margin:auto;
   }
   input {
-    width:50%;
-    margin: auto;
+    width:80%;
+  }
+  @media (max-width: 789px) {
+    input{
+      width:77%;
+      height:1.5rem;
+    }
+    label{
+      margin:25px;
+      width:2%;
+    }
+  }
+`;
+
+export const Div2 = styled.div`
+  display:flex;
+  margin: 0;
+  label {
+    margin:auto;
+  }
+  input {
+    width:80%;
+  }
+  @media (max-width: 789px) {
+    textarea{
+      height:2.5rem;
+      margin:10px;
+    }
+    label{
+      margin:25px;
+      width:2%;
+    }
+  }
+`;
+
+export const Div1 = styled.div`
+  display:flex;
+  margin: 0;
+  label {
+    margin:auto;
+  }
+  input {
+    width:80%;
+  }
+  @media (max-width: 789px) {
+    input{
+      width:77%;
+      height:1.5rem;
+    }
+    label{
+      margin:25px;
+      width:2%;
+    }
   }
 `;
 
