@@ -82,7 +82,6 @@ function PageInteresse() {
                                     <label for="checkbox7">Espiritualidade<img src={espiritualidade} alt="espiritualidade" /></label>
                                     <input type="checkbox" id="checkbox8" name="familia" />
                                     <label for="checkbox8">Família<img src={familia} alt="familia" /></label>
-
                                 </CheckImg>
                             </ModalBody>
                             <ModalFooter>
