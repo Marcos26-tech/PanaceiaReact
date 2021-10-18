@@ -3,11 +3,14 @@ import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormB
 
 
 const Registro = () => {
+
+    let id = ""
+
     const [user, setUser] = useState({
-        name: '',
+        id: id,
+        nome: '',
         email: '',
-        password: '',
-        logado: false
+        senha: '',
     });
 
     const [status, setStatus] = useState({
@@ -15,8 +18,9 @@ const Registro = () => {
         mensagem: ''
     });
 
-    //Receber os dados do formulário
-    const valueInput = e => setUser({ ...user, [e.target.name]: e.target.value });
+    const valueInput = (e) => {
+        setUser({ ...user, [e.target.name]: e.target.value })
+    }
 
     //Enviar os dados para o back-end
     const addUser = async e => {
@@ -25,6 +29,16 @@ const Registro = () => {
         if (!validate()) return;
 
         const saveDataForm = true;
+
+        fetch("/rest/user/" + id, {
+            method: "post",
+            headers: {
+                'Content-Type': 'application/json'
+            }, body: JSON.stringify(user)
+        }).then(() => {
+            window.location = "/Registro"
+        })
+
 
         if (saveDataForm) {
             setStatus({
@@ -45,29 +59,37 @@ const Registro = () => {
 
 
         const listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+        const isLogado = JSON.parse(localStorage.getItem('isLogado') || '[]')
+
         listaUser.push(
             {
-                name: user.name,
+                name: user.nome,
                 email: user.email,
-                password: user.password,
-                logado: true,
-            }
-        )
+                password: user.senha,
+            })
+
+        isLogado.push(
+            {
+                logado: true
+            })
+
         localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        localStorage.setItem('isLogado', JSON.stringify(isLogado))
+
     }
 
     function validate() {
-        if (!user.name) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!' });
+        if (!user.nome) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo nome!' });
         if (!user.email) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo e-mail!' });
-        if (!user.password) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo senha!' });
-        if (user.password.length < 6) return setStatus({ type: 'error', mensagem: 'Erro: A senha precisa ter pelo menos seis caracteres!' });
+        if (!user.senha) return setStatus({ type: 'error', mensagem: 'Erro: Necessário preencher o campo senha!' });
+        if (user.senha.length < 6) return setStatus({ type: 'error', mensagem: 'Erro: A senha precisa ter pelo menos seis caracteres!' });
 
         return true;
 
     }
 
     function someCadastrar() {
-        if (user.name && user.email && user.password && user.password.length > 6) {
+        if (user.nome && user.email && user.senha && user.senha.length > 6) {
             return (document.getElementById('form').style.visibility = "hidden",
                 window.location.replace('./termosdeuso'));
         }
@@ -88,7 +110,7 @@ const Registro = () => {
                 <Form onSubmit={addUser} id='form'>
                     <FormFieldset>
                         <label>Nome: </label>
-                        <FormInput type="text" name="name" placeholder="Nome completo do usuário" onChange={valueInput} value={user.name} />
+                        <FormInput type="text" name="nome" placeholder="Nome completo do usuário" onChange={valueInput} value={user.nome} />
                     </FormFieldset>
 
                     <FormFieldset>
@@ -98,7 +120,7 @@ const Registro = () => {
 
                     <FormFieldset>
                         <label>Senha: </label>
-                        <FormInput type="password" name="password" placeholder="Senha para acessar o site" autoComplete="on" onChange={valueInput} value={user.password} />
+                        <FormInput type="password" name="senha" placeholder="Senha para acessar o site" autoComplete="on" onChange={valueInput} value={user.senha} />
                     </FormFieldset>
 
                     <FormFieldset>

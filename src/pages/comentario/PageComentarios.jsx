@@ -1,88 +1,114 @@
-import React, { Component } from 'react';
+import { React, useEffect, useState } from 'react';
 import Comentario from '../../components/comentario/Comentario';
 
-import {Container, Button} from '../../assets/style/StyleComunidadeGlobal';
+import { Container, Button } from '../../assets/style/StyleComunidadeGlobal';
 
 
-class PageComentarios extends Component {
-  state = {
-    comentarios: [
-      {
-        nome: 'Rafael',
-        data: new Date(2020, 9, 19, 17, 30, 0),
-        mensagem: 'Olá, tudo bem?'
-      },
-      {
-        nome: 'Pedro',
-        data: new Date(2020, 9, 19, 17, 30, 0),
-        mensagem: 'Olá, tudo bem. E você?'
-      }
-    ],
-    novoComentario: {
-      nome: '',
-      mensagem: ''
-    }
+function PageComentarios(props) {
+
+  let id = "";
+
+  if (props.match.path.toLowerCase().includes("depo")) {
+    id = props.match.params.id
   }
 
-  adicionarComentario = evento => {
-    evento.preventDefault();
-    const novoComentario = { ...this.state.novoComentario, data: new Date() }
-    this.setState({
-      comentarios: [...this.state.comentarios, novoComentario],
-      novoComentario: { nome: '', mensagem: '' }
+  // MÉTODO GET
+  const [depoimentos, setDepoimentos] = useState([])
+
+  useEffect(() => {
+    fetch("/rest/brief").then((resp) => {
+      return resp.json()
+    }).then((resp) => {
+      setDepoimentos(resp)
+      console.log(resp)
+    }).catch(error => {
+      console.log(error)
+    })
+  }, [])
+
+
+  // MÉTODO DELETE
+  const removerComentario = (idDepoimento) => {
+    fetch("/rest/brief/" + idDepoimento, {
+      method: "delete"
+    }).then(() => {
+      window.location = "/depo/" + id
+    }).catch((error) => {
+      console.log(error)
     })
   }
 
-  removerComentario = comentario => {
-    let lista = this.state.comentarios;
-    lista = lista.filter(c => c !== comentario)
-    this.setState({ comentarios: lista })
+  // MÉTODO POST
+  const [novoDepoimento, setNovoDepoimento] = useState({
+    id: "",
+    idComunidade: id,
+    titulo: "",
+    comentario: ""
+  })
+
+  const adicionarDepoimento = evento => {
+    evento.preventDefault();
+
+    fetch("/rest/brief/", {
+      method: "post",
+      headers: {
+        'Content-Type': 'application/json'
+      }, body: JSON.stringify(novoDepoimento)
+    }).then(() => {
+      window.location = "/depo/" + id
+    })
   }
 
-  digitacao = evento => {
-    const { name, value } = evento.target;
-    this.setState({ novoComentario: { ...this.state.novoComentario, [name]: value } })
+  const digitacao = (evento) => {
+    setNovoDepoimento({ ...novoDepoimento, [evento.target.name]: evento.target.value })
   }
 
-  render() {
-    return (
-      <Container >
-        <h1>Depoimentos da comunidade</h1>
-        {this.state.comentarios.map((comentario, indice) => (
-          <Comentario
-            key={indice}
-            nome={comentario.nome}
-            data={comentario.data}
-            onRemove={this.removerComentario.bind(this, comentario)}>
-            {comentario.mensagem}
-          </Comentario>
-        ))}
 
-        <form method="post" action="aqui vai a função de enviar os dados do formulario" onSubmit={this.adicionarComentario}>
-          <div>
-            <h3>Compartilhe um depoimento com a comunidade</h3>
-            <input
-              type="text"
-              name="nome"
-              value={this.state.novoComentario.nome}
-              onChange={this.digitacao}
-              required
-              placeholder="Digite seu nome" />
-          </div>
-          <div>
-            <textarea
-              name="mensagem"
-              value={this.state.novoComentario.mensagem}
-              onChange={this.digitacao}
-              required
-              rows="4" 
-              placeholder="Escreva seu depoimento..."/>
-          </div>
-          <Button type="submit">Publicar Comentário</Button>
-        </form>
-      </Container>
-    );
-  }
+
+
+  return (
+    <Container >
+      <h1>Depoimentos da comunidade</h1>
+      {depoimentos.map((depoimento) => (
+
+        <Comentario
+          key={depoimento.id}
+          idComunidade={id}
+          data={new Date()}
+          idDepoimento={depoimento.idComunidade}
+          nome={id == depoimento.idComunidade ? depoimento.titulo : null}
+          comentario={id == depoimento.idComunidade ? depoimento.comentario : null}
+          onRemove={removerComentario.bind(this, depoimento.id)}>
+          {id == depoimento.idComunidade ? depoimento.comentario : null}
+        </Comentario>
+      ))}
+
+      <form onSubmit={adicionarDepoimento}>
+        <div>
+          <h3>Compartilhe um depoimento com a comunidade</h3>
+          <input
+            type="text"
+            name="titulo"
+            value={depoimentos.titulo}
+            onChange={digitacao}
+            required
+            placeholder="Digite seu nome" />
+        </div>
+        <div>
+          <textarea
+            name="comentario"
+            value={depoimentos.comentario}
+            onChange={digitacao}
+            required
+            rows="4"
+            placeholder="Escreva seu depoimento..." />
+        </div>
+        <Button type="submit">Publicar Comentário</Button>
+
+      </form>
+    </Container>
+  );
 }
+
 
 export default PageComentarios;

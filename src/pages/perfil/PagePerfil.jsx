@@ -54,7 +54,7 @@ const PagePerfil = () => {
     }
 
     function sair(){
-        window.localStorage.clear('ListaUser')
+        localStorage.removeItem('isLogado')
         window.location.replace('/Login')
     }
     return (

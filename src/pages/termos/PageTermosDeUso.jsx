@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Container, FormButton } from "../../assets/style/StyleGlobal";
 import styled from "styled-components";
 
@@ -31,13 +31,38 @@ export const Section = styled.section`
 `;
 
 const Termos = () => {
+
   function aceitouTermos() {
     if (document.getElementById("termos-ok").checked) {
-      window.location.replace("./Questionario");
+      window.location.replace("./questionario/" + ultimaPosicao.id);
     } else {
       alert("Você precisa aceitar os Termos para continuar.");
+
     }
   }
+
+  // MÉTODO GET
+  const [usuarios, setUsuarios] = useState([])
+
+  // Effect para trazer todo conteúdo do objeto
+  useEffect(() => {
+    fetch("/rest/user").then((resp) => {
+      return resp.json()
+    }).then((resp) => {
+      setUsuarios(resp)
+      console.log(resp)
+    }).catch(error => {
+      console.log(error)
+    })
+  }, [])
+
+
+  var ultimaPosicao = usuarios[Object.keys(usuarios)[Object.keys(usuarios).length - 1]]
+  console.log(ultimaPosicao)
+
+  useEffect(() => {
+  }, [usuarios])
+
 
   return (
     <>
