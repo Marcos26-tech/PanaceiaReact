@@ -12,6 +12,7 @@ import Questionario from "./pages/questionario/PageQuestionario";
 import Termosdeuso from "./pages/termos/PageTermosDeUso";
 import Perfil from './pages/perfil/PagePerfil'
 import PageInteresse from "./pages/interesse/PageInteresse";
+import Dashboard from "./pages/dashboard/PageDashboard"
 
 
 function Routes() {
@@ -19,20 +20,20 @@ function Routes() {
     <>
       
         <Switch>
-          <Route path="/Registro" component={Registro} />
-          <Route path="/Forgetpassword" component={ForgetPassword} />
-          <Route path="/Agendaeeventos" component={Agenda} />
-          <Route path="/Comunidades" component={CriaComunidades} />
+          <Route path="registro" component={Registro} />
+          <Route path="/forgetpassword" component={ForgetPassword} />
+          <Route path="/agendaeeventos" component={Agenda} />
+          <Route path="/vomunidades" component={CriaComunidades} />
           <Route path="/interesses/:id" component={PageInteresse} />
           <Route path="/depo/:id" component={MostraComentario} />
           <Route path="/questionario/:id" component={Questionario} />
-          <Route path="/Termosdeuso/" component={Termosdeuso} />
-          <Route path="/Perfil" component={Perfil} />
-    
+          <Route path="/termosdeuso/" component={Termosdeuso} />
+          <Route path="/perfil" component={Perfil} />
+          <Route path="/dashboard" component={Dashboard} />
         </Switch>
        
-        <Route path="/Login" component={Login} />
-        <Route path="/Home" exact component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/home" exact component={Home} />
         <Route path="/" exact component={Home} />
       
     </>

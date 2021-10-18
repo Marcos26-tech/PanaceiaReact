@@ -55,8 +55,13 @@ const PagePerfil = () => {
 
     function sair(){
         localStorage.removeItem('isLogado')
-        window.location.replace('/Login')
+        window.location.replace('/login')
     }
+
+    function AcessoAdmin(){
+        window.location.replace('/dashboard')
+    }
+    
     return (
         
         <FormWrapper>
@@ -65,7 +70,8 @@ const PagePerfil = () => {
                 <FormHeader>
                     <h2>Perfil</h2>
                     <div>
-                        <Button onClick={sair}>sair</Button>
+                        <Button onClick={sair}>Sair</Button>
+                        <Button onClick={AcessoAdmin}>Acesso de Admin</Button>
                     </div>
                 </FormHeader>
 

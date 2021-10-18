@@ -52,7 +52,7 @@ const data2 = [
 
 
 
-function Dashboard() {
+const Dashboard = () => {
 
     // MÉTODO GET
     const [usuarios, setUsuarios] = useState([])
