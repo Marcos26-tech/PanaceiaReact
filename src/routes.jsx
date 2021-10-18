@@ -20,7 +20,7 @@ function Routes() {
     <>
       
         <Switch>
-          <Route path="registro" component={Registro} />
+          <Route path="/registro" component={Registro} />
           <Route path="/forgetpassword" component={ForgetPassword} />
           <Route path="/agendaeeventos" component={Agenda} />
           <Route path="/comunidades" component={CriaComunidades} />

@@ -30,7 +30,7 @@ export const Section = styled.section`
   }
 `;
 
-const Termos = () => {
+function Termos() {
 
   function aceitouTermos() {
     if (document.getElementById("termos-ok").checked) {

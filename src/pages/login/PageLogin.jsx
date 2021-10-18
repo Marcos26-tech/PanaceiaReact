@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../assets/style/StyleFormGlobal';
 
 
-const FormLogin = () => {
+function FormLogin() {
 
     const [user, setUser] = useState({
         email: '',
@@ -53,7 +53,7 @@ const FormLogin = () => {
     function someLogin() {
         if (user.email && user.password && user.password.length >= 6) {
             return (document.getElementById('form').style.visibility = "hidden",
-                window.location.replace('/comunidades')),
+                window.location.replace('/comunidades'),
 
                 isLogado.push(
                     {
@@ -61,14 +61,10 @@ const FormLogin = () => {
                     }),
 
                 localStorage.setItem('isLogado', JSON.stringify(isLogado))
+            )
         }
 
     }
-
-
-
-
-
 
     return (
 

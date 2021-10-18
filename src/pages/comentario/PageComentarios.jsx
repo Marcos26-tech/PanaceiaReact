@@ -63,9 +63,6 @@ function PageComentarios(props) {
     setNovoDepoimento({ ...novoDepoimento, [evento.target.name]: evento.target.value })
   }
 
-
-
-
   return (
     <Container >
       <h1>Depoimentos da comunidade</h1>

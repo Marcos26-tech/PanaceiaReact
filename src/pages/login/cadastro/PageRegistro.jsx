@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, FormLink } from '../../../assets/style/StyleFormGlobal';
 
 
-const Registro = () => {
+function Registro() {
 
     let id = ""
 
@@ -36,7 +36,7 @@ const Registro = () => {
                 'Content-Type': 'application/json'
             }, body: JSON.stringify(user)
         }).then(() => {
-            window.location = "/Registro"
+            window.location = ('./termosdeuso')
         })
 
 
