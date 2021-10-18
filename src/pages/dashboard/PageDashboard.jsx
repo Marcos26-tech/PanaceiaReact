@@ -13,7 +13,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import { Container } from "../../assets/style/StyleComunidadeGlobal";
+import { Container } from "../../assets/style/StylePageDash";
 
 const data = [
   { name: "Junho", Escala: 24, amt: 2400 },
