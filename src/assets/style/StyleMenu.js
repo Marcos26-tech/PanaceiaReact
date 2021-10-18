@@ -12,7 +12,7 @@ export const Nav = styled.nav`
     ul {
         margin:5px 0;
         text-align: center;
-        background:linear-gradient(99deg, transparent -8%, rgb(152, 243, 147) , rgb(70, 170, 65)49%, rgb(152, 243, 147) 99%,transparent 1% );
+        background:linear-gradient(99deg, transparent -8%, #9ef76b , rgb(70, 170, 65)49%, #9ef76b  99%,transparent 1% );
         box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(228, 225, 225, 0.6);
     };
     

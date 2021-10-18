@@ -16,9 +16,9 @@ import {
 import { Container, Section, Section1, Div, Div1, Div2, Div3, Div4, } from "../../assets/style/StylePageDash";
 
 const data = [
-  { name: "Junho", Escala: 24, amt: 2400 },
+  { name: "Junho", Escala: 21, amt: 2400 },
   { name: "Julho", Escala: 20, amt: 2210 },
-  { name: "Agosto", Escala: 38, amt: 2290 },
+  { name: "Agosto", Escala: 30, amt: 2290 },
   { name: "Setembro", Escala: 39, amt: 2000 },
   { name: "Outubro", Escala: 30, amt: 2181 },
 
@@ -173,8 +173,7 @@ const Dashboard = () => {
 
             <Div3>
               <h1>
-                A média de depoimentos por comunidades {" "}
-                {`${(numDepoimentos / numComunidades).toFixed(1)}`}
+                A média de depoimentos por comunidades {`${(numDepoimentos / numComunidades).toFixed(1)}`}
               </h1>
             </Div3>
 

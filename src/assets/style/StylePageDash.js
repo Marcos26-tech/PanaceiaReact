@@ -25,37 +25,36 @@ export const Section1 = styled.section`
 
 `;
 
-
 export const Div = styled.div`
-  border: 1px solid #566566;
+  background-image: linear-gradient(91deg, #A8FE75 0%, #19A6A5 100%);
   margin:10px;
   width:19%;
   height: 7rem;
 `;
 
 export const Div1 = styled.div`
-  border: 1px solid #566566;
+  background-image: linear-gradient(291deg, #A8FE75 0%, #19A6A5 100%);
   margin:10px;
   width:19%;
   height: 7rem;
 `;
 
 export const Div2 = styled.div`
-border: 1px solid #566566;
+  background-image: linear-gradient(50deg, #A8FE75 0%, #19A6A5 100%);
   margin:10px;
   width:19.4%;
   height: 7rem;
 `;
 
 export const Div3 = styled.div`
-border: 1px solid #566566;
+  background-image: linear-gradient(291deg, #A8FE75 0%, #19A6A5 100%);
   margin:10px;
   width:19%;
   height: 7rem;
 `;
 
 export const Div4 = styled.div`
-border: 1px solid #566566;
+  background-image: linear-gradient(50deg, #A8FE75 0%, #19A6A5 100%);
   margin:10px;
   width:19%;
   height: 7rem;
