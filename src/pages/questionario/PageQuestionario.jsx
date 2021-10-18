@@ -5,20 +5,22 @@ import { Modal, ModalContent2, ModalBody, ModalHeader, ModalFooter } from '../..
 
 
 const Questionario = (props) => {
-  
+
   var scoreAnsiedade = 0;
   var contaResposta = 0;
 
-  // Aqui, pegamos o id que é passado pela URL (id do usuário específico)
+  let id = ""
+
   let idUsuaria = null;
+
   if (props.match.path.toLowerCase().includes('questionario')) {
     idUsuaria = props.match.params.id
   }
 
-  let id = ""
 
   const [novoQuestionario, setNovoQuestionario] = useState({
     id: id,
+    idUsuario: "",
     escala: 0
   })
 
@@ -30,12 +32,10 @@ const Questionario = (props) => {
     }
     setNovoQuestionario({
       id: id,
+      idUsuario: idUsuaria,
       escala: `${scoreAnsiedade}`
     })
 
-    console.log("Nivel ansiedade: " + scoreAnsiedade)
-    console.log("id:" + novoQuestionario.id)
-    console.log("escala:" + novoQuestionario.escala)
   }
 
   function calcularScore() {
@@ -50,11 +50,7 @@ const Questionario = (props) => {
 
   }
 
-
   useEffect(() => {
-    console.log("Passei pelo Effect.........")
-    console.log("id:" + novoQuestionario.id)
-    console.log("escala:" + novoQuestionario.escala)
     if (novoQuestionario.escala !== 0) {
 
       // MÉTODO POST
