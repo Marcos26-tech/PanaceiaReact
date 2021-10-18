@@ -114,7 +114,7 @@ export const FormButton = styled.button`
 
 //style botão sair da pagina perfil
 export const Button = styled.button`
-  margin: 0 0 0 90%;
+  margin: 0 0 0 88%;
   display: inline-block;
   width: 10%;
   padding:5px 0;
@@ -135,9 +135,35 @@ export const Button = styled.button`
   }
   @media (max-width: 783px) {
     font-size: 12px;
-    text-align: center;
     margin: 0 0 0 85%;
     width: 19%;
+  }
+`;
+
+export const Buttoon = styled.button`
+  display: inline-block;
+  margin: 2% 0 0 83%;
+  width:19%;
+  padding:5px;
+  text-align: center;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 234, 0);
+  border: 0;
+  border-radius: 35px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  &:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
+    transform: translate(0, -5px);
+  }
+  @media (max-width: 783px) {
+    font-size: 12px;
+    margin: 2% 0 0 82%;
+    width: 25%;
   }
 `;
 

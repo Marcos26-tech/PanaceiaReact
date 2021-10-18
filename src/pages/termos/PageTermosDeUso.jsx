@@ -28,6 +28,16 @@ export const Section = styled.section`
     margin: 5px;
     font-size: 14px;
   }
+  @media (max-width: 783px) {
+    height:100%;
+    margin: 10px 2% 2px;
+    h2 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
 `;
 
 function Termos() {

@@ -13,7 +13,7 @@ export const Container = styled.section`
   @media (max-width: 789px) {
     margin: 3rem 3% auto;
     padding:10px;
-    height:41rem;
+    height:100%;
     h3 {
       font-size:12px;
     }

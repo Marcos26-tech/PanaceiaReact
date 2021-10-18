@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, Button, Input} from '../../assets/style/StylePagePerfil';
+import {Form, FormWrapper, FormHeader, FormBody, FormFieldset, FormInput, FormButton, Button, Buttoon, Input} from '../../assets/style/StylePagePerfil';
 
 const PagePerfil = () => {
 
@@ -71,7 +71,7 @@ const PagePerfil = () => {
                     <h2>Perfil</h2>
                     <div>
                         <Button onClick={sair}>Sair</Button>
-                        <Button onClick={AcessoAdmin}>Acesso de Admin</Button>
+                        <Buttoon onClick={AcessoAdmin}>Acesso de Admin</Buttoon>
                     </div>
                 </FormHeader>
 
