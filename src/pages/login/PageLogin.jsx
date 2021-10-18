@@ -53,7 +53,7 @@ const FormLogin = () => {
     function someLogin() {
         if (user.email && user.password && user.password.length >= 6) {
             return (document.getElementById('form').style.visibility = "hidden",
-                window.location.replace('./Comunidades')),
+                window.location.replace('/comunidades')),
 
                 isLogado.push(
                     {
