@@ -55,7 +55,7 @@ const Questionario = (props) => {
     console.log("Passei pelo Effect.........")
     console.log("id:" + novoQuestionario.id)
     console.log("escala:" + novoQuestionario.escala)
-    if (novoQuestionario.escala != 0) {
+    if (novoQuestionario.escala !== 0) {
 
       // MÉTODO POST
       fetch("/rest/survey/" + id, {
