@@ -13,7 +13,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import { Container } from "../../assets/style/StylePageDash";
+import { Container, Section, Section1, Div, Div1, Div2, Div3, Div4, } from "../../assets/style/StylePageDash";
 
 const data = [
   { name: "Junho", Escala: 24, amt: 2400 },
@@ -150,62 +150,81 @@ const Dashboard = () => {
   return (
     <>
       <Container>
-        <div>
+        <Section>
           <h2>Dashboard Panace IA</h2>
           <p>Dados atualizados da base de dados oficial Panace IA. </p>
-          <div>
-            <h1>O número de usuárias registradas é de: {numUsuarios}</h1>
-            <h1>O número de comunidades criadas é de: {numComunidades}</h1>
-            <h1>O número de depoimentos postados é de: {numDepoimentos}</h1>
-            <h2>
-              A média de depoimentos por comunidades é:{" "}
-              {`${(numDepoimentos / numComunidades).toFixed(1)}`}
-            </h2>
-            <h2>
-              Média de escalas: {`${(total / numQuestionarios).toFixed(2)}`}
-            </h2>
-          </div>
-        </div>
-        <div>
-          <LineChart
-            width={900}
-            height={600}
-            data={data}
-            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-          >
-            <Line
-              type="monotone"
-              dataKey="Escala"
-              stroke="#040138"
-              activeDot={{ r: 8 }}
-            />
-            <CartesianGrid strokeDasharray="3 3" />
-            <Tooltip />
-            <YAxis />
-            <XAxis dataKey="name" />
-            <Legend />
-          </LineChart>
-        </div>
-        <div>
-          <h2>Dashboard</h2>
-          <p>Dados atualizados da base de dados oficial Panace IA. </p>
-        </div>
-        <div>
-          <RadarChart outerRadius={90} width={900} height={400} data={data2}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" />
-            <PolarRadiusAxis angle={125} domain={[0, 150]} />
+          <Section1> 
+            <Div>
+                <h1>
+                  Usuárias registradas {numUsuarios}
+                </h1>
+            </Div> 
+            <Div1>
+              <h1>
+                Comunidades criadas {numComunidades}
+              </h1>
+            </Div1>
+            
+            <Div2>
+              <h1>
+                Depoimentos postados {numDepoimentos}
+              </h1>
+            </Div2>
 
-            <Radar
-              name="Grupos de Interesses"
-              dataKey="B"
-              stroke="#060f0a"
-              fill="#06f361"
-              fillOpacity={0.3}
-            />
-            <Legend />
-          </RadarChart>
-        </div>
+            <Div3>
+              <h1>
+                A média de depoimentos por comunidades {" "}
+                {`${(numDepoimentos / numComunidades).toFixed(1)}`}
+              </h1>
+            </Div3>
+
+            <Div4>
+              <h1>
+                Média de escalas {`${(total / numQuestionarios).toFixed(2)}`}
+              </h1>
+            </Div4>
+          </Section1>
+          <div>
+            <LineChart
+              width={600}
+              height={400}
+              data={data}
+              margin={{ top: 15, right: 30, left: 20, bottom: 5 }}
+            >
+              <Line
+                type="monotone"
+                dataKey="Escala"
+                stroke="#0d069c"
+                activeDot={{ r: 8 }}
+              />
+              <CartesianGrid strokeDasharray="3 3" />
+              <Tooltip />
+              <YAxis />
+              <XAxis dataKey="name" />
+              <Legend />
+            </LineChart>
+          </div>
+          <div>
+            <h2>Dashboard</h2>
+            <p>Dados atualizados da base de dados oficial Panace IA. </p>
+          </div>
+          <div>
+            <RadarChart outerRadius={90} width={900} height={400} data={data2}>
+              <PolarGrid />
+              <PolarAngleAxis dataKey="subject" />
+              <PolarRadiusAxis angle={125} domain={[0, 150]} />
+
+              <Radar
+                name="Grupos de Interesses"
+                dataKey="B"
+                stroke="#060f0a"
+                fill="#06f361"
+                fillOpacity={0.3}
+              />
+              <Legend />
+            </RadarChart>
+          </div>
+        </Section>
       </Container>
     </>
   );
