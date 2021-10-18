@@ -12,6 +12,7 @@ import Questionario from "./pages/questionario/PageQuestionario";
 import Termosdeuso from "./pages/termos/PageTermosDeUso";
 import Perfil from './pages/perfil/PagePerfil'
 import PageInteresse from "./pages/interesse/PageInteresse";
+// import PageDashboard from './pages/dashboard/PageDashboard'
 
 function Routes() {
   return (
@@ -22,11 +23,12 @@ function Routes() {
           <Route path="/Forgetpassword" component={ForgetPassword} />
           <Route path="/Agendaeeventos" component={Agenda} />
           <Route path="/Comunidades" component={CriaComunidades} />
-          <Route path="/Interesses" component={PageInteresse} />
+          <Route path="/interesses/:id" component={PageInteresse} />
           <Route path="/depo/:id" component={MostraComentario} />
           <Route path="/questionario/:id" component={Questionario} />
           <Route path="/Termosdeuso/" component={Termosdeuso} />
           <Route path="/Perfil" component={Perfil} />
+          {/* <Route path="/dashboard" component={PageDashboard} /> */}
         </Switch>
        
         <Route path="/Login" component={Login} />

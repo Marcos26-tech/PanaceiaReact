@@ -1,50 +1,75 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Container, Section, Span, StyledQuestionario, FormButton } from "../../assets/style/StyleGlobal";
 import { Modal, ModalContent2, ModalBody, ModalHeader, ModalFooter } from '../../assets/style/StyleModal';
 
 
 
-const Questionario = () => {
-  function validarQuestionario(qtdPerguntas) {
-    if (qtdPerguntas < 14) {
-      alert("É necessário responder todas as perguntas!");
-    } else {
-      alert("Pode seguir sua navegação pela Panace IA! <3");
-      window.location.replace('./Interesses')
+const Questionario = (props) => {
+  
+  var scoreAnsiedade = 0;
+  var contaResposta = 0;
+
+  // Aqui, pegamos o id que é passado pela URL (id do usuário específico)
+  let idUsuaria = null;
+  if (props.match.path.toLowerCase().includes('questionario')) {
+    idUsuaria = props.match.params.id
+  }
+
+  let id = ""
+
+  const [novoQuestionario, setNovoQuestionario] = useState({
+    id: id,
+    escala: 0
+  })
+
+
+  function enviarQuestionario() {
+    calcularScore();
+    if (contaResposta < 7) {
+      return alert("Você precisa responder todas as perguntas!")
     }
+    setNovoQuestionario({
+      id: id,
+      escala: `${scoreAnsiedade}`
+    })
+
+    console.log("Nivel ansiedade: " + scoreAnsiedade)
+    console.log("id:" + novoQuestionario.id)
+    console.log("escala:" + novoQuestionario.escala)
   }
 
   function calcularScore() {
-    var scoreAnsiedade = 0;
-
     for (let i = 0; i < document.querySelectorAll(".question").length; i++) {
       if (document.getElementsByClassName("question")[i].checked) {
+        contaResposta += 1
         let pergunta = document.getElementsByClassName("question")[i];
-        let numeroPergunta = parseInt(pergunta.name);
-
         scoreAnsiedade += parseInt(pergunta.value);
-
       }
     }
+    return scoreAnsiedade;
+
   }
 
-  function enviarQuestionario() {
-    var scoreTotal = 0;
-    var qtdPergunta = 0;
 
-    for (let i = 0; i < document.querySelectorAll(".question").length; i++) {
-      if (document.getElementsByClassName("question")[i].checked) {
-        let numero = document.getElementsByClassName("question")[i];
+  useEffect(() => {
+    console.log("Passei pelo Effect.........")
+    console.log("id:" + novoQuestionario.id)
+    console.log("escala:" + novoQuestionario.escala)
+    if (novoQuestionario.escala != 0) {
 
-        scoreTotal += parseInt(numero.value);
+      // MÉTODO POST
+      fetch("/rest/survey/" + id, {
+        method: "post",
+        headers: {
+          'Content-Type': 'application/json'
+        }, body: JSON.stringify(novoQuestionario)
+      }).then(() => {
+        window.location = "/interesses/" + idUsuaria
+      });
 
-        qtdPergunta += 1;
-      }
     }
+  }, [novoQuestionario])
 
-    validarQuestionario(qtdPergunta);
-    calcularScore();
-  }
 
   return (
     <>
@@ -83,7 +108,7 @@ const Questionario = () => {
                   sim, mas não tão forte
                   <input type="radio" class="question" name="3" value="1" />
                   um pouco, mas isso não me preocupa
-                  <input type="radio" class="question" name="3" value="0" />
+                  <input type="radio" class="question" name="3" value="1" />
                   não sinto nada disso
                 </StyledQuestionario>
 
