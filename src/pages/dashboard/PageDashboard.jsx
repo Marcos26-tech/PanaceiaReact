@@ -1,10 +1,5 @@
 import { React, useState, useEffect } from "react";
 import {
-  Radar,
-  RadarChart,
-  PolarGrid,
-  PolarRadiusAxis,
-  PolarAngleAxis,
   LineChart,
   Line,
   XAxis,
@@ -13,7 +8,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import { Container, Section, Section1, Div, Div1, Div2, Div3, Div4, } from "../../assets/style/StylePageDash";
+import { Container, Section, Section1, Div, Div1, Div2, Div3, Div4, Div5 } from "../../assets/style/StylePageDash";
 
 const data = [
   { name: "Junho", Escala: 21, amt: 2400 },
@@ -21,46 +16,9 @@ const data = [
   { name: "Agosto", Escala: 30, amt: 2290 },
   { name: "Setembro", Escala: 39, amt: 2000 },
   { name: "Outubro", Escala: 30, amt: 2181 },
+  { name: "Novembro", Escala: '', amt: 2181 },
+  { name: "Dezembro", Escala: '', amt: 2181 },
 
-];
-
-const data2 = [
-  {
-    subject: "Math",
-    A: 120,
-    B: 110,
-    fullMark: 150,
-  },
-  {
-    subject: "Chinese",
-    A: 98,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: "English",
-    A: 86,
-    B: 130,
-    fullMark: 150,
-  },
-  {
-    subject: "Geography",
-    A: 99,
-    B: 100,
-    fullMark: 150,
-  },
-  {
-    subject: "Physics",
-    A: 85,
-    B: 90,
-    fullMark: 150,
-  },
-  {
-    subject: "History",
-    A: 65,
-    B: 85,
-    fullMark: 150,
-  },
 ];
 
 const Dashboard = () => {
@@ -151,13 +109,15 @@ const Dashboard = () => {
     <>
       <Container>
         <Section>
-          <h2>Dashboard Panace IA</h2>
-          <p>Dados atualizados da base de dados oficial Panace IA. </p>
+          <Div5>
+            <h2>Dashboard Estatitisca Gerais</h2>
+            <p>Moderadores das comunidades orientado com análises preditivas, entendendo as fontes de variabilidade dos dados e identificando relações de causa de efeito para tomada de decisão</p>
+          </Div5>
           <Section1> 
             <Div>
-                <h1>
-                  Usuárias registradas {numUsuarios}
-                </h1>
+              <h1>
+                Usuárias registradas {numUsuarios}
+              </h1>
             </Div> 
             <Div1>
               <h1>
@@ -184,8 +144,9 @@ const Dashboard = () => {
             </Div4>
           </Section1>
           <div>
+            <h5>Gráfico com indices baseados na escala mensal das resposta do questionário</h5>
             <LineChart
-              width={600}
+              width={900}
               height={400}
               data={data}
               margin={{ top: 15, right: 30, left: 20, bottom: 5 }}
@@ -202,26 +163,6 @@ const Dashboard = () => {
               <XAxis dataKey="name" />
               <Legend />
             </LineChart>
-          </div>
-          <div>
-            <h2>Dashboard</h2>
-            <p>Dados atualizados da base de dados oficial Panace IA. </p>
-          </div>
-          <div>
-            <RadarChart outerRadius={90} width={900} height={400} data={data2}>
-              <PolarGrid />
-              <PolarAngleAxis dataKey="subject" />
-              <PolarRadiusAxis angle={125} domain={[0, 150]} />
-
-              <Radar
-                name="Grupos de Interesses"
-                dataKey="B"
-                stroke="#060f0a"
-                fill="#06f361"
-                fillOpacity={0.3}
-              />
-              <Legend />
-            </RadarChart>
           </div>
         </Section>
       </Container>
