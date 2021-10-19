@@ -18,11 +18,19 @@ export const FormWrapper = styled.div`
   height: 670px;
   font-family: Quicksand, arial, sans-serif;
   border-radius: 5px;
+  img {
+    height: 5rem;
+    width: 15%;
+  }
   @media (max-width: 783px) {
     margin: 3rem 3% auto;
     padding: 5px;
     height: 42rem;
     width: 92%;
+    img {
+      height: 5rem;
+      width: 19%;
+    }
   }
 `;
 export const FormHeader = styled.header`

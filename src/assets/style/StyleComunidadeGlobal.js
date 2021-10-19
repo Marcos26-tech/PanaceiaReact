@@ -77,13 +77,9 @@ export const Button = styled.button`
 //fomulario de criar comunidades
 export const Form = styled.form`
   label {
-    margin: auto;
-  }
-  div {
-    display: flex;
-  }
-  input {
-    width: 90%;
+    display: float;
+    align-items: center;
+    margin: 15px 10px 0 0;
   }
   textarea {
     width: 90%;
@@ -105,20 +101,17 @@ export const Form = styled.form`
 
 export const Dividir = styled.div`
   display: flex;
-  margin: 0;
-  label {
-    margin: auto;
-  }
+  margin: 10px;
   input {
-    width: 80%;
+    width: 50%;
   }
   @media (max-width: 789px) {
     input {
-      width: 77%;
+      width: 80%;
       height: 1.5rem;
     }
     label {
-      margin: 25px;
+      margin: 15px;
       width: 2%;
     }
   }
@@ -126,20 +119,16 @@ export const Dividir = styled.div`
 
 export const Div2 = styled.div`
   display: flex;
-  margin: 0;
-  label {
-    margin: auto;
-  }
+  margin: 10px;
   input {
-    width: 80%;
+    width: 50%;
   }
   @media (max-width: 789px) {
     textarea {
       height: 2.5rem;
-      margin: 10px;
     }
     label {
-      margin: 25px;
+      margin: 15px;
       width: 2%;
     }
   }
@@ -147,20 +136,17 @@ export const Div2 = styled.div`
 
 export const Div1 = styled.div`
   display: flex;
-  margin: 0;
-  label {
-    margin: auto;
-  }
+  margin: 10px;
   input {
-    width: 80%;
+    width: 50%;
   }
   @media (max-width: 789px) {
     input {
-      width: 77%;
+      width: 80%;
       height: 1.5rem;
     }
     label {
-      margin: 25px;
+      margin: 15px;
       width: 2%;
     }
   }

@@ -22,6 +22,7 @@ import {
   Div3,
   Div4,
   Div5,
+  Section2,
 } from "../../assets/style/StylePageDash";
 
 const Dashboard = () => {
@@ -181,95 +182,97 @@ const Dashboard = () => {
               </h1>
             </Div4>
           </Section1>
-          <div>
-            <h5>Média de Escala das Usuárias</h5>
-            <LineChart
-              width={950}
-              height={400}
-              data={dashboard}
-              margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
-            >
-              <Line
-                type="monotone"
-                dataKey="mediaEscala"
-                stroke="#0d069c"
-                activeDot={{ r: 8 }}
-              />
-              <CartesianGrid strokeDasharray="3 3" />
-              <Tooltip />
-              <YAxis />
-              <XAxis dataKey="data" />
-              <Legend />
-            </LineChart>
-          </div>
-          <div>
-            <h5>Sentimentos percebido dos Depoimentos das Usuárias</h5>
+          <Section2>
+            <div>
+              <h5>Média de Escala das Usuárias</h5>
+              <LineChart
+                width={950}
+                height={400}
+                data={dashboard}
+                margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
+              >
+                <Line
+                  type="monotone"
+                  dataKey="mediaEscala"
+                  stroke="#0d069c"
+                  activeDot={{ r: 8 }}
+                />
+                <CartesianGrid strokeDasharray="3 3" />
+                <Tooltip />
+                <YAxis />
+                <XAxis dataKey="data" />
+                <Legend />
+              </LineChart>
+            </div>
+            <div>
+              <h5>Sentimentos percebido dos Depoimentos das Usuárias</h5>
 
-            <AreaChart
-              width={950}
-              height={400}
-              data={dashboard}
-              margin={{ top: 10, right: 30, left: 50, bottom: 5 }}
-            >
-              <defs>
-                <linearGradient
-                  id="sentimentoPositivo"
-                  x1="0"
-                  y1="0"
-                  x2="0"
-                  y2="1"
-                >
-                  <stop offset="5%" stopColor="#2218ec" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#5b1af5" stopOpacity={0} />
-                </linearGradient>
-                <linearGradient
-                  id="sentimentoNegativo"
-                  x1="0"
-                  y1="0"
-                  x2="0"
-                  y2="1"
-                >
-                  <stop offset="5%" stopColor="#f11810" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#f32922" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <XAxis dataKey="data" />
-              <YAxis />
-              <CartesianGrid strokeDasharray="3 3" />
-              <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="sentimentoPositivo"
-                stroke="#281df0"
-                fillOpacity={1}
-                fill="url(#sentimentoPositivo)"
-              />
-              <Area
-                type="monotone"
-                dataKey="sentimentoNegativo"
-                stroke="#ee3b1b"
-                fillOpacity={1}
-                fill="url(#sentimentoNegativo)"
-              />
-            </AreaChart>
-          </div>
-          <div>
-            <h5>Interesses das Usuárias</h5>
+              <AreaChart
+                width={950}
+                height={400}
+                data={dashboard}
+                margin={{ top: 10, right: 30, left: 50, bottom: 5 }}
+              >
+                <defs>
+                  <linearGradient
+                    id="sentimentoPositivo"
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                  >
+                    <stop offset="5%" stopColor="#2218ec" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#5b1af5" stopOpacity={0} />
+                  </linearGradient>
+                  <linearGradient
+                    id="sentimentoNegativo"
+                    x1="0"
+                    y1="0"
+                    x2="0"
+                    y2="1"
+                  >
+                    <stop offset="5%" stopColor="#f11810" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#f32922" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <XAxis dataKey="data" />
+                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" />
+                <Tooltip />
+                <Area
+                  type="monotone"
+                  dataKey="sentimentoPositivo"
+                  stroke="#281df0"
+                  fillOpacity={1}
+                  fill="url(#sentimentoPositivo)"
+                />
+                <Area
+                  type="monotone"
+                  dataKey="sentimentoNegativo"
+                  stroke="#ee3b1b"
+                  fillOpacity={1}
+                  fill="url(#sentimentoNegativo)"
+                />
+              </AreaChart>
+            </div>
+            <div>
+              <h5>Interesses das Usuárias</h5>
 
-            <BarChart
-              width={1000}
-              height={400}
-              data={interesses}
-              margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="nome" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              <Bar dataKey="qtdUsuarios" fill="#82ca9d" />
-            </BarChart>
-          </div>
+              <BarChart
+                width={1000}
+                height={400}
+                data={interesses}
+                margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
+              >
+                <CartesianGrid strokeDasharray="3 3" />
+                <XAxis dataKey="nome" />
+                <YAxis />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="qtdUsuarios" fill="#82ca9d" />
+              </BarChart>
+            </div>
+          </Section2>
         </Section>
       </Container>
     </>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import usuario from '../../assets/img/usuario.png';
 import {
   Form,
   FormWrapper,
@@ -110,7 +111,7 @@ const PagePerfil = () => {
         ) : (
           ""
         )}
-
+        <img src={usuario} alt="foto usuaria" />
         <Form onSubmit={addUser} id="form">
           <FormFieldset>
             <label>Alterar a Foto: </label>

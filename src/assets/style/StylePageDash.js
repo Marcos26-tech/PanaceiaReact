@@ -15,11 +15,18 @@ export const Section = styled.section`
     font-size: 19px;
     margin-left: 14em;
   }
+  @media (max-width: 789px) {
+    padding: 0 0 2rem 0;
+    h5 {
+      margin: 2em;
+      font-size: 15px;
+    }
+  }
 `;
 
 export const Section1 = styled.section`
   border: 1px solid;
-  border-image: linear-gradient(227.91deg, #a8fe75 0%, #46aa41  100%) 1;
+  border-image: linear-gradient(227.91deg, #a8fe75 0%, #46aa41 100%) 1;
   font-size: 14px;
   margin: 1rem;
   display: flex;
@@ -34,6 +41,19 @@ export const Section1 = styled.section`
     margin: 18px;
     padding: 15px;
     font-size: 15px;
+  }
+  @media (max-width: 789px) {
+    display: block;
+    div {
+      width: 93%;
+      height: 7rem;
+    }
+    h2,
+    h1 {
+      margin: 15px;
+      padding: 29px;
+      font-size: 15px;
+    }
   }
 `;
 
@@ -82,5 +102,21 @@ export const Div5 = styled.div`
   h2 {
     font-size: 20px;
     text-align: center;
+  }
+  @media (max-width: 789px) {
+    p {
+      text-align: center;
+      font-size: 12px;
+    }
+    h2 {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+`;
+
+export const Section2 = styled.section`
+  @media (max-width: 789px) {
+    display: none;
   }
 `;
