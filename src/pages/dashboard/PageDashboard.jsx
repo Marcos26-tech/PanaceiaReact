@@ -153,31 +153,31 @@ const Dashboard = () => {
             <p>
               Moderadores das comunidades orientado com análises preditivas,
               entendendo as fontes de variabilidade dos dados e identificando
-              relações de causa de efeito para tomada de decisão
+              relações de causa de efeito para melhor tomada de decisão.
             </p>
           </Div5>
           <Section1>
             <Div>
-              <h1>Usuárias registradas {numUsuarios}</h1>
+              <h1>Usuárias Registradas {numUsuarios}</h1>
             </Div>
             <Div1>
-              <h1>Comunidades criadas {numComunidades}</h1>
+              <h1>Comunidades Criadas {numComunidades}</h1>
             </Div1>
 
             <Div2>
-              <h1>Depoimentos postados {numDepoimentos}</h1>
+              <h1>Depoimentos Postados {numDepoimentos}</h1>
             </Div2>
 
             <Div3>
-              <h1>
-                A média de depoimentos por comunidades{" "}
+              <h2>
+                Média dos Depoimentos por Comunidade{" "}
                 {`${(numDepoimentos / numComunidades).toFixed(1)}`}
-              </h1>
+              </h2>
             </Div3>
 
             <Div4>
               <h1>
-                Média de escalas {`${(total / numQuestionarios).toFixed(2)}`}
+                Média das Escalas {`${(total / numQuestionarios).toFixed(2)}`}
               </h1>
             </Div4>
           </Section1>

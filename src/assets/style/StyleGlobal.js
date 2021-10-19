@@ -5,8 +5,8 @@ export const Container = styled.section`
   background: rgb(247, 246, 246);
   opacity: 98%;
   border-radius: 5px;
-  padding: 1rem 3rem 3rem;
-  margin: 3rem 8% 3rem;
+  padding: 1rem 3rem 5rem;
+  margin: 3rem 8% 5rem;
   height: 100%;
   text-align: center;
   justify-content: center;
@@ -32,13 +32,13 @@ export const Section = styled.section`
     font-weight: bold;
     color: #343d59;
     text-align: center;
-    margin: 2px;
+    margin:0 0 20px 0;
   }
 `;
 
 export const Title = styled.h1`
-  margin: 10px;
-  padding: 10px;
+  margin: 5px;
+  padding: 9px;
   font-size: 35px;
   font-weight: bold;
   color: #343d59;
@@ -66,8 +66,8 @@ export const StyledCarrocelContainer = styled.div`
 `;
 
 export const StyledImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 109%;
 `;
 
 export const StyledArrowContainer = styled.div`
@@ -89,8 +89,8 @@ export const StyledImage = styled.img`
   height: 100%;
   border-radius: 5%;
   @media (max-width: 789px) {
-    width: 100%;
-    height: 80%;
+    width: 99%;
+    height: 95%;
   }
 `;
 

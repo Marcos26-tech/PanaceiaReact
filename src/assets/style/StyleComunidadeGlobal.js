@@ -166,7 +166,7 @@ export const Div1 = styled.div`
   }
 `;
 
-// inicio do stilo da seção de comunidade
+// inicio do stilo da pag informaçoes para  pagecomunidade
 export const Divi = styled.div`
   display: flex;
   margin: 0 0 10px;
@@ -222,6 +222,7 @@ export const SectionPrimeira = styled.section`
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgb(25, 121, 6);
+  margin-bottom:10px;
   p {
     text-align: justify;
     margin: 2px 27px 0 3px;

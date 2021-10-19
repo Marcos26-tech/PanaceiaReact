@@ -79,7 +79,9 @@ function PageComunidades() {
         do ponto onde se encontra! by Grupo Panaceia ”
       </h1>
       <h2>Informações uteis de fonte confiável</h2>
-      <InfoComunidade />
+
+      <InfoComunidade /> {/* <--- pagina de infomaçoes para Pagecomunidade é renderizado aqui*/}
+
       <h3>Comunidades disponíveis</h3>
       {comunidades.map((comunidade) => (
         <Comunidades

@@ -22,7 +22,7 @@ import {
 } from "../../assets/style/StyleGlobal";
 
 const imagens = [
-  Item8,
+  Item,
   Item1,
   Item2,
   Item3,
@@ -30,7 +30,7 @@ const imagens = [
   Item5,
   Item6,
   Item7,
-  Item,
+  Item8,
   Item9,
   Item10,
   Item11,
