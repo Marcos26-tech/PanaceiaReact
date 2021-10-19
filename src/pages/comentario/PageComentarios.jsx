@@ -88,7 +88,6 @@ function PageComentarios(props) {
           {id === depoimento.idComunidade ? depoimento.comentario : null}
         </Comentario> //
       ))}
-npm StyledArrowContainer
       <form onSubmit={adicionarDepoimento}>
         <div>
           <h3>Compartilhe um depoimento com a comunidade</h3>
