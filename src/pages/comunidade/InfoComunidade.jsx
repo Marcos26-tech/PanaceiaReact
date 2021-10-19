@@ -45,13 +45,12 @@ function InfoComunidade() {
         <Divi>
           <img src={ImagemAutocuidado} alt="cuidados infantil" />
           <p>
-            No
+            No{" "}
             <a href={site1} target="_blank" rel="noreferrer">
               <span>Outubro Rosa</span>
             </a>
             , médicas refletem sobre como é preciso estruturar a rotina para
-            cuidar da saúde e prevenir o câncer que mais afeta mulheres. Falar
-            sobre a doença é fundamental! Para vencer o estigma, o receio, o
+            cuidar da saúde e prevenir o câncer que mais afeta mulheres. Para vencer o estigma, o receio, o
             peso que a cerca. Ao passar por um prédio iluminado de rosa durante
             este mês, faça uma reflexão. Se você é mulher, já fez seus exames de
             rotina este ano ?
@@ -106,7 +105,7 @@ function InfoComunidade() {
             <a href={site5} target="_blank" rel="noreferrer">
               <span>Impactos do Exercicio Físico na Saúde da Mulher</span>
             </a>{" "}
-            Um dos benefícios da prática de exercícios físicos para mulheres é a
+            Os benefícios da prática de exercícios físicos para mulheres é a
             diminuição dos sintomas da depressão e ansiedade. E isso é
             comprovado por estudos! Fazer caminhada, andar de bicicleta ou
             praticar alguns exercícios, por exemplo, são práticas que diminuem

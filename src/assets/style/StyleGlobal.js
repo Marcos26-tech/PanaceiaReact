@@ -29,19 +29,21 @@ export const Section = styled.section`
   text-align: center;
   justify-content: center;
   h3 {
+    font-size: 18px;
     font-weight: bold;
-    color: #343d59;
+    color: #024136;
     text-align: center;
-    margin:0 0 20px 0;
+    margin: 0 0 20px 0;
   }
 `;
 
 export const Title = styled.h1`
-  margin: 5px;
-  padding: 9px;
-  font-size: 35px;
+  font-family: Italianno, cursive;
+  margin: 1px;
+  padding: 1px;
+  font-size: 55px;
   font-weight: bold;
-  color: #343d59;
+  color: #024136;
   text-align: center;
   justify-content: center;
 `;
@@ -80,7 +82,7 @@ export const StyledArrowContainer = styled.div`
   border-radius: 50%;
   cursor: pointer;
   &:hover {
-    background-color: #26a682;
+    background-color: #305c54;
   }
 `;
 

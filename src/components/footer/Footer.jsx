@@ -6,6 +6,7 @@ const StyledFooter = styled.footer`
   background: linear-gradient(hsl(108, 48%, 74%), transparent);
   padding: 1px;
   p {
+    font-family: IM Fell English SC, serif;
     font-size: 15px;
     color: rgb(0, 0, 0);
   }

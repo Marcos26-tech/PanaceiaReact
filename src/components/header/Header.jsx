@@ -27,9 +27,9 @@ const Stylednovo = styled.div`
   justify-content: center;
   p {
     position: relative;
-    margin: 0 0 0 175px;
+    margin: 0 0 0 145px;
     padding-top: 2rem;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
     @media (max-width: 780px) {
       width: 100%;
