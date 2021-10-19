@@ -7,7 +7,7 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
   display: inline-block;
   width: 100%;
-  background-image: linear-gradient(91deg, #9ef76b 0%, #09ad40 100%);
+  background-image:linear-gradient(90deg, #9ef76b , rgb(70, 170, 65)49%, #9ef76b 100%);
   height: 99px;
   img {
     position: absolute;

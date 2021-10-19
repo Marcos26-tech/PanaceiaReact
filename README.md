@@ -29,3 +29,5 @@ instalar libs:
 
 <!-- React Spinners-->
 # npm install --save react-spinners
+
+# npm i install --save-dev eslint

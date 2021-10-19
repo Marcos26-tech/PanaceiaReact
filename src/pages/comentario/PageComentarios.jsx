@@ -72,12 +72,16 @@ function PageComentarios(props) {
           key={depoimento.id}
           idComunidade={id}
           data={new Date()}
-          idDepoimento={depoimento.idComunidade}
-          nome={id == depoimento.idComunidade ? depoimento.titulo : null}
-          comentario={id == depoimento.idComunidade ? depoimento.comentario : null}
-          onRemove={removerComentario.bind(this, depoimento.id)}>
-          {id == depoimento.idComunidade ? depoimento.comentario : null}
-        </Comentario>
+          idDepoimento={depoimento.idComunidade} 
+          // eslint-disable-next-line
+          nome={id == depoimento.idComunidade ? depoimento.titulo : null} // 
+          // eslint-disable-next-line
+          comentario={id == depoimento.idComunidade ? depoimento.comentario : null} // 
+          //eslint-disable-next-line
+          onRemove={removerComentario.bind(this, depoimento.id)}> // 
+          //eslint-disable-next-line
+          {id === depoimento.idComunidade ? depoimento.comentario : null} 
+        </Comentario>//
       ))}
 
       <form onSubmit={adicionarDepoimento}>

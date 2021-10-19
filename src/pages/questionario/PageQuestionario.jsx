@@ -63,8 +63,8 @@ const Questionario = (props) => {
         window.location = "/interesses/" + idUsuaria
       });
 
-    }
-  }, [novoQuestionario])
+    } // eslint-disable-next-line 
+  }, [novoQuestionario]) //
 
 
   return (

@@ -8,8 +8,9 @@ import imagemUsuario from '../../assets/img/usuario.png';
 const Comentario = props => {
 
     return (
-        <>
-            {props.idComunidade == props.idDepoimento ?
+        <>  
+            {// eslint-disable-next-line
+            props.idComunidade == props.idDepoimento ? //
                 <Container>
                     <Avatar src={imagemUsuario} alt={props.nome} />
                     <Conteudo>
