@@ -14,12 +14,6 @@ export const Container = styled.section`
     margin: 3rem 3% auto;
     padding: 10px;
     height: 100%;
-    h3 {
-      font-size: 12px;
-    }
-    h1 {
-      font-size: 15px;
-    }
   }
 `;
 
@@ -35,6 +29,11 @@ export const Section = styled.section`
     text-align: center;
     margin: 0 0 20px 0;
   }
+  @media (max-width: 789px) {
+    h3 {
+      font-size: 13px;
+    }
+  }
 `;
 
 export const Title = styled.h1`
@@ -46,6 +45,9 @@ export const Title = styled.h1`
   color: #024136;
   text-align: center;
   justify-content: center;
+  @media (max-width: 789px) {
+    font-size: 28px;
+  }
 `;
 
 export const StyledContainer = styled.section`

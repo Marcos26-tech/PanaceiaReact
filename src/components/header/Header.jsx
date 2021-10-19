@@ -34,7 +34,7 @@ const Stylednovo = styled.div`
     @media (max-width: 780px) {
       width: 100%;
       font-size: 25px;
-      padding-left: 5.5rem;
+      padding-left: 7.5rem;
     }
   }
 `;

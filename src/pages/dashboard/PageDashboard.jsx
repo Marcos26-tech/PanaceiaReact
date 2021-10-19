@@ -184,10 +184,10 @@ const Dashboard = () => {
           <div>
             <h5>Média de Escala das Usuárias</h5>
             <LineChart
-              width={1000}
+              width={950}
               height={400}
               data={dashboard}
-              margin={{ top: 15, right: 30, left: 20, bottom: 5 }}
+              margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
             >
               <Line
                 type="monotone"
@@ -206,10 +206,10 @@ const Dashboard = () => {
             <h5>Sentimentos percebido dos Depoimentos das Usuárias</h5>
 
             <AreaChart
-              width={1000}
+              width={950}
               height={400}
               data={dashboard}
-              margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+              margin={{ top: 10, right: 30, left: 50, bottom: 5 }}
             >
               <defs>
                 <linearGradient
@@ -256,7 +256,12 @@ const Dashboard = () => {
           <div>
             <h5>Interesses das Usuárias</h5>
 
-            <BarChart width={1000} height={400} data={interesses}>
+            <BarChart
+              width={1000}
+              height={400}
+              data={interesses}
+              margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
+            >
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="nome" />
               <YAxis />
