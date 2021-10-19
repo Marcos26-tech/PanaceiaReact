@@ -1,87 +1,96 @@
-import { React, useEffect, useState } from 'react';
-import Comentario from '../../components/comentario/Comentario';
+import { React, useEffect, useState } from "react";
+import Comentario from "../../components/comentario/Comentario";
 
-import { Container, Button } from '../../assets/style/StyleComunidadeGlobal';
-
+import { Container, Button } from "../../assets/style/StyleComunidadeGlobal";
 
 function PageComentarios(props) {
-
   let id = "";
 
   if (props.match.path.toLowerCase().includes("depo")) {
-    id = props.match.params.id
+    id = props.match.params.id;
   }
 
   // MÉTODO GET
-  const [depoimentos, setDepoimentos] = useState([])
+  const [depoimentos, setDepoimentos] = useState([]);
 
   useEffect(() => {
-    fetch("/rest/brief").then((resp) => {
-      return resp.json()
-    }).then((resp) => {
-      setDepoimentos(resp)
-      console.log(resp)
-    }).catch(error => {
-      console.log(error)
-    })
-  }, [])
-
+    fetch("/rest/brief")
+      .then((resp) => {
+        return resp.json();
+      })
+      .then((resp) => {
+        setDepoimentos(resp);
+        console.log(resp);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   // MÉTODO DELETE
   const removerComentario = (idDepoimento) => {
     fetch("/rest/brief/" + idDepoimento, {
-      method: "delete"
-    }).then(() => {
-      window.location = "/depo/" + id
-    }).catch((error) => {
-      console.log(error)
+      method: "delete",
     })
-  }
+      .then(() => {
+        window.location = "/depo/" + id;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   // MÉTODO POST
   const [novoDepoimento, setNovoDepoimento] = useState({
     id: "",
     idComunidade: id,
     titulo: "",
-    comentario: ""
-  })
+    comentario: "",
+  });
 
-  const adicionarDepoimento = evento => {
+  const adicionarDepoimento = (evento) => {
     evento.preventDefault();
 
     fetch("/rest/brief/", {
       method: "post",
       headers: {
-        'Content-Type': 'application/json'
-      }, body: JSON.stringify(novoDepoimento)
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(novoDepoimento),
     }).then(() => {
-      window.location = "/depo/" + id
-    })
-  }
+      window.location = "/depo/" + id;
+    });
+  };
 
   const digitacao = (evento) => {
-    setNovoDepoimento({ ...novoDepoimento, [evento.target.name]: evento.target.value })
-  }
+    setNovoDepoimento({
+      ...novoDepoimento,
+      [evento.target.name]: evento.target.value,
+    });
+  };
 
   return (
-    <Container >
+    <Container>
       <h1>Depoimentos da comunidade</h1>
       {depoimentos.map((depoimento) => (
-
         <Comentario
           key={depoimento.id}
           idComunidade={id}
           data={new Date()}
-          idDepoimento={depoimento.idComunidade} 
+          idDepoimento={depoimento.idComunidade}
           // eslint-disable-next-line
-          nome={id == depoimento.idComunidade ? depoimento.titulo : null} // 
+          nome={id == depoimento.idComunidade ? depoimento.titulo : null} //
           // eslint-disable-next-line
-          comentario={id == depoimento.idComunidade ? depoimento.comentario : null} // 
+          comentario={
+            id == depoimento.idComunidade ? depoimento.comentario : null
+          } //
           //eslint-disable-next-line
-          onRemove={removerComentario.bind(this, depoimento.id)}> // 
-          //eslint-disable-next-line
-          {id === depoimento.idComunidade ? depoimento.comentario : null} 
-        </Comentario>//
+          onRemove={removerComentario.bind(this, depoimento.id)}
+        >
+          {" "}
+          // //eslint-disable-next-line
+          {id === depoimento.idComunidade ? depoimento.comentario : null}
+        </Comentario> //
       ))}
 
       <form onSubmit={adicionarDepoimento}>
@@ -93,7 +102,8 @@ function PageComentarios(props) {
             value={depoimentos.titulo}
             onChange={digitacao}
             required
-            placeholder="Digite seu nome" />
+            placeholder="Digite seu nome"
+          />
         </div>
         <div>
           <textarea
@@ -102,14 +112,13 @@ function PageComentarios(props) {
             onChange={digitacao}
             required
             rows="4"
-            placeholder="Escreva seu depoimento..." />
+            placeholder="Escreva seu depoimento..."
+          />
         </div>
         <Button type="submit">Publicar Comentário</Button>
-
       </form>
     </Container>
   );
 }
-
 
 export default PageComentarios;

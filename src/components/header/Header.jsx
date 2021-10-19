@@ -7,7 +7,12 @@ import styled from "styled-components";
 const StyledHeader = styled.header`
   display: inline-block;
   width: 100%;
-  background-image:linear-gradient(90deg, #9ef76b , rgb(70, 170, 65)49%, #9ef76b 100%);
+  background-image: linear-gradient(
+    90deg,
+    #9ef76b,
+    rgb(70, 170, 65) 49%,
+    #9ef76b 100%
+  );
   height: 99px;
   img {
     position: absolute;
@@ -29,7 +34,7 @@ const Stylednovo = styled.div`
     @media (max-width: 780px) {
       width: 100%;
       font-size: 25px;
-      padding-left:5.5rem;
+      padding-left: 5.5rem;
     }
   }
 `;
@@ -43,11 +48,12 @@ class Header extends Component {
             <p>
               <Typewriter
                 onInit={(typewriter) => {
-                  typewriter.typeString("Panaceia")
-                  .pauseFor(2000)
-                  .deleteChars(10)
-                  .typeString("Panace IA")
-                  .start(200);
+                  typewriter
+                    .typeString("Panaceia")
+                    .pauseFor(2000)
+                    .deleteChars(10)
+                    .typeString("Panace IA")
+                    .start(200);
                 }}
               />
             </p>

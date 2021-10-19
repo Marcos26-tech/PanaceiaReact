@@ -31,7 +31,8 @@ export const Container = styled.div`
       0 4px 6px -2px rgba(0, 0, 0, 0.05);
     padding: 1rem;
   }
-  input, textarea {
+  input,
+  textarea {
     color: #4a5568;
     background-color: #fff;
     border: 1px solid #e2e8f0;
@@ -50,11 +51,12 @@ export const Container = styled.div`
     display: block;
     padding: 15px;
     height: 100%;
-    h1{
-      font-size:16px;
+    h1 {
+      font-size: 16px;
     }
-    h3, h2{
-      font-size:14px;
+    h3,
+    h2 {
+      font-size: 14px;
     }
   }
 `;
@@ -74,17 +76,17 @@ export const Button = styled.button`
 
 //fomulario de criar comunidades
 export const Form = styled.form`
-  label{
+  label {
     margin: auto;
   }
-  div{
+  div {
     display: flex;
   }
-  input{
+  input {
     width: 90%;
   }
-  textarea{
-    width:90%;
+  textarea {
+    width: 90%;
   }
   button {
     background-color: rgb(25, 121, 6);
@@ -102,68 +104,67 @@ export const Form = styled.form`
 `;
 
 export const Dividir = styled.div`
-  display:flex;
+  display: flex;
   margin: 0;
   label {
-    margin:auto;
+    margin: auto;
   }
   input {
-    width:80%;
+    width: 80%;
   }
   @media (max-width: 789px) {
-    input{
-      width:77%;
-      height:1.5rem;
+    input {
+      width: 77%;
+      height: 1.5rem;
     }
-    label{
-      margin:25px;
-      width:2%;
+    label {
+      margin: 25px;
+      width: 2%;
     }
   }
 `;
 
 export const Div2 = styled.div`
-  display:flex;
+  display: flex;
   margin: 0;
   label {
-    margin:auto;
+    margin: auto;
   }
   input {
-    width:80%;
+    width: 80%;
   }
   @media (max-width: 789px) {
-    textarea{
-      height:2.5rem;
-      margin:10px;
+    textarea {
+      height: 2.5rem;
+      margin: 10px;
     }
-    label{
-      margin:25px;
-      width:2%;
+    label {
+      margin: 25px;
+      width: 2%;
     }
   }
 `;
 
 export const Div1 = styled.div`
-  display:flex;
+  display: flex;
   margin: 0;
   label {
-    margin:auto;
+    margin: auto;
   }
   input {
-    width:80%;
+    width: 80%;
   }
   @media (max-width: 789px) {
-    input{
-      width:77%;
-      height:1.5rem;
+    input {
+      width: 77%;
+      height: 1.5rem;
     }
-    label{
-      margin:25px;
-      width:2%;
+    label {
+      margin: 25px;
+      width: 2%;
     }
   }
 `;
-
 
 // inicio do stilo da seção de comunidade
 export const Divi = styled.div`
@@ -171,24 +172,23 @@ export const Divi = styled.div`
   margin: 0 0 10px;
   padding: 0 0 10px;
   img {
-    width:9rem;
-    height:10rem;
+    width: 9rem;
+    height: 10rem;
   }
   a {
     color: rgb(194, 5, 131);
-    font-weight:bold;
-    font-size:18px;
+    font-weight: bold;
+    font-size: 18px;
   }
   @media (max-width: 789px) {
-    span{
-      font-size:14px;
-      text-align:center;
+    span {
+      font-size: 14px;
+      text-align: center;
     }
-    img{
-  
-      position:relative;
-      width:8rem;
-      height:12rem;
+    img {
+      position: relative;
+      width: 8rem;
+      height: 12rem;
     }
   }
 `;
@@ -198,37 +198,37 @@ export const Div = styled.div`
   margin: 0 0 10px;
   padding: 0 0 10px;
   img {
-    width:10rem;
-    height:10rem;
+    width: 10rem;
+    height: 10rem;
   }
   a {
     color: rgb(194, 5, 131);
-    font-weight:bold;
-    font-size:16px;
+    font-weight: bold;
+    font-size: 16px;
   }
   @media (max-width: 789px) {
-    span{
-      font-size:14px;
+    span {
+      font-size: 14px;
     }
-    img{
-      position:relative;
-      width:8rem;
-      height:13rem;
+    img {
+      position: relative;
+      width: 8rem;
+      height: 13rem;
     }
   }
 `;
 
 export const SectionPrimeira = styled.section`
   display: flex;
-  align-items:center;
+  align-items: center;
   border-bottom: 1px solid rgb(25, 121, 6);
-  p{
-    text-align:justify;
+  p {
+    text-align: justify;
     margin: 2px 27px 0 3px;
     padding: 3px;
   }
   @media (max-width: 789px) {
-     display:block;
-     font-size:13px;
-    }
+    display: block;
+    font-size: 13px;
+  }
 `;

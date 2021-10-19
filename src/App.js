@@ -4,9 +4,7 @@ import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer";
 import Routes from "./routes";
 
-
 const App = () => {
-
   return (
     <>
       <Header />

@@ -2,14 +2,13 @@ import { React, useState, useEffect } from "react";
 import { Container, FormButton } from "../../assets/style/StyleGlobal";
 import styled from "styled-components";
 
-
 export const Section = styled.section`
   background: rgb(255, 255, 255);
   border-radius: 2%;
   margin: 1rem 8% 2rem;
   text-align: center;
   padding: 10px;
-  span{
+  span {
     font-weight: bold;
     color: rgb(12, 139, 1);
     text-align: center;
@@ -29,7 +28,7 @@ export const Section = styled.section`
     font-size: 14px;
   }
   @media (max-width: 783px) {
-    height:100%;
+    height: 100%;
     margin: 10px 2% 2px;
     h2 {
       font-size: 14px;
@@ -41,38 +40,37 @@ export const Section = styled.section`
 `;
 
 function Termos() {
-
   function aceitouTermos() {
     if (document.getElementById("termos-ok").checked) {
       window.location.replace("./questionario/" + ultimaPosicao.id);
     } else {
       alert("Você precisa aceitar os Termos para continuar.");
-
     }
   }
 
   // MÉTODO GET
-  const [usuarios, setUsuarios] = useState([])
+  const [usuarios, setUsuarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/user").then((resp) => {
-      return resp.json()
-    }).then((resp) => {
-      setUsuarios(resp)
-      console.log(resp)
-    }).catch(error => {
-      console.log(error)
-    })
-  }, [])
+    fetch("/rest/user")
+      .then((resp) => {
+        return resp.json();
+      })
+      .then((resp) => {
+        setUsuarios(resp);
+        console.log(resp);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
+  var ultimaPosicao =
+    usuarios[Object.keys(usuarios)[Object.keys(usuarios).length - 1]];
+  console.log(ultimaPosicao);
 
-  var ultimaPosicao = usuarios[Object.keys(usuarios)[Object.keys(usuarios).length - 1]]
-  console.log(ultimaPosicao)
-
-  useEffect(() => {
-  }, [usuarios])
-
+  useEffect(() => {}, [usuarios]);
 
   return (
     <>
@@ -140,7 +138,10 @@ function Termos() {
             </label>
           </div>
 
-          <FormButton onClick={() => aceitouTermos()}> Aceitar Termos</FormButton>
+          <FormButton onClick={() => aceitouTermos()}>
+            {" "}
+            Aceitar Termos
+          </FormButton>
         </Section>
       </Container>
     </>

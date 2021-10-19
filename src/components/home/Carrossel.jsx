@@ -21,7 +21,21 @@ import {
   StyledImage,
 } from "../../assets/style/StyleGlobal";
 
-const imagens = [ Item8, Item1, Item2, Item3, Item4, Item5, Item6, Item7, Item, Item9, Item10, Item11, Item12];
+const imagens = [
+  Item8,
+  Item1,
+  Item2,
+  Item3,
+  Item4,
+  Item5,
+  Item6,
+  Item7,
+  Item,
+  Item9,
+  Item10,
+  Item11,
+  Item12,
+];
 
 const Carrossel = () => {
   const [mudarImageIndex, setMudarImageIndex] = useState(0);

@@ -3,22 +3,22 @@ import styled from "styled-components";
 //inicio style da pagina home//
 export const Container = styled.section`
   background: rgb(247, 246, 246);
-  opacity:98%;
-  border-radius:5px;
+  opacity: 98%;
+  border-radius: 5px;
   padding: 1rem 3rem 3rem;
   margin: 3rem 8% 3rem;
-  height:100%;
+  height: 100%;
   text-align: center;
   justify-content: center;
   @media (max-width: 789px) {
     margin: 3rem 3% auto;
-    padding:10px;
-    height:100%;
+    padding: 10px;
+    height: 100%;
     h3 {
-      font-size:12px;
+      font-size: 12px;
     }
     h1 {
-      font-size:15px;
+      font-size: 15px;
     }
   }
 `;
@@ -39,7 +39,7 @@ export const Section = styled.section`
 export const Title = styled.h1`
   margin: 10px;
   padding: 10px;
-  font-size:35px;
+  font-size: 35px;
   font-weight: bold;
   color: #343d59;
   text-align: center;
@@ -60,7 +60,7 @@ export const StyledCarrocelContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 789px) {
-    padding:2px;
+    padding: 2px;
     margin: 2px;
   }
 `;
@@ -95,7 +95,7 @@ export const StyledImage = styled.img`
 `;
 
 export const FormButton = styled.button`
-  display:inline-block;
+  display: inline-block;
   width: 25%;
   padding: 12px 0;
   font-family: inherit;
@@ -115,11 +115,11 @@ export const FormButton = styled.button`
 `;
 
 //inicio style da pagina PageQuestionario
-export const Span= styled.span`
-    font-weight: bold;
-    color: rgb(12, 139, 1);
-    text-align: center;
-    margin: 2px;
+export const Span = styled.span`
+  font-weight: bold;
+  color: rgb(12, 139, 1);
+  text-align: center;
+  margin: 2px;
 `;
 
 export const StyledQuestionario = styled.div`
@@ -127,24 +127,22 @@ export const StyledQuestionario = styled.div`
   border-radius: 5px;
   margin: 5px 0 12px;
   padding: 0 15px 20px;
-  font-size:14.5px;
-  background-color:  rgb(247, 246, 246) ;
+  font-size: 14.5px;
+  background-color: rgb(247, 246, 246);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
-  
+
   h2 {
-    font-size:16px;
+    font-size: 16px;
     text-align: center;
     color: rgb(12, 139, 1);
   }
-  input[type=radio]:checked {
-  
-    cursor: pointer; 
+  input[type="radio"]:checked {
+    cursor: pointer;
     width: 16px;
     height: 16px;
     border: 5px solid;
-    
   }
-  input{
+  input {
     margin-left: 12px;
     position: relative;
     width: 14px;
