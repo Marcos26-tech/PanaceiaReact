@@ -1,6 +1,10 @@
 import React from "react";
 import ImagemAutocuidado from "../../assets/img/imgcomunidade/cuidado.jpg";
 import ImagemSaude from "../../assets/img/imgcomunidade/saudef.jpg";
+import Mulheres1 from "../../assets/img/imgcomunidade/auto1.jpg";
+import Mulheres2 from "../../assets/img/imgcomunidade/auto2.jpg";
+import Mulheres3 from "../../assets/img/imgcomunidade/auto3.jpg";
+import Mulheres4 from "../../assets/img/imgcomunidade/auto4.jpg";
 import {
   SectionPrimeira,
   Div,
@@ -23,8 +27,8 @@ function InfoComunidade() {
   return (
     <>
       <SectionPrimeira>
-        <Div>
-          <img src={ImagemAutocuidado} alt="Autocuidado Feminino" />
+        <Divi>
+          <img src={ImagemSaude} alt="Autocuidado Feminino" />
           <p>
             <a href={site} target="_blank" rel="noreferrer">
               <span>
@@ -38,9 +42,9 @@ function InfoComunidade() {
             todos os nossos principais aspectos como seres humanos: o físico, o
             mental e o emocional.{" "}
           </p>
-        </Div>
+        </Divi>
         <Divi>
-          <img src={ImagemSaude} alt="cuidados infantil" />
+          <img src={ImagemAutocuidado} alt="cuidados infantil" />
           <p>
             No{" "}
             <a href={site1} target="_blank" rel="noreferrer">
@@ -57,7 +61,7 @@ function InfoComunidade() {
       </SectionPrimeira>
       <SectionPrimeira>
         <Div>
-          <img src={ImagemAutocuidado} alt="Autocuidado Feminino" />
+          <img src={Mulheres1} alt="Autocuidado Feminino" />
           <p>
             <a href={site2} target="_blank" rel="noreferrer">
               <span>Alimentação Saudável para Mulheres</span>
@@ -68,8 +72,8 @@ function InfoComunidade() {
             e dinamismo.{" "}
           </p>
         </Div>
-        <Div>
-          <img src={ImagemAutocuidado} alt="Autocuidado Feminino" />
+        <Divi>
+          <img src={Mulheres2} alt="Autocuidado Feminino" />
           <p>
             <a href={site4} target="_blank" rel="noreferrer">
               <span>A Ansiedade em tempos de Pandemia e Distanciamento Social{" "}</span>
@@ -78,11 +82,11 @@ function InfoComunidade() {
             de preocupação consciente de uma pessoa diante de um evento futuro
             não desejado ou medo de uma situação real.
           </p>
-        </Div>
+        </Divi>
       </SectionPrimeira>
       <SectionPrimeira>
-      <Divi>
-          <img src={ImagemSaude} alt="cuidados infantil" />
+      <Div>
+          <img src={Mulheres3} alt="cuidados infantil" />
           <p>{" "}
             <a href={site3} target="_blank" rel="noreferrer">
               <span>Como Desenvolver a Inteligência Emocional </span>
@@ -93,10 +97,10 @@ function InfoComunidade() {
             que desenvolver inteligência emocional (IE) auxilia não só nesses
             processos intelectuais, mas em todos os âmbitos da vida.{" "}
           </p>
-        </Divi>
+        </Div>
 
         <Divi>
-          <img src={ImagemSaude} alt="cuidados infantil" />
+          <img src={Mulheres4} alt="cuidados infantil" />
           <p>
             <a href={site5} target="_blank" rel="noreferrer">
               <span>Impactos do Exercicio Físico na Saúde da Mulher</span>
