@@ -36,17 +36,16 @@ function InfoComunidade() {
                 próprias necessidades do corpo, mentais e psicológicas"
               </span>
             </a>{" "}
-            Esta definição é a mais simples e também mais abrangente. O
-            principal elemento do autocuidado é a atenção voltada para si mesmo,
-            para as próprias necessidades e aspirações. O que envolve cuidar de
-            todos os nossos principais aspectos como seres humanos: o físico, o
-            mental e o emocional.{" "}
+            O principal elemento do autocuidado deve ser a atenção voltada para
+            si mesmo, para as próprias necessidades e aspirações. O que envolve
+            cuidar de todos os nossos principais aspectos como seres humanos: o
+            físico, o mental e o emocional.
           </p>
         </Divi>
         <Divi>
           <img src={ImagemAutocuidado} alt="cuidados infantil" />
           <p>
-            No{" "}
+            No
             <a href={site1} target="_blank" rel="noreferrer">
               <span>Outubro Rosa</span>
             </a>
@@ -60,8 +59,8 @@ function InfoComunidade() {
         </Divi>
       </SectionPrimeira>
       <SectionPrimeira>
-        <Div>
-          <img src={Mulheres1} alt="Autocuidado Feminino" />
+        <Divi>
+          <img src={Mulheres1} alt="Alimentação Saudável" />
           <p>
             <a href={site2} target="_blank" rel="noreferrer">
               <span>Alimentação Saudável para Mulheres</span>
@@ -69,15 +68,17 @@ function InfoComunidade() {
             Mulheres ocupadas podem muitas vezes não perceber, mas precisam
             fazer da alimentação saudável uma prioridade para que possam manter
             seu ritmo de vida com saúde e continuar expressando sua inteligência
-            e dinamismo.{" "}
+            e dinamismo.
           </p>
-        </Div>
+        </Divi>
         <Divi>
-          <img src={Mulheres2} alt="Autocuidado Feminino" />
+          <img src={Mulheres2} alt="Ansiedade" />
           <p>
             <a href={site4} target="_blank" rel="noreferrer">
-              <span>A Ansiedade em tempos de Pandemia e Distanciamento Social{" "}</span>
-            </a>
+              <span>
+                Ansiedade em tempos de Pandemia e Distanciamento Social
+              </span>
+            </a>{" "}
             Múltiplos fenômenos fisiológicos e mentais, relacionados ao estado
             de preocupação consciente de uma pessoa diante de um evento futuro
             não desejado ou medo de uma situação real.
@@ -85,9 +86,9 @@ function InfoComunidade() {
         </Divi>
       </SectionPrimeira>
       <SectionPrimeira>
-      <Div>
-          <img src={Mulheres3} alt="cuidados infantil" />
-          <p>{" "}
+        <Div>
+          <img src={Mulheres3} alt="Inteligência Emocional" />
+          <p>
             <a href={site3} target="_blank" rel="noreferrer">
               <span>Como Desenvolver a Inteligência Emocional </span>
             </a>{" "}
@@ -95,12 +96,12 @@ function InfoComunidade() {
             faz-se necessária uma boa dose de dedicação, esforço e disciplina
             disso, a maioria das pessoas sabe. O que muitos ignoram é o fato de
             que desenvolver inteligência emocional (IE) auxilia não só nesses
-            processos intelectuais, mas em todos os âmbitos da vida.{" "}
+            processos intelectuais, mas em todos os âmbitos da vida.
           </p>
         </Div>
 
         <Divi>
-          <img src={Mulheres4} alt="cuidados infantil" />
+          <img src={Mulheres4} alt="Exercicio Físico" />
           <p>
             <a href={site5} target="_blank" rel="noreferrer">
               <span>Impactos do Exercicio Físico na Saúde da Mulher</span>
@@ -108,8 +109,8 @@ function InfoComunidade() {
             Um dos benefícios da prática de exercícios físicos para mulheres é a
             diminuição dos sintomas da depressão e ansiedade. E isso é
             comprovado por estudos! Fazer caminhada, andar de bicicleta ou
-            praticar alguns exercícios, por exemplo, são
-            práticas que diminuem os sintomas da depressão e da ansiedade.{" "}
+            praticar alguns exercícios, por exemplo, são práticas que diminuem
+            os sintomas da depressão e da ansiedade.{" "}
           </p>
         </Divi>
       </SectionPrimeira>

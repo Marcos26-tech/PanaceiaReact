@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Avatar, Conteudo } from "./StyledComunidade";
 import { Link } from "react-router-dom";
 
-import imagemComunidade from "../../assets/img/imgcomunidade/mulheres.jpg";
+import imagemComunidade from "../../assets/img/usuario.png";
 
 const Comunidades = (props) => {
   return (
