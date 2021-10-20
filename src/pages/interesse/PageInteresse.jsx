@@ -38,7 +38,7 @@ function PageInteresse() {
       }
     }
 
-    window.location.replace("./Comunidades");
+    window.location.replace("/Comunidades/");
   };
 
   return (

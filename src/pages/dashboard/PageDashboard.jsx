@@ -1,5 +1,4 @@
 import { React, useState, useEffect } from "react";
-import Typewriter from "typewriter-effect";
 import {
   Area,
   AreaChart,
@@ -135,7 +134,7 @@ const Dashboard = () => {
       });
   }, []);
 
-  var numUsuarios = Object.keys(usuarios).length;
+  let numUsuarios = Object.keys(usuarios).length;
   var numComunidades = Object.keys(comunidades).length;
   var numDepoimentos = Object.keys(depoimentos).length;
   var numQuestionarios = Object.keys(questionarios).length;
@@ -160,15 +159,7 @@ const Dashboard = () => {
           </Div5>
           <Section1>
             <Div>
-              <h1>
-                <Typewriter
-                  onInit={(typewriter) => {
-                    typewriter
-                      .typeString("Usuárias Registradas", numUsuarios)
-                      .start(20);
-                  }}
-                />
-              </h1>
+              <h1>Usuárias Registradas {numUsuarios}</h1>
             </Div>
             <Div1>
               <h1>Comunidades Criadas {numComunidades}</h1>
@@ -195,15 +186,15 @@ const Dashboard = () => {
             <div>
               <h5>Média de Escala das Usuárias</h5>
               <LineChart
-                width={950}
+                width={1200}
                 height={400}
                 data={dashboard}
-                margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
+                margin={{ top: 15, right: 90, left: 20, bottom: 50 }}
               >
                 <Line
                   type="monotone"
                   dataKey="mediaEscala"
-                  stroke="#0d069c"
+                  stroke="#0a3a04"
                   activeDot={{ r: 8 }}
                 />
                 <CartesianGrid strokeDasharray="3 3" />
@@ -217,10 +208,10 @@ const Dashboard = () => {
               <h5>Sentimentos percebido dos Depoimentos das Usuárias</h5>
 
               <AreaChart
-                width={950}
+                width={1200}
                 height={400}
                 data={dashboard}
-                margin={{ top: 10, right: 30, left: 50, bottom: 5 }}
+                margin={{ top: 15, right: 90, left: 20, bottom: 50 }}
               >
                 <defs>
                   <linearGradient
@@ -230,8 +221,8 @@ const Dashboard = () => {
                     x2="0"
                     y2="1"
                   >
-                    <stop offset="5%" stopColor="#2218ec" stopOpacity={0.8} />
-                    <stop offset="95%" stopColor="#5b1af5" stopOpacity={0} />
+                    <stop offset="5%" stopColor="#0d0391" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#a551e9" stopOpacity={0} />
                   </linearGradient>
                   <linearGradient
                     id="sentimentoNegativo"
@@ -240,8 +231,8 @@ const Dashboard = () => {
                     x2="0"
                     y2="1"
                   >
-                    <stop offset="5%" stopColor="#f11810" stopOpacity={0.8} />
-                    <stop offset="95%" stopColor="#f32922" stopOpacity={0} />
+                    <stop offset="5%" stopColor="#eb1008" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#74091bdd" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <XAxis dataKey="data" />
@@ -251,14 +242,14 @@ const Dashboard = () => {
                 <Area
                   type="monotone"
                   dataKey="sentimentoPositivo"
-                  stroke="#281df0"
+                  stroke="#190df3"
                   fillOpacity={1}
                   fill="url(#sentimentoPositivo)"
                 />
                 <Area
                   type="monotone"
                   dataKey="sentimentoNegativo"
-                  stroke="#ee3b1b"
+                  stroke="#e92a08"
                   fillOpacity={1}
                   fill="url(#sentimentoNegativo)"
                 />
@@ -268,17 +259,17 @@ const Dashboard = () => {
               <h5>Interesses das Usuárias</h5>
 
               <BarChart
-                width={1000}
+                width={1200}
                 height={400}
                 data={interesses}
-                margin={{ top: 15, right: 75, left: 50, bottom: 5 }}
+                margin={{ top: 15, right: 90, left: 20, bottom: 50 }}
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="nome" />
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="qtdUsuarios" fill="#82ca9d" />
+                <Bar dataKey="qtdUsuarios" fill="#1794176e" />
               </BarChart>
             </div>
           </Section2>

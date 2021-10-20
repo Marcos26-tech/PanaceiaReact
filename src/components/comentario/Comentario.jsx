@@ -10,12 +10,12 @@ const Comentario = (props) => {
     <>
       {
         // eslint-disable-next-line
-        props.idComunidade == props.idDepoimento ? ( //
+        props.idComunidade == props.idDepoimento ? (
           <Container>
             <Avatar src={imagemUsuario} alt={props.nome} />
             <Conteudo>
               <h2>{props.nome}</h2>
-              <p>{props.children}</p>
+              <p>{props.comentario}</p>
               <Data>
                 {formatRelative(props.data, new Date(), { locale: ptBR })}
               </Data>
