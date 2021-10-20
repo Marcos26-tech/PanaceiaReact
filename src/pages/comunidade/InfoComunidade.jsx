@@ -50,10 +50,10 @@ function InfoComunidade() {
               <span>Outubro Rosa</span>
             </a>
             , médicas refletem sobre como é preciso estruturar a rotina para
-            cuidar da saúde e prevenir o câncer que mais afeta mulheres. Para vencer o estigma, o receio, o
-            peso que a cerca. Ao passar por um prédio iluminado de rosa durante
-            este mês, faça uma reflexão. Se você é mulher, já fez seus exames de
-            rotina este ano ?
+            cuidar da saúde e prevenir o câncer que mais afeta mulheres. Para
+            vencer o estigma, o receio, o peso que a cerca. Ao passar por um
+            prédio iluminado de rosa durante este mês, faça uma reflexão. Se
+            você é mulher, já fez seus exames de rotina este ano ?
           </p>
         </Divi>
       </SectionPrimeira>

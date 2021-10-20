@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-
 import Home from "./pages/pagehome/PageHome";
 import Agenda from "./pages/agenda/PageAgenda";
 import Login from "./pages/login/PageLogin";
@@ -28,11 +27,10 @@ function Routes() {
         <Route path="/termosdeuso/" component={Termosdeuso} />
         <Route path="/perfil" component={Perfil} />
         <Route path="/dashboard" component={Dashboard} />
+        <Route path="/login" component={Login} />
+        <Route path="/home" exact component={Home} />
+        <Route path="/" exact component={Home} />
       </Switch>
-
-      <Route path="/login" component={Login} />
-      <Route path="/home" exact component={Home} />
-      <Route path="/" exact component={Home} />
     </>
   );
 }

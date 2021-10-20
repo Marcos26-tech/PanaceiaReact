@@ -48,4 +48,3 @@ export const Data = styled.p`
   color: #718096;
   font-size: 10px;
 `;
-

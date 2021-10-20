@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import usuario from '../../assets/img/usuario.png';
+import usuario from "../../assets/img/usuario.png";
 import {
   Form,
   FormWrapper,

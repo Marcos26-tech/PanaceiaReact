@@ -17,7 +17,6 @@ export const ModalContent = styled.div`
   background-color: #fff;
   max-height: calc(100vh - 150px);
   overflow-y: auto;
-  
 `;
 
 export const ModalContent2 = styled.div`
@@ -25,7 +24,6 @@ export const ModalContent2 = styled.div`
   background-color: #fff;
   max-height: calc(100vh - 210px);
   overflow-y: auto;
-  
 `;
 
 export const ModalHeader = styled.div`
@@ -37,22 +35,19 @@ export const ModalHeader = styled.div`
 
 export const ModalTitle = styled.div`
   margin: 0;
-  
 `;
 
 export const ModalBody = styled.div`
   padding: 10px;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  
 `;
 export const ModalFooter = styled.div`
   padding: 10px;
-  
 `;
 
 export const CheckImg = styled.div`
-  padding:5px;
+  padding: 5px;
   margin: 5px;
   input[type="checkbox"][id^="checkbox"] {
     display: none;
@@ -84,7 +79,6 @@ export const CheckImg = styled.div`
     line-height: 28px;
     transition-duration: 0.4s;
     transform: scale(0);
-    
   }
 
   label img {
@@ -114,9 +108,9 @@ export const CheckImg = styled.div`
     z-index: -1;
   }
   span {
-    font-family:Italianno;
-    font-size:35px;
-    margin:0 20px 0;
+    font-family: Italianno;
+    font-size: 35px;
+    margin: 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +119,7 @@ export const CheckImg = styled.div`
 
 export const FormButton2 = styled.button`
   display: inline-block;
-  margin:0 0 5px 5px;
+  margin: 0 0 5px 5px;
   width: 25%;
   padding: 12px 0;
   font-family: inherit;
@@ -149,7 +143,7 @@ export const FormButton2 = styled.button`
 
 export const FormButton3 = styled.button`
   display: inline-block;
-  margin:0 0 5px 5px;
+  margin: 0 0 5px 5px;
   width: 25%;
   padding: 12px 0;
   font-family: inherit;
@@ -168,6 +162,6 @@ export const FormButton3 = styled.button`
   }
   @media (max-width: 783px) {
     width: 50%;
-    margin:10px;
+    margin: 10px;
   }
 `;

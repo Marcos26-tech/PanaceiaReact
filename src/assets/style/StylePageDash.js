@@ -96,7 +96,8 @@ export const Div5 = styled.div`
   margin: 5px 0 0 0;
   padding: 10px 0 0 0;
   p {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
     text-align: center;
     font-size: 18px;
   }

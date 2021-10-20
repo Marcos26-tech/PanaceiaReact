@@ -79,7 +79,10 @@ function PageInteresse() {
                 <ModalBody>
                   <CheckImg>
                     <input type="checkbox" id="checkbox1" name="cachorros" />
-                    <label for="checkbox1"><span>Cachorro</span><img src={dog} alt="cachorros" /></label>
+                    <label for="checkbox1">
+                      <span>Cachorro</span>
+                      <img src={dog} alt="cachorros" />
+                    </label>
                     <input type="checkbox" id="checkbox2" name="gatos" />
                     <label for="checkbox2">
                       <span>Gatos</span>

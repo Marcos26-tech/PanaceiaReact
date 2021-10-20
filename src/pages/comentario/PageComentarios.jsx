@@ -81,10 +81,13 @@ function PageComentarios(props) {
           // eslint-disable-next-line
           nome={id == depoimento.idComunidade ? depoimento.titulo : null} //
           // eslint-disable-next-line
-          comentario={id == depoimento.idComunidade ? depoimento.comentario : null} //
+          comentario={
+            id == depoimento.idComunidade ? depoimento.comentario : null
+          } //
           //eslint-disable-next-line
-          onRemove={removerComentario.bind(this, depoimento.id)}>// 
-          //eslint-disable-next-line
+          onRemove={removerComentario.bind(this, depoimento.id)}
+        >
+          // //eslint-disable-next-line
           {id === depoimento.idComunidade ? depoimento.comentario : null}
         </Comentario> //
       ))}

@@ -160,7 +160,7 @@ export const Divi = styled.div`
   img {
     width: 9rem;
     height: 10rem;
-    border-radius:5px;
+    border-radius: 5px;
   }
   a {
     color: rgb(194, 5, 131);
@@ -187,7 +187,7 @@ export const Div = styled.div`
   img {
     width: 10rem;
     height: 10rem;
-    border-radius:5px;
+    border-radius: 5px;
   }
   a {
     color: rgb(194, 5, 131);
@@ -211,7 +211,7 @@ export const SectionPrimeira = styled.section`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #46aa41;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   p {
     font-size: 18.1px;
     text-align: justify;

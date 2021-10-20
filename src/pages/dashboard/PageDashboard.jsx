@@ -161,10 +161,10 @@ const Dashboard = () => {
           <Section1>
             <Div>
               <h1>
-              <Typewriter
+                <Typewriter
                   onInit={(typewriter) => {
                     typewriter
-                      .typeString("Usuárias Registradas",numUsuarios)
+                      .typeString("Usuárias Registradas", numUsuarios)
                       .start(20);
                   }}
                 />
@@ -271,7 +271,7 @@ const Dashboard = () => {
                 width={1000}
                 height={400}
                 data={interesses}
-                margin={{ top: 15, right:75, left: 50, bottom: 5 }}
+                margin={{ top: 15, right: 75, left: 50, bottom: 5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="nome" />
