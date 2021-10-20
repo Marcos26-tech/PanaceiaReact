@@ -34,21 +34,18 @@
 
 ### - npm install recharts --save
 
-<!-- React Spinners-->
-
-### - npm install --save react-spinners
-
 <!-- corretor de warnigs no console-->
+
 ### - npm i install --save-dev eslint
 
-####  Abaixo as informaçoes que foram cumpridas com parte da entrega e finalização do MVP.
+#### Abaixo as informaçoes que foram cumpridas com parte da entrega e finalização do MVP.
 
-####  • Construção de todas as páginas do projeto de forma componentizada com React;
+#### • Construção de todas as páginas do projeto de forma componentizada com React;
 
-####  • Sistema de rotas, utilizando o react-router-dom;
+#### • Sistema de rotas, utilizando o react-router-dom;
 
-####  • Desejável a utilização das libs usadas em aula como Styled Components e React Icons.
+#### • Desejável a utilização das libs usadas em aula como Styled Components e React Icons.
 
-####  • Construção de uma API com Rest (Jersey), para manipular os dados via requisições.
+#### • Construção de uma API com Rest (Jersey), para manipular os dados via requisições.
 
-####  • Deverá ser entregue o front-end em react, sem a pasta node-modules e a API Rest contendo conexão com o banco do aluno ou scripts para criar e popular os dados.
+#### • Deverá ser entregue o front-end em react, sem a pasta node-modules e a API Rest contendo conexão com o banco do aluno ou scripts para criar e popular os dados.
