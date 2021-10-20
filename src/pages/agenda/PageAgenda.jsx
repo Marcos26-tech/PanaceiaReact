@@ -12,7 +12,7 @@ const Agenda = () => {
           construindo laços de amizade de forma genuína
         </h2>
         <div>
-          <InlineWidget url="https://calendly.com/panaceia/panaceia?primary_color=13f00d" />
+          <InlineWidget url="https://calendly.com/panaceia/panaceia2021?primary_color=00ff3c" />
         </div>
       </Container>
     </>
