@@ -1,15 +1,7 @@
 import { React, useState } from "react";
-import { Container, FormButton } from "../../assets/style/StyleGlobal";
+import { Container } from "../../assets/style/StyleGlobal";
 import { Span } from "../../assets/style/StyleGlobal";
 import { Link } from "react-router-dom";
-import {
-  Modal,
-  ModalContent,
-  ModalBody,
-  ModalHeader,
-  ModalFooter,
-  CheckImg,
-} from "../../assets/style/StyleModal";
 import dog from "../../assets/img/imginteresses/dog.jpg";
 import cat from "../../assets/img/imginteresses/cat.jpg";
 import yoga from "../../assets/img/imginteresses/yoga.jpg";
@@ -18,6 +10,16 @@ import espiritualidade from "../../assets/img/imginteresses/espiritualidade.jpg"
 import estudos from "../../assets/img/imginteresses/estudos.jpg";
 import lutas from "../../assets/img/imginteresses/lutas.jpg";
 import tecnologia from "../../assets/img/imginteresses/tecnologia.jpg";
+import {
+  Modal,
+  ModalContent,
+  ModalBody,
+  ModalHeader,
+  ModalFooter,
+  CheckImg,
+  FormButton2,
+  FormButton3,
+} from "../../assets/style/StyleModal";
 
 function PageInteresse() {
   const [show, setShow] = useState(false);
@@ -50,9 +52,9 @@ function PageInteresse() {
               (Se preferir, poderá selecionar mais tarde a qualquer momento)
             </p>
             <div>
-              <FormButton onClick={mostraModal}>
+              <FormButton2 onClick={mostraModal}>
                 Desejo selecionar meus interesses
-              </FormButton>
+              </FormButton2>
             </div>
             <div>
               <Link title="Comunidades" to="/Comunidades">
@@ -77,33 +79,30 @@ function PageInteresse() {
                 <ModalBody>
                   <CheckImg>
                     <input type="checkbox" id="checkbox1" name="cachorros" />
-                    <label for="checkbox1">
-                      Cachorros
-                      <img src={dog} alt="cachorros" />
-                    </label>
+                    <label for="checkbox1"><span>Cachorro</span><img src={dog} alt="cachorros" /></label>
                     <input type="checkbox" id="checkbox2" name="gatos" />
                     <label for="checkbox2">
-                      Gatos
+                      <span>Gatos</span>
                       <img src={cat} alt="gatos" />
                     </label>
                     <input type="checkbox" id="checkbox3" name="yoga" />
                     <label for="checkbox3">
-                      Meditação
+                      <span>Meditação</span>
                       <img src={yoga} alt="yoga" />
                     </label>
                     <input type="checkbox" id="checkbox4" name="estudos" />
                     <label for="checkbox4">
-                      Estudos
+                      <span>Estudos</span>
                       <img src={estudos} alt="estudos" />
                     </label>
                     <input type="checkbox" id="checkbox5" name="tecnologia" />
                     <label for="checkbox5">
-                      Tecnologia
+                      <span>Tecnologia</span>
                       <img src={tecnologia} alt="tecnologia" />
                     </label>
                     <input type="checkbox" id="checkbox6" name="lutas" />
                     <label for="checkbox6">
-                      Lutas
+                      <span>Lutas</span>
                       <img src={lutas} alt="lutas" />
                     </label>
                     <input
@@ -112,19 +111,19 @@ function PageInteresse() {
                       name="espiritualidade"
                     />
                     <label for="checkbox7">
-                      Espiritualidade
+                      <span>Espiritualidade</span>
                       <img src={espiritualidade} alt="espiritualidade" />
                     </label>
                     <input type="checkbox" id="checkbox8" name="familia" />
                     <label for="checkbox8">
-                      Família
+                      <span>Família</span>
                       <img src={familia} alt="familia" />
                     </label>
                   </CheckImg>
                 </ModalBody>
                 <ModalFooter>
-                  <FormButton onClick={salvarInteresses}>Salvar </FormButton>
-                  <button onClick={mostraModal}>Voltar</button>
+                  <FormButton2 onClick={salvarInteresses}>Salvar</FormButton2>
+                  <FormButton3 onClick={mostraModal}>Voltar</FormButton3>
                 </ModalFooter>
               </ModalContent>
             </Modal>
