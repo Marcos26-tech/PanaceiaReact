@@ -20,7 +20,7 @@ export const FormWrapper = styled.div`
   border-radius: 5px;
   img {
     height: 5rem;
-    width: 15%;
+    width: 12%;
   }
   @media (max-width: 783px) {
     margin: 3rem 3% auto;
@@ -28,8 +28,8 @@ export const FormWrapper = styled.div`
     height: 42rem;
     width: 92%;
     img {
-      height: 5rem;
-      width: 19%;
+      height: 3rem;
+      width: 15%;
     }
   }
 `;
