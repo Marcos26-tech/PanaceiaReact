@@ -53,7 +53,7 @@ class Header extends Component {
                     .pauseFor(2000)
                     .deleteChars(10)
                     .typeString("Panace IA")
-                    .start(200);
+                    .start(2000);
                 }}
               />
             </p>

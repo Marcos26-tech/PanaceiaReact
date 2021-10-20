@@ -49,39 +49,3 @@ export const Data = styled.p`
   font-size: 10px;
 `;
 
-//inicio do style do icone das pag//
-export const Span = styled.span`
-  .tw-heart {
-    background: url(http://i.imgur.com/zw8ahUb.png) no-repeat 0 0;
-    left: 0px;
-    top: 0px;
-    margin: 0 auto;
-  }
-  position: relative;
-  width: 4em;
-  height: 4.5em;
-  display: block;
-  justify-content: right;
-
-  [type="checkbox"]:checked + .tw-heart {
-    transition: background 0.8s steps(28);
-    background-position: -2800px 0;
-    animation: ease;
-  }
-
-  [type="checkbox"] {
-    opacity: 0;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 85%;
-    height: 85%;
-    z-index: 1;
-  }
-`;
-export const IconeLike = styled.span`
-  display: flex;
-  width: 100%;
-  height: 100%;
-`;

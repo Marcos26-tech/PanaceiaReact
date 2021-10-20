@@ -1,4 +1,5 @@
 import { React, useState, useEffect } from "react";
+import Typewriter from "typewriter-effect";
 import {
   Area,
   AreaChart,
@@ -159,7 +160,15 @@ const Dashboard = () => {
           </Div5>
           <Section1>
             <Div>
-              <h1>Usuárias Registradas {numUsuarios}</h1>
+              <h1>
+              <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString("Usuárias Registradas",numUsuarios)
+                      .start(20);
+                  }}
+                />
+              </h1>
             </Div>
             <Div1>
               <h1>Comunidades Criadas {numComunidades}</h1>
@@ -262,7 +271,7 @@ const Dashboard = () => {
                 width={1000}
                 height={400}
                 data={interesses}
-                margin={{ top: 15, right: 30, left: 50, bottom: 5 }}
+                margin={{ top: 15, right:75, left: 50, bottom: 5 }}
               >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="nome" />
