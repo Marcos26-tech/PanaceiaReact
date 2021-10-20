@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import Comentario from "../../components/comentario/Comentario";
 
-import { Container, Button } from "../../assets/style/StyleComunidadeGlobal";
+import { Container, Button, Form } from "../../assets/style/StyleComunidadeGlobal";
 
 function PageComentarios(props) {
   let id = "";
@@ -87,7 +87,7 @@ function PageComentarios(props) {
           {id === depoimento.idComunidade ? depoimento.comentario : null}
         </Comentario>  
       ))}
-      <form onSubmit={adicionarDepoimento}>
+      <Form onSubmit={adicionarDepoimento}>
         <div>
           <h3>Compartilhe um depoimento com a comunidade</h3>
           <input
@@ -110,7 +110,7 @@ function PageComentarios(props) {
           />
         </div>
         <Button type="submit">Publicar Comentário</Button>
-      </form>
+      </Form>
     </Container>
   );
 }
