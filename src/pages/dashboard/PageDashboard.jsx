@@ -30,8 +30,9 @@ const Dashboard = () => {
   const [usuarios, setUsuarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
+  // "https://api-panaceia.herokuapp.com/rest/user"
   useEffect(() => {
-    fetch("https://api-panaceia.herokuapp.com/rest/user")
+    fetch("/rest/user")
       .then((resp) => {
         return resp.json();
       })
@@ -49,7 +50,8 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("https://api-panaceia.herokuapp.com/rest/community")
+    // "https://api-panaceia.herokuapp.com/rest/community"
+    fetch("/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -66,8 +68,9 @@ const Dashboard = () => {
   const [depoimentos, setDepoimentos] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
+  // "https://api-panaceia.herokuapp.com/rest/brief"
   useEffect(() => {
-    fetch("https://api-panaceia.herokuapp.com/rest/brief")
+    fetch("/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -84,8 +87,9 @@ const Dashboard = () => {
   const [questionarios, setQuestionarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
+  // "https://api-panaceia.herokuapp.com/rest/survey"
   useEffect(() => {
-    fetch("https://api-panaceia.herokuapp.com/rest/survey")
+    fetch("/rest/survey")
       .then((resp) => {
         return resp.json();
       })
@@ -102,8 +106,9 @@ const Dashboard = () => {
   const [dashboard, setDashboard] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
+  // "https://api-panaceia.herokuapp.com/rest/dash"
   useEffect(() => {
-    fetch("https://api-panaceia.herokuapp.com/rest/dash")
+    fetch("/rest/dash")
       .then((resp) => {
         return resp.json();
       })
@@ -120,8 +125,9 @@ const Dashboard = () => {
   const [interesses, setInteresses] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
+  // "https://api-panaceia.herokuapp.com/rest/interest"
   useEffect(() => {
-    fetch("https://api-panaceia.herokuapp.com/rest/interest")
+    fetch("/rest/interest")
       .then((resp) => {
         return resp.json();
       })

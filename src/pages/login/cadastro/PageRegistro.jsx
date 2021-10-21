@@ -36,8 +36,8 @@ function Registro() {
     if (!validate()) return;
 
     const saveDataForm = true;
-
-    fetch("https://api-panaceia.herokuapp.com/rest/user/" + id, {
+    // "https://api-panaceia.herokuapp.com/rest/user/
+    fetch("/rest/user/" + id, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
