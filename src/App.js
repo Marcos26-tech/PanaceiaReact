@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/header/Header.jsx";
 import Footer from "./components/footer/Footer";
-import Routes from "./Routes";
+import Routes from "./routes";
 
 const App = () => {
   return (
