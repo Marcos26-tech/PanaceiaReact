@@ -53,7 +53,7 @@ function Termos() {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/user")
+    fetch("https://api-panaceia.herokuapp.com/rest/user/")
       .then((resp) => {
         return resp.json();
       })

@@ -19,7 +19,6 @@ const Menu = () => {
             <Link to="/Comunidades">Comunidade</Link>
           </li>
           <li>
-            {" "}
             {isLogado ? (
               <Link to="/Perfil">Perfil</Link>
             ) : (

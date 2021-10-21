@@ -58,7 +58,7 @@ const Questionario = (props) => {
   useEffect(() => {
     if (novoQuestionario.escala !== 0) {
       // MÉTODO POST
-      fetch("/rest/survey/" + id, {
+      fetch("https://api-panaceia.herokuapp.com/rest/survey/" + id, {
         method: "post",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +68,7 @@ const Questionario = (props) => {
         window.location = "/interesses/" + idUsuaria;
       });
     } // eslint-disable-next-line
-  }, [novoQuestionario]); //
+  }, [novoQuestionario]); 
 
   return (
     <>
