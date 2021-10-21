@@ -32,7 +32,6 @@ const Stylednovo = styled.div`
     padding-top: 2rem;
     font-size: 35px;
     font-weight: bold;
-    }
   }
 `;
 class Header extends Component {
