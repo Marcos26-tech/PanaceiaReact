@@ -141,7 +141,7 @@ function PageComunidades() {
         <h3>
           Atenção: Este site não oferece tratamento ou aconcelhamneto para
           pessoas em crise de ansiedade, depressão ou suicida. Em caso de crise,
-          ligue para 188(CVV) <a href={sitecvv}>ou acesse o site</a>. Em caso de emergência, procure
+          ligue para 188(CVV) <a target="_blank" rel="noreferrer" href={sitecvv}>ou acesse o site</a>. Em caso de emergência, procure
           atendimento em um hospital mais próximo de você.
         </h3>
       </Divcvv>
