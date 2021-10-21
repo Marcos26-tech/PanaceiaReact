@@ -36,7 +36,7 @@
 
 <!-- corretor de warnigs no console-->
 
-### - npm i install --save-dev eslint
+### - npm install --save-dev eslint
 
 #### Abaixo as informaçoes que foram cumpridas com parte da entrega e finalização do MVP.
 
