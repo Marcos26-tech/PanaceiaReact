@@ -125,8 +125,8 @@ function PageInteresse() {
                   </CheckImg>
                 </ModalBody>
                 <ModalFooter>
-                  <FormButton2 onClick={salvarInteresses}>Salvar</FormButton2>
                   <FormButton3 onClick={mostraModal}>Voltar</FormButton3>
+                  <FormButton2 onClick={salvarInteresses}>Salvar</FormButton2>
                 </ModalFooter>
               </ModalContent>
             </Modal>
