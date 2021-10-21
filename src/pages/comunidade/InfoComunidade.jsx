@@ -9,7 +9,6 @@ import {
   SectionPrimeira,
   Div,
   Divi,
-  Anoter,
 } from "../../assets/style/StyleComunidadeGlobal";
 
 let site =
