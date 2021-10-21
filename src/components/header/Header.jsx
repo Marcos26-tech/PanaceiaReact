@@ -18,23 +18,20 @@ const StyledHeader = styled.header`
     position: absolute;
     height: 80px;
     width: 80px;
-    padding: 10px 82px 0 0;
+    padding: 10px 95px 0 0;
   }
 `;
 
 const Stylednovo = styled.div`
   display: flex;
   justify-content: center;
+  width: 100%;
   p {
     position: relative;
     margin: 0 0 0 145px;
     padding-top: 2rem;
     font-size: 35px;
     font-weight: bold;
-    @media (max-width: 780px) {
-      width: 100%;
-      font-size: 25px;
-      padding-left: 5.5rem;
     }
   }
 `;

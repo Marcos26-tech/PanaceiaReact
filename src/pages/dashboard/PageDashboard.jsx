@@ -176,10 +176,10 @@ const Dashboard = () => {
             </Div2>
 
             <Div3>
-              <h2>
+              <h1>
                 Média dos Depoimentos por Comunidade{" "}
                 {`${(numDepoimentos / numComunidades).toFixed(1)}`}
-              </h2>
+              </h1>
             </Div3>
 
             <Div4>

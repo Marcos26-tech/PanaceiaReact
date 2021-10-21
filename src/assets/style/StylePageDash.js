@@ -17,6 +17,7 @@ export const Section = styled.section`
   }
   @media (max-width: 789px) {
     padding: 0 0 2rem 0;
+    text-align: center;
     h5 {
       margin: 2em;
       font-size: 15px;
@@ -42,13 +43,16 @@ export const Section1 = styled.section`
     padding: 15px;
     font-size: 15px;
   }
-  @media (max-width: 789px) {
+  @media (max-width: 1380px){
+    font-size: 13px;
+    text-align: center;
+  }
+  @media (max-width: 820px) {
     display: block;
     div {
       width: 93%;
       height: 7rem;
     }
-    h2,
     h1 {
       margin: 15px;
       padding: 29px;
@@ -81,7 +85,7 @@ export const Div2 = styled.div`
 export const Div3 = styled.div`
   background-image: linear-gradient(291deg, #a8fe75 0%, #46aa41 100%);
   margin: 10px;
-  width: 19.4%;
+  width: 19%;
   height: 7rem;
 `;
 
@@ -101,24 +105,20 @@ export const Div5 = styled.div`
     text-align: center;
     font-size: 18px;
   }
-  h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-  @media (max-width: 789px) {
+  @media (max-width: 810px) {
+    h2 {
+      text-align: center;
+      font-size: 18px;
+    }
     p {
       text-align: center;
       font-size: 12px;
-    }
-    h2 {
-      font-size: 18px;
-      text-align: center;
     }
   }
 `;
 
 export const Section2 = styled.section`
-  @media (max-width: 789px) {
+  @media (max-width: 810px) {
     display: none;
   }
 `;

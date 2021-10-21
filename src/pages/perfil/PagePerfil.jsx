@@ -100,17 +100,6 @@ const PagePerfil = () => {
             <Buttoon onClick={AcessoAdmin}>Acesso de Admin</Buttoon>
           </div>
         </FormHeader>
-
-        {status.type === "success" ? (
-          <p style={{ color: "#033d11" }}>{status.mensagem}</p>
-        ) : (
-          ""
-        )}
-        {status.type === "error" ? (
-          <p style={{ color: "#ff0000" }}>{status.mensagem}</p>
-        ) : (
-          ""
-        )}
         <img src={usuario} alt="foto usuaria" />
         <Form onSubmit={addUser} id="form">
           <FormFieldset>
@@ -123,7 +112,12 @@ const PagePerfil = () => {
               value={user.image}
             />
           </FormFieldset>
+        {status.type === "success" ? (
+          <p style={{ color: "#033d11" }}>{status.mensagem}</p>) : ("")}
 
+        {status.type === "error" ? (
+          <p style={{ color: "#ff0000" }}>{status.mensagem}</p>) : ("")}
+          
           <FormFieldset>
             <label>Editar o Nome: </label>
             <FormInput
