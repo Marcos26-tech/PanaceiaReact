@@ -47,7 +47,7 @@ export const Section1 = styled.section`
     font-size: 13px;
     text-align: center;
   }
-  @media (max-width: 820px) {
+  @media (max-width: 1210px) {
     display: block;
     div {
       width: 93%;
@@ -99,13 +99,17 @@ export const Div4 = styled.div`
 export const Div5 = styled.div`
   margin: 5px 0 0 0;
   padding: 10px 0 0 0;
+  h2 {
+      text-align: center;
+      font-size: 25px;
+    }
   p {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     text-align: center;
     font-size: 18px;
   }
-  @media (max-width: 810px) {
+  @media (max-width: 1210px) {
     h2 {
       text-align: center;
       font-size: 18px;
@@ -118,7 +122,7 @@ export const Div5 = styled.div`
 `;
 
 export const Section2 = styled.section`
-  @media (max-width: 810px) {
+  @media (max-width: 1110px) {
     display: none;
   }
 `;

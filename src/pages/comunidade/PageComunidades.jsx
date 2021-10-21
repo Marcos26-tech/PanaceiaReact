@@ -8,8 +8,13 @@ import {
   Dividir,
   Div1,
   Div2,
+  Divcvv,
   Button,
 } from "../../assets/style/StyleComunidadeGlobal";
+
+let sitecvv ='https://www.cvv.org.br/'
+
+
 
 function PageComunidades() {
   // MÉTODO GET
@@ -18,7 +23,7 @@ function PageComunidades() {
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
     // 'https://api-panaceia.herokuapp.com/rest/community'
-    fetch('/rest/community')
+    fetch("/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -34,7 +39,7 @@ function PageComunidades() {
   // MÉTODO DELETE
   const handleDelete = (id) => {
     // 'https://api-panaceia.herokuapp.com/rest/community/'
-    fetch('/rest/community/'+ id, {
+    fetch("/rest/community/" + id, {
       method: "delete",
     })
       .then(() => {
@@ -82,7 +87,8 @@ function PageComunidades() {
         do ponto onde se encontra! by Grupo Panaceia ”
       </h1>
       <h2>Informações uteis de fonte confiável</h2>
-      <InfoComunidade />{/* <--- pagina de infomaçoes para Pagecomunidade é renderizado aqui*/}
+      <InfoComunidade />
+      {/* <--- pagina de infomaçoes para Pagecomunidade é renderizado aqui*/}
       <h6>Comunidades</h6>
       {comunidades.map((comunidade) => (
         <Comunidades
@@ -131,6 +137,14 @@ function PageComunidades() {
         </Div2>
         <Button type="submit">Criar Comunidade</Button>
       </Form>
+      <Divcvv>
+        <h3>
+          Atenção: Este site não oferece tratamento ou aconcelhamneto para
+          pessoas em crise de ansiedade, depressão ou suicida. Em caso de crise,
+          ligue para 188(CVV) <a href={sitecvv}>ou acesse o site</a>. Em caso de emergência, procure
+          atendimento em um hospital mais próximo de você.
+        </h3>
+      </Divcvv>
     </Container>
   );
 }

@@ -9,6 +9,7 @@ import {
   SectionPrimeira,
   Div,
   Divi,
+  Anoter,
 } from "../../assets/style/StyleComunidadeGlobal";
 
 let site =
@@ -28,7 +29,7 @@ function InfoComunidade() {
     <>
       <SectionPrimeira>
         <Divi>
-          <img src={ImagemSaude} alt="Autocuidado Feminino" />
+          <img src={ImagemAutocuidado} alt="Autocuidado Feminino" />
           <p>
             <a href={site} target="_blank" rel="noreferrer">
               <span>
@@ -37,13 +38,13 @@ function InfoComunidade() {
               </span>
             </a>{" "}
             O principal elemento do autocuidado deve ser a atenção voltada para
-            si mesmo, para as próprias necessidades e aspirações. O que envolve
+            si mesmo, para as próprias necessidades e aspirações. Devendo
             cuidar de todos os nossos principais aspectos como seres humanos: o
             físico, o mental e o emocional.
           </p>
         </Divi>
-        <Divi>
-          <img src={ImagemAutocuidado} alt="cuidados infantil" />
+        <Div>
+          <img src={ImagemSaude} alt="cuidados infantil" />
           <p>
             No{" "}
             <a href={site1} target="_blank" rel="noreferrer">
@@ -55,7 +56,7 @@ function InfoComunidade() {
             prédio iluminado de rosa durante este mês, faça uma reflexão. Se
             você é mulher, já fez seus exames de rotina este ano ?
           </p>
-        </Divi>
+        </Div>
       </SectionPrimeira>
       <SectionPrimeira>
         <Divi>
@@ -106,10 +107,10 @@ function InfoComunidade() {
               <span>Impactos do Exercicio Físico na Saúde da Mulher</span>
             </a>{" "}
             Os benefícios da prática de exercícios físicos para mulheres é a
-            diminuição dos sintomas da depressão e ansiedade. E isso é
-            comprovado por estudos! Fazer caminhada, andar de bicicleta ou
-            praticar alguns exercícios, por exemplo, são práticas que diminuem
-            os sintomas da depressão e da ansiedade.{" "}
+            diminuição dos sintomas da depressão e ansiedade. Sendo comprovado
+            por estudos fazer caminhada, andar de bicicleta ou praticar alguns
+            exercícios, por exemplo, são práticas que diminuem os sintomas da
+            depressão e da ansiedade.
           </p>
         </Divi>
       </SectionPrimeira>

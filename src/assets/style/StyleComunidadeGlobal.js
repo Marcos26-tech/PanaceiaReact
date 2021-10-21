@@ -23,7 +23,7 @@ export const Container = styled.div`
     font-size: 23px;
     text-align: center;
     margin:0 0 20px;
-    padding: 2px;
+    padding: 5px;
     font-weight: bold;
     color: rgb(12, 139, 1);
   }
@@ -176,6 +176,7 @@ export const Div1 = styled.div`
 `;
 
 // inicio do stilo da pag informaçoes para  pagecomunidade
+
 export const Divi = styled.div`
   display: flex;
   margin: 0 0 10px;
@@ -244,5 +245,19 @@ export const SectionPrimeira = styled.section`
   @media (max-width: 789px) {
     display: block;
     font-size: 13px;
+  }
+`;
+
+export const Divcvv = styled.div`
+  background: #ec6c6c;
+  h3{
+    text-align: center;
+    color:#f6fafa;
+    font-size: 15px;
+  }
+  a {
+    color:#f6fafa;
+    font-weight: bold;
+    font-size: 16px;
   }
 `;
