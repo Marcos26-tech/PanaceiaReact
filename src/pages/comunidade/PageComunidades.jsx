@@ -17,7 +17,7 @@ function PageComunidades() {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/community")
+    fetch('https://api-panaceia.herokuapp.com/rest/community')
       .then((resp) => {
         return resp.json();
       })
@@ -32,7 +32,7 @@ function PageComunidades() {
 
   // MÉTODO DELETE
   const handleDelete = (id) => {
-    fetch("rest/community/" + id, {
+    fetch('https://api-panaceia.herokuapp.com/rest/community/'+ id, {
       method: "delete",
     })
       .then(() => {
@@ -55,7 +55,7 @@ function PageComunidades() {
   const adicionarComunidade = (evento) => {
     evento.preventDefault();
 
-    fetch("/rest/community/" + id, {
+    fetch('https://api-panaceia.herokuapp.com/rest/community/' + id, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -80,9 +80,8 @@ function PageComunidades() {
         do ponto onde se encontra! by Grupo Panaceia ”
       </h1>
       <h2>Informações uteis de fonte confiável</h2>
-      <InfoComunidade />{" "}
-      {/* <--- pagina de infomaçoes para Pagecomunidade é renderizado aqui*/}
-      <h3>Comunidades disponíveis</h3>
+      <InfoComunidade />{/* <--- pagina de infomaçoes para Pagecomunidade é renderizado aqui*/}
+      <h6>Comunidades</h6>
       {comunidades.map((comunidade) => (
         <Comunidades
           key={comunidade.id}

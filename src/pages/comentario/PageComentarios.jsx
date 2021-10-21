@@ -14,7 +14,7 @@ function PageComentarios(props) {
   const [depoimentos, setDepoimentos] = useState([]);
 
   useEffect(() => {
-    fetch("/rest/brief")
+    fetch("https://api-panaceia.herokuapp.com/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -29,7 +29,7 @@ function PageComentarios(props) {
 
   // MÉTODO DELETE
   const removerComentario = (idDepoimento) => {
-    fetch("/rest/brief/" + idDepoimento, {
+    fetch("https://api-panaceia.herokuapp.com/rest/brief/" + idDepoimento, {
       method: "delete",
     })
       .then(() => {
@@ -51,7 +51,7 @@ function PageComentarios(props) {
   const adicionarDepoimento = (evento) => {
     evento.preventDefault();
 
-    fetch("/rest/brief/", {
+    fetch("https://api-panaceia.herokuapp.com/rest/brief/", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

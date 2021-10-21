@@ -31,7 +31,7 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/user")
+    fetch("https://api-panaceia.herokuapp.com/rest/user")
       .then((resp) => {
         return resp.json();
       })
@@ -49,7 +49,7 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/community")
+    fetch("https://api-panaceia.herokuapp.com/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -67,7 +67,7 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/brief")
+    fetch("https://api-panaceia.herokuapp.com/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -85,7 +85,7 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/survey")
+    fetch("https://api-panaceia.herokuapp.com/rest/survey")
       .then((resp) => {
         return resp.json();
       })
@@ -103,7 +103,7 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/dash")
+    fetch("https://api-panaceia.herokuapp.com/rest/dash")
       .then((resp) => {
         return resp.json();
       })
@@ -121,7 +121,7 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    fetch("/rest/interest")
+    fetch("https://api-panaceia.herokuapp.com/rest/interest")
       .then((resp) => {
         return resp.json();
       })

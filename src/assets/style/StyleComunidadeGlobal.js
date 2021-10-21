@@ -14,7 +14,15 @@ export const Container = styled.div`
   }
   h3 {
     font-size: 20px;
-    margin-bottom: 25px;
+    margin:10px 0 0 0;
+    padding: 2px;
+    font-weight: bold;
+    color: rgb(12, 139, 1);
+  }
+  h6 {
+    font-size: 23px;
+    text-align: center;
+    margin:0 0 20px;
     padding: 2px;
     font-weight: bold;
     color: rgb(12, 139, 1);
