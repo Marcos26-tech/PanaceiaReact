@@ -74,6 +74,20 @@ export const Button = styled.button`
   }
 `;
 
+export const Button1 = styled.button`
+  background-color: rgb(25, 121, 6);
+  color: #fff;
+  margin:10px 0 0 0;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  &:hover {
+    background-color: rgb(122, 243, 9);
+    cursor: pointer;
+  }
+`;
+
 //fomulario de criar comunidades
 export const Form = styled.form`
   label {
@@ -125,7 +139,8 @@ export const Div2 = styled.div`
   }
   @media (max-width: 789px) {
     textarea {
-      height: 2.5rem;
+      margin: 2px;
+      height: 3.5rem;
     }
     label {
       margin: 15px;

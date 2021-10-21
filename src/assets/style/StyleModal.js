@@ -26,6 +26,13 @@ export const ModalContent2 = styled.div`
   overflow-y: auto;
 `;
 
+export const ModalContent2021 = styled.div`
+  width: 59rem;
+  background-color: #fff;
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+`;
+
 export const ModalHeader = styled.div`
   padding: 10px;
   display: flex;

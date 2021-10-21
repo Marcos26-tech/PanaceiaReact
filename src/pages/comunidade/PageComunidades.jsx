@@ -8,6 +8,7 @@ import {
   Dividir,
   Div1,
   Div2,
+  Button,
 } from "../../assets/style/StyleComunidadeGlobal";
 
 function PageComunidades() {
@@ -127,7 +128,7 @@ function PageComunidades() {
             placeholder="Escreva uma pequena descrição sobre a comunidade..."
           />
         </Div2>
-        <button type="submit">Criar Comunidade</button>
+        <Button type="submit">Criar Comunidade</Button>
       </Form>
     </Container>
   );

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: block;
   margin: 5rem 25rem 2rem;
+  
 `;
 
 export const Form = styled.form`

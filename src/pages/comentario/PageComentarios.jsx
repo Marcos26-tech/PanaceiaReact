@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import Comentario from "../../components/comentario/Comentario";
 
-import { Container, Button, Form } from "../../assets/style/StyleComunidadeGlobal";
+import { Container, Button1, Form, Dividir, Div2 } from "../../assets/style/StyleComunidadeGlobal";
 
 function PageComentarios(props) {
   let id = "";
@@ -88,8 +88,8 @@ function PageComentarios(props) {
         </Comentario>  
       ))}
       <Form onSubmit={adicionarDepoimento}>
-        <div>
           <h3>Compartilhe um depoimento com a comunidade</h3>
+        <Dividir>
           <input
             type="text"
             name="titulo"
@@ -98,8 +98,8 @@ function PageComentarios(props) {
             required
             placeholder="Digite seu nome"
           />
-        </div>
-        <div>
+        </Dividir>
+        <Div2>
           <textarea
             name="comentario"
             value={depoimentos.comentario}
@@ -108,8 +108,8 @@ function PageComentarios(props) {
             rows="4"
             placeholder="Escreva seu depoimento..."
           />
-        </div>
-        <Button type="submit">Publicar Comentário</Button>
+        </Div2>
+        <Button1 type="submit">Publicar Comentário</Button1>
       </Form>
     </Container>
   );

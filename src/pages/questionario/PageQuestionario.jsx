@@ -8,7 +8,7 @@ import {
 } from "../../assets/style/StyleGlobal";
 import {
   Modal,
-  ModalContent2,
+  ModalContent2021,
   ModalBody,
   ModalHeader,
   ModalFooter,
@@ -73,7 +73,7 @@ const Questionario = (props) => {
   return (
     <>
       <Modal>
-        <ModalContent2>
+        <ModalContent2021>
           <ModalHeader>
             <Span>
               <h1>Questionário de Avaliação - Panace.IA</h1>
@@ -200,7 +200,7 @@ const Questionario = (props) => {
               </p>
             </ModalFooter>
           </Container>
-        </ModalContent2>
+        </ModalContent2021>
       </Modal>
     </>
   );

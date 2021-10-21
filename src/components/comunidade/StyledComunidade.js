@@ -11,8 +11,8 @@ export const Container = styled.div`
 
 export const Avatar = styled.img`
   margin: 0.5rem;
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 75px;
+  max-height: 75px;
 `;
 
 export const Conteudo = styled.div`
