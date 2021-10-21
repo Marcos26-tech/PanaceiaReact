@@ -152,9 +152,9 @@ const Dashboard = () => {
           <Div5>
             <h2>Dashboard Estatitisca Gerais</h2>
             <p>
-              Moderadores das comunidades orientado com análises preditivas,
-              entendendo as fontes de variabilidade dos dados e identificando
-              relações de causa de efeito para melhor tomada de decisão.
+             Os moderadores das comunidades orientados pelas análises preditivas,
+              poderão identificar as
+              relações de causa e efeito entre elas para melhor tomada de decisão.
             </p>
           </Div5>
           <Section1>
@@ -178,13 +178,13 @@ const Dashboard = () => {
 
             <Div4>
               <h1>
-                Média das Escalas {`${(total / numQuestionarios).toFixed(2)}`}
+                Média das respostas do questionario {`${(total / numQuestionarios).toFixed(2)}`}
               </h1>
             </Div4>
           </Section1>
           <Section2>
             <div>
-              <h5>Média de Escala das Usuárias</h5>
+              <h5>Média de Ansiedade das Usuárias</h5>
               <LineChart
                 width={1200}
                 height={400}
