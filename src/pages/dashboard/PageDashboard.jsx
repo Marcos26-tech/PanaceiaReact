@@ -32,7 +32,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "https://api-panaceia.herokuapp.com/rest/user"
   useEffect(() => {
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/user")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/user")
       .then((resp) => {
         return resp.json();
       })
@@ -51,7 +51,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
     // "https://api-panaceia.herokuapp.com/rest/community"
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/community")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -70,7 +70,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "https://api-panaceia.herokuapp.com/rest/brief"
   useEffect(() => {
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/brief")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -89,7 +89,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "https://api-panaceia.herokuapp.com/rest/survey"
   useEffect(() => {
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/survey")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/survey")
       .then((resp) => {
         return resp.json();
       })
@@ -108,7 +108,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "https://api-panaceia.herokuapp.com/rest/dash"
   useEffect(() => {
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/dash")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/dash")
       .then((resp) => {
         return resp.json();
       })
@@ -127,7 +127,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "https://api-panaceia.herokuapp.com/rest/interest"
   useEffect(() => {
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/interest")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/interest")
       .then((resp) => {
         return resp.json();
       })

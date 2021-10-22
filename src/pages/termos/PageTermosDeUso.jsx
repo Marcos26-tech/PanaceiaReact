@@ -54,7 +54,7 @@ function Termos() {
   // Effect para trazer todo conteúdo do objeto
   // "https://api-panaceia.herokuapp.com/rest/user/"
   useEffect(() => {
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/user/")
+    fetch("http://localhost:8080/Panaceia/https://api-panaceia.herokuapp.com/rest/user/")
       .then((resp) => {
         return resp.json();
       })
