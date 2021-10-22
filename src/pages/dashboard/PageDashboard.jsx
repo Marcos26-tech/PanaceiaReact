@@ -32,7 +32,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "/rest/user"
   useEffect(() => {
-    fetch("/rest/user")
+    fetch("https://panaceia.azurewebsites.net/rest/user")
       .then((resp) => {
         return resp.json();
       })
@@ -51,7 +51,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
     // "/rest/community"
-    fetch("/rest/community")
+    fetch("https://panaceia.azurewebsites.net/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -70,7 +70,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "/rest/brief"
   useEffect(() => {
-    fetch("/rest/brief")
+    fetch("https://panaceia.azurewebsites.net/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -89,7 +89,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "/rest/survey"
   useEffect(() => {
-    fetch("/rest/survey")
+    fetch("https://panaceia.azurewebsites.net/rest/survey")
       .then((resp) => {
         return resp.json();
       })
@@ -108,7 +108,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "/rest/dash"
   useEffect(() => {
-    fetch("/rest/dash")
+    fetch("https://panaceia.azurewebsites.net/rest/dash")
       .then((resp) => {
         return resp.json();
       })
@@ -127,7 +127,7 @@ const Dashboard = () => {
   // Effect para trazer todo conteúdo do objeto
   // "/rest/interest"
   useEffect(() => {
-    fetch("/rest/interest")
+    fetch("https://panaceia.azurewebsites.net/rest/interest")
       .then((resp) => {
         return resp.json();
       })

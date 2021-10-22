@@ -37,7 +37,7 @@ function Registro() {
 
     const saveDataForm = true;
     // "/rest/user/"
-    fetch("/rest/user/" + id, {
+    fetch("https://panaceia.azurewebsites.net/rest/user/" + id, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
