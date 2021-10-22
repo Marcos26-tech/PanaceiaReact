@@ -169,7 +169,7 @@ function Registro() {
         </Form>
 
         <FormFieldset>
-          <FormLink href="./Login">Já tem conta Clique aqui!</FormLink>
+          <FormLink href="./login">Já tem conta Clique aqui!</FormLink>
         </FormFieldset>
       </FormBody>
     </FormWrapper>
