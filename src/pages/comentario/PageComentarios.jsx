@@ -15,7 +15,7 @@ function PageComentarios(props) {
 
   useEffect(() => {
     // "https://api-panaceia.herokuapp.com/rest/brief/"
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/brief/")
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/brief/")
       .then((resp) => {
         return resp.json();
       })
@@ -31,7 +31,7 @@ function PageComentarios(props) {
   // MÉTODO DELETE
   const removerComentario = (idDepoimento) => {
     // "https://api-panaceia.herokuapp.com/rest/brief/"
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/brief/" + idDepoimento, {
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/brief/" + idDepoimento, {
       method: "delete",
     })
       .then(() => {
@@ -53,7 +53,7 @@ function PageComentarios(props) {
   const adicionarDepoimento = (evento) => {
     evento.preventDefault();
     // "https://api-panaceia.herokuapp.com/rest/brief/"
-    fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/brief/", {
+    fetch("http://localhost:8080/panaceia/https://api-panaceia.herokuapp.com/rest/brief/", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
