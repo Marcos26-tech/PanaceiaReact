@@ -14,8 +14,8 @@ function PageComentarios(props) {
   const [depoimentos, setDepoimentos] = useState([]);
 
   useEffect(() => {
-    // https://api-panaceia.herokuapp.com/rest/brief
-    fetch("/rest/brief")
+    // "/rest/brief/"
+    fetch("https://panaceia.azurewebsites.net/rest/brief/")
       .then((resp) => {
         return resp.json();
       })
@@ -30,7 +30,7 @@ function PageComentarios(props) {
 
   // MÉTODO DELETE
   const removerComentario = (idDepoimento) => {
-    // https://api-panaceia.herokuapp.com/rest/brief/
+    // "/rest/brief/"
     fetch("/rest/brief/" + idDepoimento, {
       method: "delete",
     })
@@ -52,7 +52,7 @@ function PageComentarios(props) {
 
   const adicionarDepoimento = (evento) => {
     evento.preventDefault();
-    // "https://api-panaceia.herokuapp.com/rest/brief/"
+    // "/rest/brief/"
     fetch("/rest/brief/", {
       method: "post",
       headers: {

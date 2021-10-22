@@ -36,8 +36,8 @@ function Registro() {
     if (!validate()) return;
 
     const saveDataForm = true;
-    // "https://api-panaceia.herokuapp.com/rest/user/
-    fetch("/rest/user/" + id, {
+    // "/rest/user/"
+    fetch("https://panaceia.azurewebsites.net/rest/user/" + id, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
@@ -123,16 +123,8 @@ function Registro() {
           <h2>Cadastro Panace I.A</h2>
         </FormHeader>
 
-        {status.type === "success" ? (
-          <p style={{ color: "#033d11" }}>{status.mensagem}</p>
-        ) : (
-          ""
-        )}
-        {status.type === "error" ? (
-          <p style={{ color: "#ff0000" }}>{status.mensagem}</p>
-        ) : (
-          ""
-        )}
+        {status.type === "success" ? (<p style={{ color: "#033d11" }}>{status.mensagem}</p>) : ("")}
+        {status.type === "error" ? (<p style={{ color: "#ff0000" }}>{status.mensagem}</p>) : ("")}
 
         <Form onSubmit={addUser} id="form">
           <FormFieldset>
@@ -177,7 +169,7 @@ function Registro() {
         </Form>
 
         <FormFieldset>
-          <FormLink href="./Login">Já tem conta Clique aqui!</FormLink>
+          <FormLink href="./login">Já tem conta Clique aqui!</FormLink>
         </FormFieldset>
       </FormBody>
     </FormWrapper>

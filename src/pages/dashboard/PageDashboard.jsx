@@ -30,9 +30,9 @@ const Dashboard = () => {
   const [usuarios, setUsuarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "https://api-panaceia.herokuapp.com/rest/user"
+  // "/rest/user"
   useEffect(() => {
-    fetch("/rest/user")
+    fetch("https://panaceia.azurewebsites.net/rest/user")
       .then((resp) => {
         return resp.json();
       })
@@ -50,8 +50,8 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    // "https://api-panaceia.herokuapp.com/rest/community"
-    fetch("/rest/community")
+    // "/rest/community"
+    fetch("https://panaceia.azurewebsites.net/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -68,9 +68,9 @@ const Dashboard = () => {
   const [depoimentos, setDepoimentos] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "https://api-panaceia.herokuapp.com/rest/brief"
+  // "/rest/brief"
   useEffect(() => {
-    fetch("/rest/brief")
+    fetch("https://panaceia.azurewebsites.net/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -87,9 +87,9 @@ const Dashboard = () => {
   const [questionarios, setQuestionarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "https://api-panaceia.herokuapp.com/rest/survey"
+  // "/rest/survey"
   useEffect(() => {
-    fetch("/rest/survey")
+    fetch("https://panaceia.azurewebsites.net/rest/survey")
       .then((resp) => {
         return resp.json();
       })
@@ -106,9 +106,9 @@ const Dashboard = () => {
   const [dashboard, setDashboard] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "https://api-panaceia.herokuapp.com/rest/dash"
+  // "/rest/dash"
   useEffect(() => {
-    fetch("/rest/dash")
+    fetch("https://panaceia.azurewebsites.net/rest/dash")
       .then((resp) => {
         return resp.json();
       })
@@ -125,9 +125,9 @@ const Dashboard = () => {
   const [interesses, setInteresses] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "https://api-panaceia.herokuapp.com/rest/interest"
+  // "/rest/interest"
   useEffect(() => {
-    fetch("/rest/interest")
+    fetch("https://panaceia.azurewebsites.net/rest/interest")
       .then((resp) => {
         return resp.json();
       })

@@ -22,8 +22,8 @@ function PageComunidades() {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    // 'https://api-panaceia.herokuapp.com/rest/community'
-    fetch("/rest/community")
+    // "/rest/community"
+    fetch("https://panaceia.azurewebsites.net/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -38,8 +38,8 @@ function PageComunidades() {
 
   // MÉTODO DELETE
   const handleDelete = (id) => {
-    // 'https://api-panaceia.herokuapp.com/rest/community/'
-    fetch("/rest/community/" + id, {
+    // "/rest/community/"
+    fetch("https://panaceia.azurewebsites.net/rest/community/" + id, {
       method: "delete",
     })
       .then(() => {
@@ -61,8 +61,8 @@ function PageComunidades() {
 
   const adicionarComunidade = (evento) => {
     evento.preventDefault();
-    // ('https://api-panaceia.herokuapp.com/rest/community/'
-    fetch("/rest/community/" + id, {
+    // ("/rest/community/"
+    fetch("https://panaceia.azurewebsites.net/rest/community/"+ id, {
       method: "post",
       headers: {
         "Content-Type": "application/json",

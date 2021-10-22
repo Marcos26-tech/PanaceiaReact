@@ -134,13 +134,13 @@ function FormLogin() {
         </Form>
 
         <FormFieldset>
-          <FormLink href="./Registro">
+          <FormLink href="./registro">
             Não tem uma conta Clique aqui e junte-se a nós!
           </FormLink>
         </FormFieldset>
 
         <FormFieldset>
-          <FormLink href="./ForgetPassword">Esqueceu sua senha!</FormLink>
+          <FormLink href="./forgetPassword">Esqueceu sua senha!</FormLink>
         </FormFieldset>
       </FormBody>
     </FormWrapper>

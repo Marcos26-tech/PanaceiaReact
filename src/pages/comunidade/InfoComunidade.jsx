@@ -11,17 +11,12 @@ import {
   Divi,
 } from "../../assets/style/StyleComunidadeGlobal";
 
-let site =
-  "https://www.vestimentarte.com.br/2020/06/autocuidado-o-que-e-principais-tipos.html";
-let site1 =
-  "https://g1.globo.com/pa/santarem-regiao/noticia/2021/10/04/campanha-do-outubro-rosa-abre-com-acao-na-casa-de-saude-da-mulher-e-doacao-de-sangue.ghtml";
-let site2 =
-  "https://www.dicasdemulher.com.br/7-dicas-de-alimentacao-saudavel-para-mulheres-muito-ocupadas/";
+let site ="https://www.vestimentarte.com.br/2020/06/autocuidado-o-que-e-principais-tipos.html";
+let site1 ="https://g1.globo.com/pa/santarem-regiao/noticia/2021/10/04/campanha-do-outubro-rosa-abre-com-acao-na-casa-de-saude-da-mulher-e-doacao-de-sangue.ghtml";
+let site2 ="https://www.dicasdemulher.com.br/7-dicas-de-alimentacao-saudavel-para-mulheres-muito-ocupadas/";
 let site3 = "https://blog.psicologiaviva.com.br/inteligencia-emocional/";
-let site4 =
-  "https://bacabal.ifma.edu.br/wp-content/uploads/sites/15/2020/05/Cartilha-ou-Ebook-Ansiedade-e-distanciamento-1.pdf";
-let site5 =
-  "https://www.sesi-ce.org.br/blog/impactos-do-exercicio-fisico-na-saude-da-mulher/";
+let site4 ="https://bacabal.ifma.edu.br/wp-content/uploads/sites/15/2020/05/Cartilha-ou-Ebook-Ansiedade-e-distanciamento-1.pdf";
+let site5 ="https://www.sesi-ce.org.br/blog/impactos-do-exercicio-fisico-na-saude-da-mulher/";
 
 function InfoComunidade() {
   return (
