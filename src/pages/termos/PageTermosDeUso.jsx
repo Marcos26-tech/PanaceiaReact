@@ -52,9 +52,9 @@ function Termos() {
   const [usuarios, setUsuarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "https://api-panaceia.herokuapp.com/rest/user/"
+  // "/rest/user/"
   useEffect(() => {
-    fetch("http://localhost:8080/Panaceia/https://api-panaceia.herokuapp.com/rest/user/")
+    fetch("/rest/user/")
       .then((resp) => {
         return resp.json();
       })
