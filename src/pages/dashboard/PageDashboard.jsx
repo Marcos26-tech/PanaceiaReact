@@ -50,8 +50,8 @@ const Dashboard = () => {
 
   // Effect para trazer todo conteúdo do objeto
   useEffect(() => {
-    // "/rest/community"
-    fetch("https://panaceia.azurewebsites.net/rest/community")
+    // "https://panaceia.azurewebsites.net/rest/community"
+    fetch("/rest/community")
       .then((resp) => {
         return resp.json();
       })
@@ -68,9 +68,9 @@ const Dashboard = () => {
   const [depoimentos, setDepoimentos] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "/rest/brief"
+  // "https://panaceia.azurewebsites.net/rest/brief"
   useEffect(() => {
-    fetch("https://panaceia.azurewebsites.net/rest/brief")
+    fetch("/rest/brief")
       .then((resp) => {
         return resp.json();
       })
@@ -87,9 +87,9 @@ const Dashboard = () => {
   const [questionarios, setQuestionarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "/rest/survey"
+  // https://panaceia.azurewebsites.net/rest/survey"
   useEffect(() => {
-    fetch("https://panaceia.azurewebsites.net/rest/survey")
+    fetch("/rest/survey")
       .then((resp) => {
         return resp.json();
       })
@@ -106,9 +106,9 @@ const Dashboard = () => {
   const [dashboard, setDashboard] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "/rest/dash"
+  // "https://panaceia.azurewebsites.net/rest/dash"
   useEffect(() => {
-    fetch("https://panaceia.azurewebsites.net/rest/dash")
+    fetch("/rest/dash")
       .then((resp) => {
         return resp.json();
       })
@@ -125,9 +125,9 @@ const Dashboard = () => {
   const [interesses, setInteresses] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "/rest/interest"
+  // "https://panaceia.azurewebsites.net/rest/interest"
   useEffect(() => {
-    fetch("https://panaceia.azurewebsites.net/rest/interest")
+    fetch("/rest/interest")
       .then((resp) => {
         return resp.json();
       })

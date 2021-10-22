@@ -58,8 +58,8 @@ const Questionario = (props) => {
   useEffect(() => {
     if (novoQuestionario.escala !== 0) {
       // MÉTODO POST
-      //"/rest/survey/"
-      fetch("https://panaceia.azurewebsites.net/rest/survey/" + id, {
+      //"https://panaceia.azurewebsites.net/rest/survey/" "
+      fetch("/rest/survey/" + id, {
         method: "post",
         headers: {
           "Content-Type": "application/json",

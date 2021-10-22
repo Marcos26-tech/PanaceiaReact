@@ -52,9 +52,9 @@ function Termos() {
   const [usuarios, setUsuarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // https://panaceia.azurewebsites.net
+  // "https://panaceia.azurewebsites.net/rest/user/"
   useEffect(() => {
-    fetch("https://panaceia.azurewebsites.net/rest/user/")
+    fetch("/rest/user/")
       .then((resp) => {
         return resp.json();
       })

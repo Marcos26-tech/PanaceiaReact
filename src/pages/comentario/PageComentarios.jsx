@@ -14,7 +14,7 @@ function PageComentarios(props) {
   const [depoimentos, setDepoimentos] = useState([]);
 
   useEffect(() => {
-    // "/rest/brief/"
+    // "https://panaceia.azurewebsites.net/rest/brief/"
     fetch("https://panaceia.azurewebsites.net/rest/brief/")
       .then((resp) => {
         return resp.json();
@@ -30,7 +30,7 @@ function PageComentarios(props) {
 
   // MÉTODO DELETE
   const removerComentario = (idDepoimento) => {
-    // "/rest/brief/"
+    // "https://panaceia.azurewebsites.net/rest/brief/"
     fetch("/rest/brief/" + idDepoimento, {
       method: "delete",
     })
@@ -52,7 +52,7 @@ function PageComentarios(props) {
 
   const adicionarDepoimento = (evento) => {
     evento.preventDefault();
-    // "/rest/brief/"
+    // "https://panaceia.azurewebsites.net/rest/brief/"
     fetch("/rest/brief/", {
       method: "post",
       headers: {
