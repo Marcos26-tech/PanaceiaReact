@@ -10,19 +10,19 @@ const Menu = () => {
       <Nav>
         <ul>
           <li>
-            <Link to="/Home">Home</Link>
+            <Link to="/home">Home</Link>
           </li>
           <li>
-            <Link to="/AgendaeEventos">Agenda & Eventos</Link>
+            <Link to="/agendaeEventos">Agenda & Eventos</Link>
           </li>
           <li>
-            <Link to="/Comunidades">Comunidade</Link>
+            <Link to="/comunidades">Comunidade</Link>
           </li>
           <li>
             {isLogado ? (
-              <Link to="/Perfil">Perfil</Link>
+              <Link to="/perfil">Perfil</Link>
             ) : (
-              <Link to="/Login">Login</Link>
+              <Link to="/login">Login</Link>
             )}
           </li>
         </ul>
