@@ -59,7 +59,7 @@ const Questionario = (props) => {
     if (novoQuestionario.escala !== 0) {
       // MÉTODO POST
       //"https://api-panaceia.herokuapp.com/rest/survey/"
-      fetch("/rest/survey/" + id, {
+      fetch("http://localhost:8080/https://api-panaceia.herokuapp.com/rest/survey/" + id, {
         method: "post",
         headers: {
           "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const Questionario = (props) => {
         window.location = "/interesses/" + idUsuaria;
       });
     } // eslint-disable-next-line
-  }, [novoQuestionario]); //
+  }, [novoQuestionario]); 
 
   return (
     <>
