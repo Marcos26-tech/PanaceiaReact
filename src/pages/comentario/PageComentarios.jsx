@@ -15,7 +15,7 @@ function PageComentarios(props) {
 
   useEffect(() => {
     // "https://panaceia.azurewebsites.net/rest/brief/"
-    fetch("https://panaceia.azurewebsites.net/rest/brief/")
+    fetch("/rest/brief/")
       .then((resp) => {
         return resp.json();
       })

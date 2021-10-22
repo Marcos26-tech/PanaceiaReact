@@ -94,7 +94,7 @@ const ForgetPassword = () => {
         </Form>
 
         <FormFieldset>
-          <FormLink href="./Login">Ir para o login</FormLink>
+          <FormLink href="./login">Ir para o login</FormLink>
         </FormFieldset>
       </FormBody>
     </FormWrapper>
