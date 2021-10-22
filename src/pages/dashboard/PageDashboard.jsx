@@ -30,9 +30,9 @@ const Dashboard = () => {
   const [usuarios, setUsuarios] = useState([]);
 
   // Effect para trazer todo conteúdo do objeto
-  // "/rest/user"
+  // "https://panaceia.azurewebsites.net/rest/user"
   useEffect(() => {
-    fetch("https://panaceia.azurewebsites.net/rest/user")
+    fetch("/rest/user")
       .then((resp) => {
         return resp.json();
       })
@@ -140,7 +140,7 @@ const Dashboard = () => {
       });
   }, []);
 
-  let numUsuarios = Object.keys(usuarios).length;
+  var numUsuarios = Object.keys(usuarios).length;
   var numComunidades = Object.keys(comunidades).length;
   var numDepoimentos = Object.keys(depoimentos).length;
   var numQuestionarios = Object.keys(questionarios).length;
