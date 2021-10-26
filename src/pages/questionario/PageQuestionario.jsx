@@ -195,7 +195,7 @@ const Questionario = (props) => {
                 Enviar Questionário
               </FormButton>
               <p>
-                * Formulário baseado na escala HAD de estudo da Unesp sobre
+                * Formulário baseado na escala HAD de estudo da Unicamp sobre
                 ansiedade, sem intuito de diagnosticar ou avaliar quaisquer
                 sintomas.
               </p>
